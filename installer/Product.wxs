@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+  <Product Id="*" Name="Squid" Language="1033" Version="3.3.2" Manufacturer="Diladele B.V." UpgradeCode="103139C5-4C94-471D-94D6-D838BB7E6CB9">
+    <Package InstallerVersion="200" Compressed="yes" InstallScope="perMachine" Description="Installer for Squid from Diladele B.V."/>
+
+    <MajorUpgrade DowngradeErrorMessage="A newer version of [ProductName] is already installed." />
+    <MediaTemplate EmbedCab="yes"/>
+
+    <UIRef Id="WixUI_InstallDir"/>
+    <Property Id="WIXUI_INSTALLDIR" Value="INSTALLFOLDER"/>
+      
+    <PropertyRef Id="NETFRAMEWORK20" />
+
+    <Condition Message="The product requires administrator priviledge.">
+      <![CDATA[Installed OR Privileged]]>
+    </Condition>
+    
+    <Condition Message="The product requires Microsoft .NET 2.0 to be installed on the machine.">
+      <![CDATA[Installed OR NETFRAMEWORK20]]>
+    </Condition>
+
+    <Condition Message="The product requires the operating system to be 64 bit.">
+      <![CDATA[Installed OR VersionNT64]]>
+    </Condition>
+
+    <Condition Message="The product requires the operating system to be Windows XP or higher.">
+      <![CDATA[Installed OR VersionNT64 >= "501"]]>
+    </Condition>
+
+    <Feature Id="SquidFeature" Title="Squid" Description="Installs Squid server." Level="1">
+      <ComponentGroupRef Id="SquidFilesGroup" />
+      <ComponentGroupRef Id="EmptySquidDirectories" />
+      <ComponentGroupRef Id="SquidRegistry" />
+      <ComponentGroupRef Id="SquidService" />
+    </Feature>
+  </Product>
+
+  <Fragment>
+    <Directory Id="TARGETDIR" Name="SourceDir">
+      <Directory Id="ProgramFiles64Folder">
+        <Directory Id="INSTALLFOLDER" Name="Squid" />
+      </Directory>
+    </Directory>
+  </Fragment>
+</Wix>

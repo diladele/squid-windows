@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+  <Fragment>
+    <ComponentGroup Id="SquidRegistry">
+      <Component Id="apppath_5EBFDB233C26420AABE9A0C7E2CB4223" Directory="INSTALLFOLDER" Guid="D26F8964-E968-4616-B5D7-6507FF1F43F6">
+        <RegistryValue Id="apppath_squid_2E52A98F647E4F9E9AD281D26C46F6E8"
+                       KeyPath="yes"
+                       Action="write"
+                       Root="HKLM"
+                       Key="Software\Microsoft\Windows\CurrentVersion\App Paths\squid.exe"
+                       Value="[INSTALLFOLDER]squid\squid.exe"
+                       Type="string"/>
+      </Component>
+      <Component Id="apppath_594F7EB39DD24AB8B7B126DD6AB2CD7C" Directory="INSTALLFOLDER" Guid="594F7EB3-9DD2-4AB8-B7B1-26DD6AB2CD7C">
+        <RegistryValue Id="apppath_squid_path_E0422DC3D3AC470192F9008F293479C8"
+                       KeyPath="yes"
+                       Action="write"
+                       Root="HKLM"
+                       Key="Software\Microsoft\Windows\CurrentVersion\App Paths\squid.exe"
+                       Name="Path"
+                       Value="[INSTALLFOLDER]squid"
+                       Type="string"/>
+      </Component>
+      <Component Id="apppath_342125F83F234AE691F282617CC538BE" Directory="INSTALLFOLDER" Guid="342125F8-3F23-4AE6-91F2-82617CC538BE">
+        <RegistryValue Id="apppath_diladele_263B78CB21E744EB9C915DA6C0C989B9"
+                       KeyPath="yes"
+                       Action="write"
+                       Root="HKLM"
+                       Key="Software\Microsoft\Windows\CurrentVersion\App Paths\Diladele.Squid.Service.exe"
+                       Value="[INSTALLFOLDER]squid\Diladele.Squid.Service.exe"
+                       Type="string"/>
+        </Component>
+      <Component Id="apppath_6FFC563B87294D628AC0B633231FAAA4" Directory="INSTALLFOLDER" Guid="6FFC563B-8729-4D62-8AC0-B633231FAAA4">
+        <RegistryValue Id="apppath_diladele_path_916C2EF499B0428D8673926406DF37AD"
+                       KeyPath="yes"
+                       Action="write"
+                       Root="HKLM"
+                       Key="Software\Microsoft\Windows\CurrentVersion\App Paths\Diladele.Squid.Service.exe"
+                       Name="Path"
+                       Value="[INSTALLFOLDER]squid"
+                       Type="string"/>
+      </Component>
+    </ComponentGroup>
+  </Fragment>
+</Wix>

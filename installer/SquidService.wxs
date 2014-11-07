@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+  <Fragment>
+    <ComponentGroup Id="SquidService">
+      <Component Id="cmp4AFDE1BB2A651BBE10BB3382F32F771C" Directory="dir68440401A834E7238BDC906147476ED2" Guid="9DFE8F58-5483-4EAE-B1B8-D37214CB8571">
+        <File Id="filCDAABF5F750DE0B7724D14235BE7F672" KeyPath="yes" Source="$(var.SquidDir)\diladele\Diladele.Squid.Service.exe" />
+        <ServiceInstall Id="squidsrv_B6713896EACC49EBAD916337B53A382E"
+                        Name="squidsrv"
+                        DisplayName="Squid Service from Diladele"
+                        Start="demand"
+                        ErrorControl="normal"
+                        Type="ownProcess"/>
+        <ServiceControl Id="squidsrv_start_2C5353F4D61E4C67A99C45A5DB2BDF32"
+                        Name="squidsrv"
+                        Start="install"
+                        Stop="both"
+                        Remove="uninstall"
+                        Wait="yes"/>
+      </Component>
+      <Component Id="cmp54C255398550E7D2F8E47A1458AC6B8A" Directory="dir68440401A834E7238BDC906147476ED2" Guid="E4BAA658-A473-49E7-9B28-B247FDE5697B">
+        <File Id="fil340670E79877403E4FB28D1DB17F76CF" KeyPath="yes" Source="$(var.SquidDir)\diladele\Diladele.Squid.Service.exe.config" />
+      </Component>
+      <Component Id="cmp5341A8FA7CF1BEC663DCE114B25533E7" Directory="dir68440401A834E7238BDC906147476ED2" Guid="E5CC79CC-4897-4C64-894C-6E2463CDC805">
+        <File Id="fil9C58EE077E41554FE82F5443687E8F5E" KeyPath="yes" Source="$(var.SquidDir)\diladele\Diladele.Squid.Service.pdb" />
+      </Component>
+    </ComponentGroup>
+  </Fragment>
+</Wix>
