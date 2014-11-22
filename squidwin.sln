@@ -7,8 +7,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "squidsrv", "squidsrv\squids
 EndProject
 Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "installer", "installer\installer.wixproj", "{BAF3352B-A4CF-4BC8-874B-A877962E771C}"
 	ProjectSection(ProjectDependencies) = postProject
+		{DDA0E589-4564-4B01-B710-69028D9AC463} = {DDA0E589-4564-4B01-B710-69028D9AC463}
 		{1F602BD4-0762-466A-95CC-AE5882907ABE} = {1F602BD4-0762-466A-95CC-AE5882907ABE}
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "squidtray", "squidtray\squidtray.csproj", "{DDA0E589-4564-4B01-B710-69028D9AC463}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -50,6 +53,18 @@ Global
 		{BAF3352B-A4CF-4BC8-874B-A877962E771C}.Release|x64.Build.0 = Release|x64
 		{BAF3352B-A4CF-4BC8-874B-A877962E771C}.Release|x86.ActiveCfg = Release|x86
 		{BAF3352B-A4CF-4BC8-874B-A877962E771C}.Release|x86.Build.0 = Release|x86
+		{DDA0E589-4564-4B01-B710-69028D9AC463}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDA0E589-4564-4B01-B710-69028D9AC463}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDA0E589-4564-4B01-B710-69028D9AC463}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{DDA0E589-4564-4B01-B710-69028D9AC463}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{DDA0E589-4564-4B01-B710-69028D9AC463}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{DDA0E589-4564-4B01-B710-69028D9AC463}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{DDA0E589-4564-4B01-B710-69028D9AC463}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDA0E589-4564-4B01-B710-69028D9AC463}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DDA0E589-4564-4B01-B710-69028D9AC463}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{DDA0E589-4564-4B01-B710-69028D9AC463}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{DDA0E589-4564-4B01-B710-69028D9AC463}.Release|x64.ActiveCfg = Release|Any CPU
+		{DDA0E589-4564-4B01-B710-69028D9AC463}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

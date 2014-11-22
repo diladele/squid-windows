@@ -2,6 +2,16 @@
 <Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
   <Fragment>
     <ComponentGroup Id="SquidRegistry">
+      <Component Id="installdir_06E68B465DB044CB9906578604733C19" Directory="INSTALLFOLDER" Guid="06E68B46-5DB0-44CB-9906-578604733C19">
+        <RegistryValue Id="installdir_main_06E68B465DB044CB9906578604733C19"
+                       KeyPath="yes"
+                       Action="write"
+                       Root="HKLM"
+                       Key="Software\Squid"
+                       Name="InstallDir"
+                       Value="[INSTALLFOLDER]"
+                       Type="string"/>
+      </Component>
       <Component Id="apppath_5EBFDB233C26420AABE9A0C7E2CB4223" Directory="INSTALLFOLDER" Guid="D26F8964-E968-4616-B5D7-6507FF1F43F6">
         <RegistryValue Id="apppath_squid_2E52A98F647E4F9E9AD281D26C46F6E8"
                        KeyPath="yes"
