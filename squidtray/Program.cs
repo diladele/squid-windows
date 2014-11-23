@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Windows.Forms;
 
@@ -17,8 +18,22 @@ namespace Diladele.Squid.Tray
             Application.SetCompatibleTextRenderingDefault(false);
             try
             {
-                var applicationContext = new SquidApplicationContext();
-                Application.Run(applicationContext);
+                var mainForm = new Form();
+                mainForm.Load += (object sender, EventArgs e) =>
+                {
+                    mainForm.Visible = false;
+                    mainForm.ShowInTaskbar = false;
+                };
+
+                mainForm.FormClosed += (object sender, FormClosedEventArgs e) =>
+                {
+                    Application.Exit();
+                };
+
+                using (var applicationContext = new SquidApplicationContext(mainForm))
+                {
+                    Application.Run(applicationContext);
+                }
             }
             catch (Exception ex)
             {

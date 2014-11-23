@@ -3,7 +3,7 @@
   <Fragment>
     <ComponentGroup Id="SquidTray">
       <Component Id="cmpD058CD70843C402E81E16A44DC8ADD6C" Directory="dir68440401A834E7238BDC906147476ED2" Guid="D058CD70-843C-402E-81E1-6A44DC8ADD6C">
-        <File Id="file6FAE4CBABF7D43429B28E0B5977FD050" KeyPath="yes" Source="$(var.SquidDir)\diladele\Diladele.Squid.Tray.exe" />
+        <File Id="tray6FAE4CBABF7D43429B28E0B5977FD050" KeyPath="yes" Source="$(var.SquidDir)\diladele\Diladele.Squid.Tray.exe" />
       </Component>
       <Component Id="cmp7C909DD25801476AA0043B1EF8A1FEEC" Directory="dir68440401A834E7238BDC906147476ED2" Guid="7C909DD2-5801-476A-A004-3B1EF8A1FEEC">
         <File Id="file83801F6DC7B0450B8ABEE271ECC45C21" KeyPath="yes" Source="$(var.SquidDir)\diladele\Diladele.Squid.Tray.exe.config" />

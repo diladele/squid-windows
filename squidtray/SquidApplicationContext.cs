@@ -21,12 +21,13 @@ namespace Diladele.Squid.Tray
 
         private About about;
         private Help help;
-
-
-        public SquidApplicationContext()
+        
+        public SquidApplicationContext(Form f) : base(f)
         {
             squidManager = new ServiceManager();
             items = new Dictionary<string, ToolStripMenuItem>();
+
+            //this.MainForm.FormClosing += OnMainFormClosed;
             InitializeContext();
         }
 
@@ -168,7 +169,7 @@ namespace Diladele.Squid.Tray
             }
         }
 
-        private void OnExit(object sender, EventArgs e)
+        internal void OnExit(object sender, EventArgs e)
         {
             Application.Exit();
         }
