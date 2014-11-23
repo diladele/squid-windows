@@ -52,6 +52,12 @@
       <Name>WixUIExtension</Name>
     </WixExtension>
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="banner.bmp" />
+    <Content Include="dialog.bmp" />
+    <Content Include="license.rtf" />
+    <Content Include="SquidIcon.ico" />
+  </ItemGroup>
   <Import Project="$(WixTargetsPath)" />
   <!--
 	To modify your build process, add your task inside one of the targets below and uncomment it.

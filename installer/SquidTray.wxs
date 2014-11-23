@@ -2,6 +2,17 @@
 <Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
   <Fragment>
     <ComponentGroup Id="SquidTray">
+      <Component Id="ApplicationShortcutDesktop" Directory="DesktopFolder" Guid="93CBE6DF-4905-49E8-96CA-CF3D15C18DE9">
+        <Shortcut Id="ApplicationDesktopShortcut"
+                  Name="Squid Server Tray"
+                  Description="Starts a squid server system tray"
+                  Target="[INSTALLFOLDER]squid\Diladele.Squid.Tray.exe">
+          <Icon Id="SquidIcon" SourceFile="SquidIcon.ico"/>
+          </Shortcut>
+        <RemoveFolder Id="DesktopFolder" On="uninstall"/>
+        <RegistryValue Root="HKCU" Key="Software/Squid" Name="installed" Type="integer" Value="1" KeyPath="yes"/>
+      </Component>
+
       <Component Id="cmpD058CD70843C402E81E16A44DC8ADD6C" Directory="dir68440401A834E7238BDC906147476ED2" Guid="D058CD70-843C-402E-81E1-6A44DC8ADD6C">
         <File Id="tray6FAE4CBABF7D43429B28E0B5977FD050" KeyPath="yes" Source="$(var.SquidDir)\diladele\Diladele.Squid.Tray.exe" />
       </Component>

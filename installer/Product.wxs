@@ -1,17 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Wix xmlns="http://schemas.microsoft.com/wix/2006/wi"
      xmlns:util="http://schemas.microsoft.com/wix/UtilExtension">
-  
+
   <Product Id="*" Name="Squid" Language="1033" Version="3.3.2" Manufacturer="Diladele B.V." UpgradeCode="103139C5-4C94-471D-94D6-D838BB7E6CB9">
     <Package InstallerVersion="200" Compressed="yes" InstallScope="perMachine" Description="Installer for Squid from Diladele B.V."/>
 
     <MajorUpgrade DowngradeErrorMessage="A newer version of [ProductName] is already installed." />
     <MediaTemplate EmbedCab="yes"/>
 
+    <!-- licenses and themes -->
+    <WixVariable Id="WixUILicenseRtf" Value="license.rtf" />
+    <WixVariable Id="WixUIBannerBmp" Value="banner.bmp" />
+    <WixVariable Id="WixUIDialogBmp" Value="dialog.bmp" />
+
     <!-- Prepare to start the tray application as custom action -->
     <Property Id="WixShellExecTarget" Value="[#tray6FAE4CBABF7D43429B28E0B5977FD050]" />
     <CustomAction Id="LaunchApplication" BinaryKey="WixCA" DllEntry="WixShellExec" Impersonate="yes" />
-    
+   
     <UI>
       <UIRef Id="WixUI_InstallDir"/>
 
@@ -19,29 +24,22 @@
       <Publish Dialog="ExitDialog"
              Control="Finish"
              Event="DoAction"
-             Value="LaunchApplication">NOT Installed
+             Value="LaunchApplication">
+        NOT Installed
       </Publish>
     </UI>
 
     <util:CloseApplication Id="CloseTrayApp" Target="Diladele.Squid.Tray.exe" CloseMessage="yes" ElevatedCloseMessage="yes" RebootPrompt="no">
     </util:CloseApplication>
-    
-    <!-- 
-    <CustomAction Id="CloseTrayApp" ExeCommand="-exit" FileKey="tray6FAE4CBABF7D43429B28E0B5977FD050" Execute="immediate" Return="asyncNoWait" />
 
-    <InstallExecuteSequence>
-      <Custom Action="CloseTrayApp" Before="InstallValidate" />
-    </InstallExecuteSequence>    
-    closing the tray app during uninstall-->
-    
     <Property Id="WIXUI_INSTALLDIR" Value="INSTALLFOLDER"/>
-      
+
     <PropertyRef Id="NETFRAMEWORK20" />
 
     <Condition Message="The product requires administrator priviledge.">
       <![CDATA[Installed OR Privileged]]>
     </Condition>
-    
+
     <Condition Message="The product requires Microsoft .NET 2.0 to be installed on the machine.">
       <![CDATA[Installed OR NETFRAMEWORK20]]>
     </Condition>
@@ -68,6 +66,7 @@
       <Directory Id="ProgramFiles64Folder">
         <Directory Id="INSTALLFOLDER" Name="Squid" />
       </Directory>
+      <Directory Id="DesktopFolder" Name="Desktop"/>        
     </Directory>
   </Fragment>
 </Wix>
