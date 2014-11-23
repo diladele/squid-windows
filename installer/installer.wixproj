@@ -22,7 +22,7 @@
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
     <DefineConstants>Debug;SquidDir=..\squid;</DefineConstants>
-    <OutputPath>bin\$(Platform)\$(Configuration)\</OutputPath>
+    <OutputPath>..\bin\$(Platform)\$(Configuration)\</OutputPath>
     <IntermediateOutputPath>obj\$(Platform)\$(Configuration)\</IntermediateOutputPath>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
@@ -36,6 +36,7 @@
     <Compile Include="SquidFiles.wxs" />
     <Compile Include="SquidRegistry.wxs" />
     <Compile Include="SquidService.wxs" />
+    <Compile Include="SquidTray.wxs" />
   </ItemGroup>
   <ItemGroup>
     <WixExtension Include="WixNetFxExtension">

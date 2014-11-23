@@ -66,9 +66,10 @@ namespace Diladele.Squid.Tray
 
             item = new ToolStripMenuItem("&Start Squid Service");
             item.Click += OnStartSquid;
-            if ((squidManager.Status == ServiceControllerStatus.Running &&
-                 squidManager.Status == ServiceControllerStatus.StartPending) ||
-                 squidManager.NotAvailable)
+            var status = squidManager.GetStatus();
+            if (status == ServiceControllerStatus.Running ||
+                status == ServiceControllerStatus.StartPending ||
+                squidManager.NotAvailable)
             {
                 item.Enabled = false;
             }
@@ -77,9 +78,9 @@ namespace Diladele.Squid.Tray
 
             item = new ToolStripMenuItem("S&top Squid Service");
             item.Click += OnStopSquid;
-            if ((squidManager.Status == ServiceControllerStatus.Stopped &&
-                 squidManager.Status == ServiceControllerStatus.StopPending) ||
-                 squidManager.NotAvailable)
+            if (status == ServiceControllerStatus.Stopped ||
+                status == ServiceControllerStatus.StopPending ||
+                squidManager.NotAvailable)
             {
                 item.Enabled = false;
             }

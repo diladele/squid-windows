@@ -29,17 +29,15 @@ namespace Diladele.Squid.Tray
             }
         }
 
-        public ServiceControllerStatus Status
+        public ServiceControllerStatus GetStatus()
         {
-            get
+            if (!Exists)
             {
-                if (!Exists)
-                {
-                    return ServiceControllerStatus.Stopped;
-                }
-
-                return controller.Status;
+                return ServiceControllerStatus.Stopped;
             }
+
+            controller.Refresh();
+            return controller.Status;
         }
 
         public bool NotAvailable

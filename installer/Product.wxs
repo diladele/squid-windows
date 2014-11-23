@@ -32,6 +32,7 @@
       <ComponentGroupRef Id="EmptySquidDirectories" />
       <ComponentGroupRef Id="SquidRegistry" />
       <ComponentGroupRef Id="SquidService" />
+      <ComponentGroupRef Id="SquidTray" />
     </Feature>
   </Product>
 
