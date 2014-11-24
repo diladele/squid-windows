@@ -36,5 +36,21 @@ namespace Diladele.Squid.Tray
         {
             Close();
         }
+
+        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            this.linkLabel1.LinkVisited = true;
+            System.Diagnostics.Process.Start("http://www.diladele.com/");
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

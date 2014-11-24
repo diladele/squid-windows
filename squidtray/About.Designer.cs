@@ -51,6 +51,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(468, 100);
             this.panel1.TabIndex = 0;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // linkLabel1
             // 
@@ -91,6 +92,7 @@
             this.label3.Size = new System.Drawing.Size(253, 24);
             this.label3.TabIndex = 3;
             this.label3.Text = "This installer is delivered by";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // linkLabel2
             // 
@@ -101,6 +103,7 @@
             this.linkLabel2.TabIndex = 4;
             this.linkLabel2.TabStop = true;
             this.linkLabel2.Text = "Diladele B.V.";
+            this.linkLabel2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked);
             // 
             // button1
             // 

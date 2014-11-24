@@ -21,5 +21,10 @@ namespace Diladele.Squid.Tray
             this.linkLabel1.LinkVisited = true;
             System.Diagnostics.Process.Start("http://www.squid-cache.org/Doc/");
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }
