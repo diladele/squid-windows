@@ -68,6 +68,12 @@
     </Compile>
     <Compile Include="ServiceManager.cs" />
     <Compile Include="SquidApplicationContext.cs" />
+    <EmbeddedResource Include="About.resx">
+      <DependentUpon>About.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Help.resx">
+      <DependentUpon>Help.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
@@ -89,6 +95,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\SquidIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\SquidIcon.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
