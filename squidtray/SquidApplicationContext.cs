@@ -40,7 +40,7 @@ namespace Diladele.Squid.Tray
             {
                 ContextMenuStrip = new ContextMenuStrip(),
                 Icon = Icon.FromHandle(handle),
-                Text = "Squid Server",
+                Text = "Squid for Windows",
                 Visible = true
             };
 

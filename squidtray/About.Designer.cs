@@ -51,7 +51,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(468, 100);
             this.panel1.TabIndex = 0;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // linkLabel1
             // 
@@ -72,7 +71,6 @@
             this.label2.Size = new System.Drawing.Size(335, 24);
             this.label2.TabIndex = 1;
             this.label2.Text = "More information about the product can be found at ";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label1
             // 
@@ -82,7 +80,6 @@
             this.label1.Size = new System.Drawing.Size(362, 26);
             this.label1.TabIndex = 0;
             this.label1.Text = "Squid v. 3.3.3-2. Build with Cygwin 64 bit";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label3
             // 
@@ -92,7 +89,6 @@
             this.label3.Size = new System.Drawing.Size(253, 24);
             this.label3.TabIndex = 3;
             this.label3.Text = "This installer is delivered by";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // linkLabel2
             // 
