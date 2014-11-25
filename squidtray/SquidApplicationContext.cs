@@ -6,6 +6,7 @@ using System.Windows.Forms;
 using System.ServiceProcess;
 using System.Diagnostics;
 using System.Collections.Generic;
+using System.Threading;
 
 namespace Diladele.Squid.Tray
 {
@@ -125,11 +126,31 @@ namespace Diladele.Squid.Tray
             }
         }
 
-        private void OnOpenSquidConfig(object sender, EventArgs e)
+        private void OnOpenSquidConfig(object sender, EventArgs notUsed)
         {
             if (PredefinedPaths.InstallationFolder != string.Empty)
             {
-                Process.Start("notepad.exe", PredefinedPaths.InstallationFolder + "\\etc\\squid\\squid.conf");
+                ProcessStartInfo startInfo = new ProcessStartInfo("notepad.exe", PredefinedPaths.InstallationFolder + "\\etc\\squid\\squid.conf");
+                startInfo.Verb = "runas";
+                ThreadPool.QueueUserWorkItem(
+                    (s) =>
+                    {
+                        try
+                        {
+                            Process.Start(startInfo);
+                        }
+                        catch (Win32Exception e)
+                        {
+                            MessageBox.Show(
+                                e.Message,
+                                e.NativeErrorCode == Constants.OperationCancelled
+                                    ? "Warning" : "Error",
+                                MessageBoxButtons.OK,
+                                e.NativeErrorCode == Constants.OperationCancelled
+                                    ? MessageBoxIcon.Warning : MessageBoxIcon.Error);
+                        }
+                    },
+                    null);
             }
         }
 

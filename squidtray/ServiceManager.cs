@@ -1,6 +1,10 @@
 ﻿using System;
 using System.ServiceProcess;
 using Microsoft.Win32;
+using System.Diagnostics;
+using System.Windows.Forms;
+using System.ComponentModel;
+using System.Threading;
 
 namespace Diladele.Squid.Tray
 {
@@ -17,7 +21,45 @@ namespace Diladele.Squid.Tray
         {
             if (Exists && controller.CanStop)
             {
-                controller.Stop();
+                ProcessStartInfo startInfo = new ProcessStartInfo("net", "stop squidsrv");
+                startInfo.Verb = "runas";
+                startInfo.WindowStyle = ProcessWindowStyle.Hidden;
+                ThreadPool.QueueUserWorkItem(
+                    (s) =>
+                    {
+                        try
+                        {
+                            var p = Process.Start(startInfo);
+                            p.WaitForExit();
+                            if (p.ExitCode != 0)
+                            {
+                                MessageBox.Show(
+                                    "Cannot stop squid service: error code '" + p.ExitCode + "'.",
+                                    "Error",
+                                    MessageBoxButtons.OK,
+                                    MessageBoxIcon.Error);
+                            }
+                        }
+                        catch (Win32Exception e)
+                        {
+                            MessageBox.Show(
+                                e.Message,
+                                e.NativeErrorCode == Constants.OperationCancelled
+                                    ? "Warning" : "Error",
+                                MessageBoxButtons.OK,
+                                e.NativeErrorCode == Constants.OperationCancelled
+                                    ? MessageBoxIcon.Warning : MessageBoxIcon.Error);
+                        }
+                    },
+                    null);
+            }
+            else
+            {
+                MessageBox.Show(
+                    "Squid service does not exist.",
+                    "Error",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
             }
         }
 
@@ -25,7 +67,44 @@ namespace Diladele.Squid.Tray
         {
             if (Exists)
             {
-                controller.Start();
+                ProcessStartInfo startInfo = new ProcessStartInfo("net", "start squidsrv");
+                startInfo.Verb = "runas";
+                startInfo.WindowStyle = ProcessWindowStyle.Hidden;
+                ThreadPool.QueueUserWorkItem(
+                    (s) =>
+                    {
+                        try
+                        {
+                            var p = Process.Start(startInfo);
+                            p.WaitForExit();
+                            if (p.ExitCode != 0)
+                            {
+                                MessageBox.Show(
+                                    "Cannot start squid service: error code '" + p.ExitCode + "'.",
+                                    "Error",
+                                    MessageBoxButtons.OK,
+                                    MessageBoxIcon.Error);
+                            }
+                        }
+                        catch (Win32Exception e)
+                        {
+                            MessageBox.Show(
+                                e.Message,
+                                e.NativeErrorCode == Constants.OperationCancelled
+                                    ? "Warning" : "Error",
+                                MessageBoxButtons.OK,
+                                e.NativeErrorCode == Constants.OperationCancelled
+                                    ? MessageBoxIcon.Warning : MessageBoxIcon.Error);
+                        }
+                    }, null);
+            }
+            else
+            {
+                MessageBox.Show(
+                    "Squid service does not exist.",
+                    "Error",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
             }
         }
 
@@ -73,9 +152,9 @@ namespace Diladele.Squid.Tray
             get
             {
                 ServiceController[] services = ServiceController.GetServices();
-                foreach(var s in services)
+                foreach (var s in services)
                 {
-                    if(s.ServiceName == Constants.ServiceName)
+                    if (s.ServiceName == Constants.ServiceName)
                     {
                         return true;
                     }
