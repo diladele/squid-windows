@@ -6,8 +6,8 @@
         <File Id="filCDAABF5F750DE0B7724D14235BE7F672" KeyPath="yes" Source="$(var.SquidDir)\diladele\Diladele.Squid.Service.exe" />
         <ServiceInstall Id="squidsrv_B6713896EACC49EBAD916337B53A382E"
                         Name="squidsrv"
-                        DisplayName="Squid Service from Diladele"
-                        Start="demand"
+                        DisplayName="Squid for Windows"
+                        Start="auto"
                         ErrorControl="normal"
                         Type="ownProcess"/>
         <ServiceControl Id="squidsrv_start_2C5353F4D61E4C67A99C45A5DB2BDF32"
