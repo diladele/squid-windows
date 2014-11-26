@@ -1,3 +1,5 @@
+certificates/
+*.pfx
 */obj/
 installer/bin/
 squid/diladele/
