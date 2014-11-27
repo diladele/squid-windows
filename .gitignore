@@ -4,3 +4,4 @@ certificates/
 installer/bin/
 squid/diladele/
 *.suo
+sign.bat
