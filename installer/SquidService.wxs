@@ -7,6 +7,7 @@
         <ServiceInstall Id="squidsrv_B6713896EACC49EBAD916337B53A382E"
                         Name="squidsrv"
                         DisplayName="Squid for Windows"
+                        Description="Reduces bandwidth and improves response times by caching and reusing frequently-requested web pages."
                         Start="auto"
                         ErrorControl="normal"
                         Type="ownProcess"/>
