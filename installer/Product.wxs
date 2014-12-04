@@ -13,6 +13,11 @@
     <WixVariable Id="WixUIBannerBmp" Value="banner.bmp" />
     <WixVariable Id="WixUIDialogBmp" Value="dialog.bmp" />
 
+    <!-- add/remove icon -->
+    <Icon Id="AddRemoveIcon" SourceFile="SquidIcon.ico"/>
+    <Property Id="ARPPRODUCTICON" Value="AddRemoveIcon" />
+
+
     <!-- Prepare to start the tray application as custom action -->
     <Property Id="WixShellExecTarget" Value="[#tray6FAE4CBABF7D43429B28E0B5977FD050]" />
     <CustomAction Id="LaunchApplication" BinaryKey="WixCA" DllEntry="WixShellExec" Impersonate="yes" />
