@@ -18,7 +18,7 @@
                        Action="write"
                        Root="HKLM"
                        Key="Software\Microsoft\Windows\CurrentVersion\App Paths\squid.exe"
-                       Value="[INSTALLFOLDER]squid\squid.exe"
+                       Value="[INSTALLFOLDER]bin\squid.exe"
                        Type="string"/>
       </Component>
       <Component Id="apppath_594F7EB39DD24AB8B7B126DD6AB2CD7C" Directory="INSTALLFOLDER" Guid="594F7EB3-9DD2-4AB8-B7B1-26DD6AB2CD7C">
@@ -28,7 +28,7 @@
                        Root="HKLM"
                        Key="Software\Microsoft\Windows\CurrentVersion\App Paths\squid.exe"
                        Name="Path"
-                       Value="[INSTALLFOLDER]squid"
+                       Value="[INSTALLFOLDER]bin"
                        Type="string"/>
       </Component>
       <Component Id="apppath_342125F83F234AE691F282617CC538BE" Directory="INSTALLFOLDER" Guid="342125F8-3F23-4AE6-91F2-82617CC538BE">
@@ -37,7 +37,7 @@
                        Action="write"
                        Root="HKLM"
                        Key="Software\Microsoft\Windows\CurrentVersion\App Paths\Diladele.Squid.Service.exe"
-                       Value="[INSTALLFOLDER]squid\Diladele.Squid.Service.exe"
+                       Value="[INSTALLFOLDER]bin\Diladele.Squid.Service.exe"
                        Type="string"/>
         </Component>
       <Component Id="apppath_6FFC563B87294D628AC0B633231FAAA4" Directory="INSTALLFOLDER" Guid="6FFC563B-8729-4D62-8AC0-B633231FAAA4">
@@ -47,7 +47,7 @@
                        Root="HKLM"
                        Key="Software\Microsoft\Windows\CurrentVersion\App Paths\Diladele.Squid.Service.exe"
                        Name="Path"
-                       Value="[INSTALLFOLDER]squid"
+                       Value="[INSTALLFOLDER]bin"
                        Type="string"/>
       </Component>
     </ComponentGroup>

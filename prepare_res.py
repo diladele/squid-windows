@@ -20,7 +20,7 @@ class copier:
             self.sys32 = sys32
 
     def copy_cygwin(self):
-        target_dir = os.path.join(self.dest, "squid")
+        target_dir = os.path.join(self.dest, "bin")
 
         # copy all windows cygwin dlls
         files = list(glob.iglob(os.path.join(self.sys32, "api-ms-win-core-*.dll")))
@@ -56,8 +56,9 @@ class copier:
                 shutil.copy2(full_path, target_dir)
 
     def copy_squid(self):
-        shutil.rmtree(self.dest);
-        os.makedirs(self.dest);
+        if os.path.exists(self.dest):
+            shutil.rmtree(self.dest)
+        os.makedirs(self.dest)
         
         # copy etc\squid
         from_etc_squid = os.path.join(self.src, "etc", "squid")
@@ -88,8 +89,8 @@ class copier:
         
         # copy usr\sbin\squid
         squid_exe_from = os.path.join(self.src, "usr", "sbin", "squid.exe")
-        squid_exe_to = os.path.join(self.dest, "squid", "squid.exe")
-        os.makedirs(os.path.join(self.dest, "squid"));
+        squid_exe_to = os.path.join(self.dest, "bin", "squid.exe")
+        os.makedirs(os.path.join(self.dest, "bin"));
         shutil.copy2(squid_exe_from, squid_exe_to);
 
 #

@@ -2,7 +2,7 @@
 <Wix xmlns="http://schemas.microsoft.com/wix/2006/wi"
      xmlns:util="http://schemas.microsoft.com/wix/UtilExtension">
 
-  <Product Id="*" Name="Squid" Language="1033" Version="3.3.2" Manufacturer="Diladele B.V." UpgradeCode="103139C5-4C94-471D-94D6-D838BB7E6CB9">
+  <Product Id="01D9D1A2-D311-4932-9856-438608315C61" Name="Squid" Language="1033" Version="3.3.2" Manufacturer="Diladele B.V." UpgradeCode="103139C5-4C94-471D-94D6-D838BB7E6CB9">
     <Package InstallerVersion="200" Compressed="yes" InstallScope="perMachine" Description="Installer for Squid from Diladele B.V."/>
 
     <MajorUpgrade DowngradeErrorMessage="A newer version of [ProductName] is already installed." />
@@ -54,7 +54,6 @@
 
     <Feature Id="SquidFeature" Title="Squid" Description="Installs Squid server." Level="1">
       <ComponentGroupRef Id="SquidFilesGroup" />
-      <ComponentGroupRef Id="EmptySquidDirectories" />
       <ComponentGroupRef Id="SquidRegistry" />
       <ComponentGroupRef Id="SquidService" />
       <ComponentGroupRef Id="SquidTray" />
@@ -66,7 +65,7 @@
       <Directory Id="ProgramFiles64Folder">
         <Directory Id="INSTALLFOLDER" Name="Squid" />
       </Directory>
-      <Directory Id="DesktopFolder" Name="Desktop"/>        
+      <Directory Id="DesktopFolder" Name="Desktop"/>
     </Directory>
   </Fragment>
 </Wix>

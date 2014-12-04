@@ -19,9 +19,10 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
     <OutputPath>bin\$(Configuration)\</OutputPath>
     <IntermediateOutputPath>obj\$(Configuration)\</IntermediateOutputPath>
+    <DefineConstants>ResDir=..\res;DiladeleDir=..\prepared;</DefineConstants>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
-    <DefineConstants>Debug;SquidDir=..\squid;</DefineConstants>
+    <DefineConstants>Debug;ResDir=..\res;DiladeleDir=..\prepared;</DefineConstants>
     <OutputPath>..\bin\$(Platform)\$(Configuration)\</OutputPath>
     <IntermediateOutputPath>obj\$(Platform)\$(Configuration)\</IntermediateOutputPath>
   </PropertyGroup>
@@ -31,10 +32,9 @@
     <DefineConstants>SquidDir=..\squid;</DefineConstants>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="SquidDirectories.wxs" />
     <Compile Include="Product.wxs" />
-    <Compile Include="SquidFiles.wxs" />
     <Compile Include="SquidRegistry.wxs" />
+    <Compile Include="SquidResourceFiles.wxs" />
     <Compile Include="SquidService.wxs" />
     <Compile Include="SquidTray.wxs" />
   </ItemGroup>
@@ -59,6 +59,9 @@
     <Content Include="SquidIcon.ico" />
   </ItemGroup>
   <Import Project="$(WixTargetsPath)" />
+  <PropertyGroup>
+    <PreBuildEvent />
+  </PropertyGroup>
   <!--
 	To modify your build process, add your task inside one of the targets below and uncomment it.
 	Other similar extension points exist, see Wix.targets.
