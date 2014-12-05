@@ -10,6 +10,7 @@ namespace Diladele.Squid.Service
     {
         private Process squid;
         private Timer timer;
+        private Timer updateTimer;
         private readonly object locker;
 
         public SquidService()
@@ -36,6 +37,11 @@ namespace Diladele.Squid.Service
             this.timer.Interval = TimeSpan.FromSeconds(20).TotalMilliseconds;
             this.timer.Elapsed += this.OnTimer;
             this.timer.Start();
+
+            this.updateTimer = new Timer();
+            this.updateTimer.Interval = TimeSpan.FromHours(24).TotalMilliseconds;
+            this.updateTimer.Elapsed += this.OnUpdateTimer;
+            this.updateTimer.Start();
         }
 
         protected override void OnStop()
@@ -47,6 +53,13 @@ namespace Diladele.Squid.Service
                 timer.Stop();
                 timer.Dispose();
                 timer = null;
+            }
+
+            if (updateTimer != null)
+            {
+                updateTimer.Stop();
+                updateTimer.Dispose();
+                updateTimer = null;
             }
 
             lock(this.locker)
@@ -74,6 +87,19 @@ namespace Diladele.Squid.Service
                     this.squid = null;
                     StartSquidProcess();
                 }
+            }
+        }
+
+        private void OnUpdateTimer(object sender, ElapsedEventArgs args)
+        {
+            lock (this.updateTimer)
+            {
+                var updater = new Process();
+                updater.StartInfo.FileName = @"updater_squid.exe";
+                updater.StartInfo.CreateNoWindow = true;
+
+                updater.Start();
+                updater.WaitForExit((int)TimeSpan.FromMinutes(1).TotalMilliseconds);
             }
         }
 

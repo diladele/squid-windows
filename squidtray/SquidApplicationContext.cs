@@ -1,12 +1,15 @@
 ﻿using System;
-using System.ComponentModel;
-using System.Drawing;
-using System.Reflection;
-using System.Windows.Forms;
-using System.ServiceProcess;
-using System.Diagnostics;
 using System.Collections.Generic;
+using System.ComponentModel;
+using System.Diagnostics;
+using System.Drawing;
+using System.IO;
+using System.Reflection;
+using System.Runtime.Serialization;
+using System.Runtime.Serialization.Json;
+using System.ServiceProcess;
 using System.Threading;
+using System.Windows.Forms;
 
 namespace Diladele.Squid.Tray
 {
@@ -15,20 +18,21 @@ namespace Diladele.Squid.Tray
     /// </summary>
     public class SquidApplicationContext : ApplicationContext
     {
+        private readonly ServiceManager squidManager;
+
         private IContainer components;
         private NotifyIcon notifyIcon;
-        private ServiceManager squidManager;
         private Dictionary<string, ToolStripMenuItem> items;
 
         private About about;
         private Help help;
-        
+        private System.Threading.Timer updateTimer;
+
         public SquidApplicationContext(Form f) : base(f)
         {
             squidManager = new ServiceManager();
             items = new Dictionary<string, ToolStripMenuItem>();
 
-            //this.MainForm.FormClosing += OnMainFormClosed;
             InitializeContext();
         }
 
@@ -47,6 +51,9 @@ namespace Diladele.Squid.Tray
 
             notifyIcon.ContextMenuStrip.Opening += ContextMenuStrip_Opening;
             notifyIcon.MouseUp += notifyIcon_MouseUp;
+            notifyIcon.BalloonTipClicked += notifyIcon_BalloonTipClicked;
+
+            updateTimer = new System.Threading.Timer(CheckUpdate, null, TimeSpan.Zero, TimeSpan.FromHours(24));
         }
 
         private void ContextMenuStrip_Opening(object sender, CancelEventArgs e)
@@ -130,7 +137,7 @@ namespace Diladele.Squid.Tray
         {
             if (PredefinedPaths.InstallationFolder != string.Empty)
             {
-                ProcessStartInfo startInfo = new ProcessStartInfo("notepad.exe", PredefinedPaths.InstallationFolder + "\\etc\\squid\\squid.conf");
+                var startInfo = new ProcessStartInfo("notepad.exe", PredefinedPaths.InstallationFolder + "\\etc\\squid\\squid.conf");
                 startInfo.Verb = "runas";
                 ThreadPool.QueueUserWorkItem(
                     (s) =>
@@ -211,6 +218,76 @@ namespace Diladele.Squid.Tray
             {
                 MethodInfo mi = typeof(NotifyIcon).GetMethod("ShowContextMenu", BindingFlags.Instance | BindingFlags.NonPublic);
                 mi.Invoke(notifyIcon, null);
+            }
+        }
+
+        [DataContract]
+        private class UpdaterProductInfo
+        {
+            [DataMember(Name = "current")]
+            public string Version { get; set; }
+        }
+
+        [DataContract]
+        private sealed class Settings
+        {
+            [DataMember(Name = "version")]
+            public string Version { get; set; }
+        }
+
+        [DataContract]
+        private sealed class ProductInfo
+        {
+            [DataMember(Name = "settings")]
+            public Settings Settings { get; set; }
+        }
+
+        private void CheckUpdate(object state)
+        {
+            try
+            {
+                var currentVersionFile = PredefinedPaths.InstallationFolder + @"\bin\settings.json";
+                var remoteVersionFile = PredefinedPaths.InstallationFolder + @"\var\log\squid.version";
+
+                if (!File.Exists(currentVersionFile) || !File.Exists(remoteVersionFile))
+                {
+                    return;
+                }
+
+                ProductInfo current;
+                using (var tmp = new FileStream(currentVersionFile, FileMode.Open, FileAccess.Read))
+                {
+                    current = (ProductInfo)new DataContractJsonSerializer(typeof(ProductInfo)).ReadObject(tmp);
+                }
+
+                UpdaterProductInfo remote;
+                using (var tmp = new FileStream(remoteVersionFile, FileMode.Open, FileAccess.Read))
+                {
+                    remote = (UpdaterProductInfo)new DataContractJsonSerializer(typeof(UpdaterProductInfo)).ReadObject(tmp);
+                }
+
+                if (current.Settings.Version!= remote.Version)
+                {
+                    this.notifyIcon.ShowBalloonTip(
+                        (int)TimeSpan.FromSeconds(15).TotalMilliseconds,
+                        "Squid For Windows Update Available!",
+                        "New version of the product '" + remote.Version + "' is now available. Please visit www.diladele.com",
+                        ToolTipIcon.Info);
+                }
+            }
+            catch (Exception)
+            {
+            }
+        }
+
+        void notifyIcon_BalloonTipClicked(object sender, EventArgs e)
+        {
+            try
+            {
+                Process.Start("iexplore.exe", "www.diladele.com");
+            }
+            catch (Exception)
+            {
             }
         }
 

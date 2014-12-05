@@ -1,10 +1,10 @@
 ﻿using System;
-using System.ServiceProcess;
-using Microsoft.Win32;
-using System.Diagnostics;
-using System.Windows.Forms;
 using System.ComponentModel;
+using System.Diagnostics;
+using System.ServiceProcess;
 using System.Threading;
+using System.Windows.Forms;
+using Microsoft.Win32;
 
 namespace Diladele.Squid.Tray
 {
@@ -21,7 +21,7 @@ namespace Diladele.Squid.Tray
         {
             if (Exists && controller.CanStop)
             {
-                ProcessStartInfo startInfo = new ProcessStartInfo("net", "stop squidsrv");
+                var startInfo = new ProcessStartInfo("net", "stop squidsrv");
                 startInfo.Verb = "runas";
                 startInfo.WindowStyle = ProcessWindowStyle.Hidden;
                 ThreadPool.QueueUserWorkItem(
@@ -67,7 +67,7 @@ namespace Diladele.Squid.Tray
         {
             if (Exists)
             {
-                ProcessStartInfo startInfo = new ProcessStartInfo("net", "start squidsrv");
+                var startInfo = new ProcessStartInfo("net", "start squidsrv");
                 startInfo.Verb = "runas";
                 startInfo.WindowStyle = ProcessWindowStyle.Hidden;
                 ThreadPool.QueueUserWorkItem(
