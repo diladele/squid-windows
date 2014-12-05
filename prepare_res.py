@@ -93,6 +93,20 @@ class copier:
         os.makedirs(os.path.join(self.dest, "bin"));
         shutil.copy2(squid_exe_from, squid_exe_to);
 
+        # copy usr\sbin\squidclient
+        squid_client_exe_from = os.path.join(self.src, "usr", "sbin", "squidclient.exe")
+        squid_client_exe_to = os.path.join(self.dest, "bin", "squidclient.exe")
+        shutil.copy2(squid_client_exe_from, squid_client_exe_to);
+
+        # copy usr\sbin\purge
+        purge_exe_from = os.path.join(self.src, "usr", "sbin", "purge.exe")
+        purge_exe_to = os.path.join(self.dest, "bin", "purge.exe")
+        shutil.copy2(purge_exe_from, purge_exe_to);
+        
+        squid_conf_from = os.path.join(".", "squid.conf")
+        squid_conf_to = os.path.join(self.dest, "etc", "squid", "squid.conf")
+        shutil.copy2(squid_conf_from, squid_conf_to);
+
 #
 # code
 #
