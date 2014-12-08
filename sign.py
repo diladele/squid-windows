@@ -13,7 +13,7 @@ def sign(file, pfx):
             #"/ac " + os.path.abspath("contrib/certificates/production/After_10-10-10_MSCV-VSClass3.cer"), 
             "/f " + pfx, 
             "/p " + os.environ['DILADELE_B_V_CERTIFICATE_PASSWORD'], 
-            "/d", '"Diladele Web Safety"', 
+            "/d", '"Squid Proxy for Windows"', 
             "/t", "http://timestamp.verisign.com/scripts/timestamp.dll", "\"" + os.path.abspath(file) + "\"" 
         ]
     )
