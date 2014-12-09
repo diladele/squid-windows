@@ -6,11 +6,15 @@ using System.Timers;
 
 namespace Diladele.Squid.Service
 {
+    using System.Linq.Expressions;
+
+    using Diladele.Squid.Tray;
+
     public partial class SquidService : ServiceBase
     {
         private Process squid;
-        private Timer timer;
-        private Timer updateTimer;
+        private System.Threading.Timer timer;
+        private System.Threading.Timer updateTimer;
         private readonly object locker;
 
         public SquidService()
@@ -33,15 +37,8 @@ namespace Diladele.Squid.Service
 
             StartSquidProcess();
 
-            this.timer = new Timer();
-            this.timer.Interval = TimeSpan.FromSeconds(20).TotalMilliseconds;
-            this.timer.Elapsed += this.OnTimer;
-            this.timer.Start();
-
-            this.updateTimer = new Timer();
-            this.updateTimer.Interval = TimeSpan.FromHours(24).TotalMilliseconds;
-            this.updateTimer.Elapsed += this.OnUpdateTimer;
-            this.updateTimer.Start();
+            this.timer = new System.Threading.Timer(this.OnTimer, null, TimeSpan.Zero, TimeSpan.FromSeconds(20));
+            this.updateTimer = new System.Threading.Timer(this.OnUpdateTimer, null, TimeSpan.Zero, TimeSpan.FromHours(6));
         }
 
         protected override void OnStop()
@@ -50,14 +47,12 @@ namespace Diladele.Squid.Service
 
             if (timer != null)
             {
-                timer.Stop();
                 timer.Dispose();
                 timer = null;
             }
 
             if (updateTimer != null)
             {
-                updateTimer.Stop();
                 updateTimer.Dispose();
                 updateTimer = null;
             }
@@ -76,7 +71,7 @@ namespace Diladele.Squid.Service
 
             this.eventLog.WriteEntry("Squid stopped.", EventLogEntryType.Information);
         }
-        private void OnTimer(object sender, ElapsedEventArgs args)
+        private void OnTimer(object state)
         {
             lock (this.locker)
             {
@@ -90,16 +85,23 @@ namespace Diladele.Squid.Service
             }
         }
 
-        private void OnUpdateTimer(object sender, ElapsedEventArgs args)
+        private void OnUpdateTimer(object state)
         {
             lock (this.updateTimer)
             {
-                var updater = new Process();
-                updater.StartInfo.FileName = @"updater_squid.exe";
-                updater.StartInfo.CreateNoWindow = true;
+                try
+                {
+                    var updater = new Process();
+                    updater.StartInfo.FileName = PredefinedPaths.InstallationFolder + @"\bin\updater_squid.exe";
+                    updater.StartInfo.CreateNoWindow = true;
 
-                updater.Start();
-                updater.WaitForExit((int)TimeSpan.FromMinutes(1).TotalMilliseconds);
+                    updater.Start();
+                    updater.WaitForExit((int)TimeSpan.FromMinutes(1).TotalMilliseconds);
+                }
+                catch (Exception e)
+                {
+                    eventLog.WriteEntry(e.Message, EventLogEntryType.Error);
+                }
             }
         }
 

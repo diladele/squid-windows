@@ -70,6 +70,9 @@
     <Reference Include="System.ServiceProcess" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\squidtray\PredefinedPaths.cs">
+      <Link>PredefinedPaths.cs</Link>
+    </Compile>
     <Compile Include="SquidService.cs">
       <SubType>Component</SubType>
     </Compile>
