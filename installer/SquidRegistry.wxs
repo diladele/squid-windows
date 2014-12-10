@@ -50,6 +50,481 @@
                        Value="[INSTALLFOLDER]bin"
                        Type="string"/>
       </Component>
+      <Component Id="apppath_38311E5CC3D24180AEE30F121CDE6164" Directory="INSTALLFOLDER" Guid="38311E5C-C3D2-4180-AEE3-0F121CDE6164">
+        <RegistryValue Id="apppath_url_fake_rewrite_38311E5CC3D24180AEE30F121CDE6164"
+                       KeyPath="yes"
+                       Action="write"
+                       Root="HKLM"
+                       Key="Software\Microsoft\Windows\CurrentVersion\App Paths\url_fake_rewrite.exe"
+                       Value="[INSTALLFOLDER]lib\squid\url_fake_rewrite.exe"
+                       Type="string"/>
+      </Component>
+      <Component Id="apppath_92826FE5B9B84CD0AF4F259F4B714BDD" Directory="INSTALLFOLDER" Guid="92826FE5-B9B8-4CD0-AF4F-259F4B714BDD">
+        <RegistryValue Id="apppath_url_fake_rewrite_92826FE5B9B84CD0AF4F259F4B714BDD"
+                       KeyPath="yes"
+                       Action="write"
+                       Root="HKLM"
+                       Key="Software\Microsoft\Windows\CurrentVersion\App Paths\url_fake_rewrite.exe"
+                       Name="Path"
+                       Value="[INSTALLFOLDER]bin"
+                       Type="string"/>
+      </Component>
+      <Component Id="apppath_B9AD96AF7D0D453FA2FDCBE4494BADF2" Directory="INSTALLFOLDER" Guid="B9AD96AF-7D0D-453F-A2FD-CBE4494BADF2">
+        <RegistryValue Id="apppath_unlinkd_B9AD96AF7D0D453FA2FDCBE4494BADF2"
+                       KeyPath="yes"
+                       Action="write"
+                       Root="HKLM"
+                       Key="Software\Microsoft\Windows\CurrentVersion\App Paths\unlinkd.exe"
+                       Value="[INSTALLFOLDER]lib\squid\unlinkd.exe"
+                       Type="string"/>
+      </Component>
+      <Component Id="apppath_579DF1C5A4E64BE08A9B19512161BB1D" Directory="INSTALLFOLDER" Guid="579DF1C5-A4E6-4BE0-8A9B-19512161BB1D">
+        <RegistryValue Id="apppath_unlinkd_579DF1C5A4E64BE08A9B19512161BB1D"
+                       KeyPath="yes"
+                       Action="write"
+                       Root="HKLM"
+                       Key="Software\Microsoft\Windows\CurrentVersion\App Paths\unlinkd.exe"
+                       Name="Path"
+                       Value="[INSTALLFOLDER]bin"
+                       Type="string"/>
+      </Component>
+      <Component Id="apppath_6ED79C6455F0472DABFF3EA01688B136" Directory="INSTALLFOLDER" Guid="6ED79C64-55F0-472D-ABFF-3EA01688B136">
+        <RegistryValue Id="apppath_ssl_crtd_6ED79C6455F0472DABFF3EA01688B136"
+                       KeyPath="yes"
+                       Action="write"
+                       Root="HKLM"
+                       Key="Software\Microsoft\Windows\CurrentVersion\App Paths\ssl_crtd.exe"
+                       Value="[INSTALLFOLDER]lib\squid\ssl_crtd.exe"
+                       Type="string"/>
+      </Component>
+      <Component Id="apppath_EC405915AC7942F1812D7E08DC307707" Directory="INSTALLFOLDER" Guid="EC405915-AC79-42F1-812D-7E08DC307707">
+        <RegistryValue Id="apppath_ssl_crtd_EC405915AC7942F1812D7E08DC307707"
+                       KeyPath="yes"
+                       Action="write"
+                       Root="HKLM"
+                       Key="Software\Microsoft\Windows\CurrentVersion\App Paths\ssl_crtd.exe"
+                       Name="Path"
+                       Value="[INSTALLFOLDER]bin"
+                       Type="string"/>
+      </Component>
+      <Component Id="apppath_07BAF8A0FD824191899A3B1338866F74" Directory="INSTALLFOLDER" Guid="07BAF8A0-FD82-4191-899A-3B1338866F74">
+        <RegistryValue Id="apppath_ntlm_fake_auth_07BAF8A0FD824191899A3B1338866F74"
+                       KeyPath="yes"
+                       Action="write"
+                       Root="HKLM"
+                       Key="Software\Microsoft\Windows\CurrentVersion\App Paths\ntlm_fake_auth.exe"
+                       Value="[INSTALLFOLDER]lib\squid\ntlm_fake_auth.exe"
+                       Type="string"/>
+      </Component>
+      <Component Id="apppath_A3A89CF7198040C2A7052663E24DC16F" Directory="INSTALLFOLDER" Guid="A3A89CF7-1980-40C2-A705-2663E24DC16F">
+        <RegistryValue Id="apppath_ntlm_fake_auth_A3A89CF7198040C2A7052663E24DC16F"
+                       KeyPath="yes"
+                       Action="write"
+                       Root="HKLM"
+                       Key="Software\Microsoft\Windows\CurrentVersion\App Paths\ntlm_fake_auth.exe"
+                       Name="Path"
+                       Value="[INSTALLFOLDER]bin"
+                       Type="string"/>
+      </Component>
+      <Component Id="apppath_6D261671E9214533A7F1842CC7620294" Directory="INSTALLFOLDER" Guid="6D261671-E921-4533-A7F1-842CC7620294">
+        <RegistryValue Id="apppath_negotiate_wrapper_auth_6D261671E9214533A7F1842CC7620294"
+                       KeyPath="yes"
+                       Action="write"
+                       Root="HKLM"
+                       Key="Software\Microsoft\Windows\CurrentVersion\App Paths\negotiate_wrapper_auth.exe"
+                       Value="[INSTALLFOLDER]lib\squid\negotiate_wrapper_auth.exe"
+                       Type="string"/>
+      </Component>
+      <Component Id="apppath_C7D9340A1BA44BB39B5F07A474FB83E0" Directory="INSTALLFOLDER" Guid="C7D9340A-1BA4-4BB3-9B5F-07A474FB83E0">
+        <RegistryValue Id="apppath_negotiate_wrapper_auth_C7D9340A1BA44BB39B5F07A474FB83E0"
+                       KeyPath="yes"
+                       Action="write"
+                       Root="HKLM"
+                       Key="Software\Microsoft\Windows\CurrentVersion\App Paths\negotiate_wrapper_auth.exe"
+                       Name="Path"
+                       Value="[INSTALLFOLDER]bin"
+                       Type="string"/>
+      </Component>
+      <Component Id="apppath_D054BDEB933E42E3949DA238D2352855" Directory="INSTALLFOLDER" Guid="D054BDEB-933E-42E3-949D-A238D2352855">
+        <RegistryValue Id="apppath_negotiate_kerberos_auth_test_D054BDEB933E42E3949DA238D2352855"
+                       KeyPath="yes"
+                       Action="write"
+                       Root="HKLM"
+                       Key="Software\Microsoft\Windows\CurrentVersion\App Paths\negotiate_kerberos_auth_test.exe"
+                       Value="[INSTALLFOLDER]lib\squid\negotiate_kerberos_auth_test.exe"
+                       Type="string"/>
+      </Component>
+      <Component Id="apppath_3224138D63A84B4599067D9859C8EA27" Directory="INSTALLFOLDER" Guid="3224138D-63A8-4B45-9906-7D9859C8EA27">
+        <RegistryValue Id="apppath_negotiate_kerberos_auth_test_3224138D63A84B4599067D9859C8EA27"
+                       KeyPath="yes"
+                       Action="write"
+                       Root="HKLM"
+                       Key="Software\Microsoft\Windows\CurrentVersion\App Paths\negotiate_kerberos_auth_test.exe"
+                       Name="Path"
+                       Value="[INSTALLFOLDER]bin"
+                       Type="string"/>
+      </Component>
+      <Component Id="apppath_54B4454555FC4D2987887E6F423CB5A8" Directory="INSTALLFOLDER" Guid="54B44545-55FC-4D29-8788-7E6F423CB5A8">
+        <RegistryValue Id="apppath_negotiate_kerberos_auth_54B4454555FC4D2987887E6F423CB5A8"
+                       KeyPath="yes"
+                       Action="write"
+                       Root="HKLM"
+                       Key="Software\Microsoft\Windows\CurrentVersion\App Paths\negotiate_kerberos_auth.exe"
+                       Value="[INSTALLFOLDER]lib\squid\negotiate_kerberos_auth.exe"
+                       Type="string"/>
+      </Component>
+      <Component Id="apppath_0DE44B8932F8467FA4C6968F5055E3D3" Directory="INSTALLFOLDER" Guid="0DE44B89-32F8-467F-A4C6-968F5055E3D3">
+        <RegistryValue Id="apppath_negotiate_kerberos_auth_0DE44B8932F8467FA4C6968F5055E3D3"
+                       KeyPath="yes"
+                       Action="write"
+                       Root="HKLM"
+                       Key="Software\Microsoft\Windows\CurrentVersion\App Paths\negotiate_kerberos_auth.exe"
+                       Name="Path"
+                       Value="[INSTALLFOLDER]bin"
+                       Type="string"/>
+      </Component>
+      <Component Id="apppath_1C2E9408BAA6485EB26C29F71F4F9D43" Directory="INSTALLFOLDER" Guid="1C2E9408-BAA6-485E-B26C-29F71F4F9D43">
+        <RegistryValue Id="apppath_negotiate_kerberos_auth_1C2E9408BAA6485EB26C29F71F4F9D43"
+                       KeyPath="yes"
+                       Action="write"
+                       Root="HKLM"
+                       Key="Software\Microsoft\Windows\CurrentVersion\App Paths\log_file_daemon.exe"
+                       Value="[INSTALLFOLDER]lib\squid\log_file_daemon.exe"
+                       Type="string"/>
+      </Component>
+      <Component Id="apppath_E1AC10DDDC4745BD825C1FAAEB89433A" Directory="INSTALLFOLDER" Guid="E1AC10DD-DC47-45BD-825C-1FAAEB89433A">
+        <RegistryValue Id="apppath_negotiate_kerberos_auth_E1AC10DDDC4745BD825C1FAAEB89433A"
+                       KeyPath="yes"
+                       Action="write"
+                       Root="HKLM"
+                       Key="Software\Microsoft\Windows\CurrentVersion\App Paths\log_file_daemon.exe"
+                       Name="Path"
+                       Value="[INSTALLFOLDER]bin"
+                       Type="string"/>
+      </Component>
+      <Component Id="apppath_259606EF7B494C8CB8A771D18803BD77" Directory="INSTALLFOLDER" Guid="259606EF-7B49-4C8C-B8A7-71D18803BD77">
+        <RegistryValue Id="apppath_negotiate_kerberos_auth_259606EF7B494C8CB8A771D18803BD77"
+                       KeyPath="yes"
+                       Action="write"
+                       Root="HKLM"
+                       Key="Software\Microsoft\Windows\CurrentVersion\App Paths\ext_unix_group_acl.exe"
+                       Value="[INSTALLFOLDER]lib\squid\ext_unix_group_acl.exe"
+                       Type="string"/>
+      </Component>
+      <Component Id="apppath_E2BD7195B86949158CD91C604F7A76B3" Directory="INSTALLFOLDER" Guid="E2BD7195-B869-4915-8CD9-1C604F7A76B3">
+        <RegistryValue Id="apppath_negotiate_kerberos_auth_E2BD7195B86949158CD91C604F7A76B3"
+                       KeyPath="yes"
+                       Action="write"
+                       Root="HKLM"
+                       Key="Software\Microsoft\Windows\CurrentVersion\App Paths\ext_unix_group_acl.exe"
+                       Name="Path"
+                       Value="[INSTALLFOLDER]bin"
+                       Type="string"/>
+      </Component>
+      <Component Id="apppath_A48C536076A1464E9814F5642097AAD3" Directory="INSTALLFOLDER" Guid="A48C5360-76A1-464E-9814-F5642097AAD3">
+        <RegistryValue Id="apppath_negotiate_kerberos_auth_A48C536076A1464E9814F5642097AAD3"
+                       KeyPath="yes"
+                       Action="write"
+                       Root="HKLM"
+                       Key="Software\Microsoft\Windows\CurrentVersion\App Paths\ext_time_quota_acl.exe"
+                       Value="[INSTALLFOLDER]lib\squid\ext_time_quota_acl.exe"
+                       Type="string"/>
+      </Component>
+      <Component Id="apppath_098170B8406C4BF1B5CA9B32906D4629" Directory="INSTALLFOLDER" Guid="098170B8-406C-4BF1-B5CA-9B32906D4629">
+        <RegistryValue Id="apppath_negotiate_kerberos_auth_098170B8406C4BF1B5CA9B32906D4629"
+                       KeyPath="yes"
+                       Action="write"
+                       Root="HKLM"
+                       Key="Software\Microsoft\Windows\CurrentVersion\App Paths\ext_time_quota_acl.exe"
+                       Name="Path"
+                       Value="[INSTALLFOLDER]bin"
+                       Type="string"/>
+      </Component>
+      <Component Id="apppath_A6DE5C3D64CA487AA20A867CEC27A108" Directory="INSTALLFOLDER" Guid="A6DE5C3D-64CA-487A-A20A-867CEC27A108">
+        <RegistryValue Id="apppath_negotiate_kerberos_auth_A6DE5C3D64CA487AA20A867CEC27A108"
+                       KeyPath="yes"
+                       Action="write"
+                       Root="HKLM"
+                       Key="Software\Microsoft\Windows\CurrentVersion\App Paths\ext_session_acl.exe"
+                       Value="[INSTALLFOLDER]lib\squid\ext_session_acl.exe"
+                       Type="string"/>
+      </Component>
+      <Component Id="apppath_BDBD637AE7FC4BE5AD9E1142DA1635B2" Directory="INSTALLFOLDER" Guid="BDBD637A-E7FC-4BE5-AD9E-1142DA1635B2">
+        <RegistryValue Id="apppath_negotiate_kerberos_auth_BDBD637AE7FC4BE5AD9E1142DA1635B2"
+                       KeyPath="yes"
+                       Action="write"
+                       Root="HKLM"
+                       Key="Software\Microsoft\Windows\CurrentVersion\App Paths\ext_session_acl.exe"
+                       Name="Path"
+                       Value="[INSTALLFOLDER]bin"
+                       Type="string"/>
+      </Component>
+      <Component Id="apppath_42652298F6AD48ABBE4A44291242B1A6" Directory="INSTALLFOLDER" Guid="42652298-F6AD-48AB-BE4A-44291242B1A6">
+        <RegistryValue Id="apppath_negotiate_kerberos_auth_42652298F6AD48ABBE4A44291242B1A6"
+                       KeyPath="yes"
+                       Action="write"
+                       Root="HKLM"
+                       Key="Software\Microsoft\Windows\CurrentVersion\App Paths\ext_ldap_group_acl.exe"
+                       Value="[INSTALLFOLDER]lib\squid\ext_ldap_group_acl.exe"
+                       Type="string"/>
+      </Component>
+      <Component Id="apppath_D8A15CFEEF95459199997EBC1AF3E84C" Directory="INSTALLFOLDER" Guid="D8A15CFE-EF95-4591-9999-7EBC1AF3E84C">
+        <RegistryValue Id="apppath_negotiate_kerberos_auth_D8A15CFEEF95459199997EBC1AF3E84C"
+                       KeyPath="yes"
+                       Action="write"
+                       Root="HKLM"
+                       Key="Software\Microsoft\Windows\CurrentVersion\App Paths\ext_ldap_group_acl.exe"
+                       Name="Path"
+                       Value="[INSTALLFOLDER]bin"
+                       Type="string"/>
+      </Component>
+      <Component Id="apppath_F7A6EBE6A3D343A3B84C773642A503A8" Directory="INSTALLFOLDER" Guid="F7A6EBE6-A3D3-43A3-B84C-773642A503A8">
+        <RegistryValue Id="apppath_negotiate_kerberos_auth_F7A6EBE6A3D343A3B84C773642A503A8"
+                       KeyPath="yes"
+                       Action="write"
+                       Root="HKLM"
+                       Key="Software\Microsoft\Windows\CurrentVersion\App Paths\ext_file_userip_acl.exe"
+                       Value="[INSTALLFOLDER]lib\squid\ext_file_userip_acl.exe"
+                       Type="string"/>
+      </Component>
+      <Component Id="apppath_F12C40E869B1439D91E5D689C52FF1DE" Directory="INSTALLFOLDER" Guid="F12C40E8-69B1-439D-91E5-D689C52FF1DE">
+        <RegistryValue Id="apppath_negotiate_kerberos_auth_F12C40E869B1439D91E5D689C52FF1DE"
+                       KeyPath="yes"
+                       Action="write"
+                       Root="HKLM"
+                       Key="Software\Microsoft\Windows\CurrentVersion\App Paths\ext_file_userip_acl.exe"
+                       Name="Path"
+                       Value="[INSTALLFOLDER]bin"
+                       Type="string"/>
+      </Component>
+      <Component Id="apppath_A1AE660D85C94F9C8A2C38EBA5B93A29" Directory="INSTALLFOLDER" Guid="A1AE660D-85C9-4F9C-8A2C-38EBA5B93A29">
+        <RegistryValue Id="apppath_negotiate_kerberos_auth_A1AE660D85C94F9C8A2C38EBA5B93A29"
+                       KeyPath="yes"
+                       Action="write"
+                       Root="HKLM"
+                       Key="Software\Microsoft\Windows\CurrentVersion\App Paths\ext_edirectory_userip_acl.exe"
+                       Value="[INSTALLFOLDER]lib\squid\ext_edirectory_userip_acl.exe"
+                       Type="string"/>
+      </Component>
+      <Component Id="apppath_9C2ABCB3C4EB444EA5581070E4B7095A" Directory="INSTALLFOLDER" Guid="9C2ABCB3-C4EB-444E-A558-1070E4B7095A">
+        <RegistryValue Id="apppath_negotiate_kerberos_auth_9C2ABCB3C4EB444EA5581070E4B7095A"
+                       KeyPath="yes"
+                       Action="write"
+                       Root="HKLM"
+                       Key="Software\Microsoft\Windows\CurrentVersion\App Paths\ext_edirectory_userip_acl.exe"
+                       Name="Path"
+                       Value="[INSTALLFOLDER]bin"
+                       Type="string"/>
+      </Component>
+      <Component Id="apppath_4886DFE9732C4CEF8103B67F746B7D9C" Directory="INSTALLFOLDER" Guid="4886DFE9-732C-4CEF-8103-B67F746B7D9C">
+        <RegistryValue Id="apppath_negotiate_kerberos_auth_4886DFE9732C4CEF8103B67F746B7D9C"
+                       KeyPath="yes"
+                       Action="write"
+                       Root="HKLM"
+                       Key="Software\Microsoft\Windows\CurrentVersion\App Paths\digest_ldap_auth.exe"
+                       Value="[INSTALLFOLDER]lib\squid\digest_ldap_auth.exe"
+                       Type="string"/>
+      </Component>
+      <Component Id="apppath_9A0ED329A89343979E33694786280E2C" Directory="INSTALLFOLDER" Guid="9A0ED329-A893-4397-9E33-694786280E2C">
+        <RegistryValue Id="apppath_negotiate_kerberos_auth_9A0ED329A89343979E33694786280E2C"
+                       KeyPath="yes"
+                       Action="write"
+                       Root="HKLM"
+                       Key="Software\Microsoft\Windows\CurrentVersion\App Paths\digest_ldap_auth.exe"
+                       Name="Path"
+                       Value="[INSTALLFOLDER]bin"
+                       Type="string"/>
+      </Component>
+      <Component Id="apppath_5794C1FD8BD5453EB70CE4B07AFBB418" Directory="INSTALLFOLDER" Guid="5794C1FD-8BD5-453E-B70C-E4B07AFBB418">
+        <RegistryValue Id="apppath_negotiate_kerberos_auth_5794C1FD8BD5453EB70CE4B07AFBB418"
+                       KeyPath="yes"
+                       Action="write"
+                       Root="HKLM"
+                       Key="Software\Microsoft\Windows\CurrentVersion\App Paths\digest_file_auth.exe"
+                       Value="[INSTALLFOLDER]lib\squid\digest_file_auth.exe"
+                       Type="string"/>
+      </Component>
+      <Component Id="apppath_3F66D3D5356E41D89BF815962B1802CA" Directory="INSTALLFOLDER" Guid="3F66D3D5-356E-41D8-9BF8-15962B1802CA">
+        <RegistryValue Id="apppath_negotiate_kerberos_auth_3F66D3D5356E41D89BF815962B1802CA"
+                       KeyPath="yes"
+                       Action="write"
+                       Root="HKLM"
+                       Key="Software\Microsoft\Windows\CurrentVersion\App Paths\digest_file_auth.exe"
+                       Name="Path"
+                       Value="[INSTALLFOLDER]bin"
+                       Type="string"/>
+      </Component>
+      <Component Id="apppath_FE1BC020E6494000B6380B3410A4D435" Directory="INSTALLFOLDER" Guid="FE1BC020-E649-4000-B638-0B3410A4D435">
+        <RegistryValue Id="apppath_negotiate_kerberos_auth_FE1BC020E6494000B6380B3410A4D435"
+                       KeyPath="yes"
+                       Action="write"
+                       Root="HKLM"
+                       Key="Software\Microsoft\Windows\CurrentVersion\App Paths\digest_edirectory_auth.exe"
+                       Value="[INSTALLFOLDER]lib\squid\digest_edirectory_auth.exe"
+                       Type="string"/>
+      </Component>
+      <Component Id="apppath_1001EFA5B22E4777A9013DB74705B174" Directory="INSTALLFOLDER" Guid="1001EFA5-B22E-4777-A901-3DB74705B174">
+        <RegistryValue Id="apppath_negotiate_kerberos_auth_1001EFA5B22E4777A9013DB74705B174"
+                       KeyPath="yes"
+                       Action="write"
+                       Root="HKLM"
+                       Key="Software\Microsoft\Windows\CurrentVersion\App Paths\digest_edirectory_auth.exe"
+                       Name="Path"
+                       Value="[INSTALLFOLDER]bin"
+                       Type="string"/>
+      </Component>
+      <Component Id="apppath_9F1D338EFF1549768DB0153B477760BE" Directory="INSTALLFOLDER" Guid="9F1D338E-FF15-4976-8DB0-153B477760BE">
+        <RegistryValue Id="apppath_negotiate_kerberos_auth_9F1D338EFF1549768DB0153B477760BE"
+                       KeyPath="yes"
+                       Action="write"
+                       Root="HKLM"
+                       Key="Software\Microsoft\Windows\CurrentVersion\App Paths\cachemgr.exe"
+                       Value="[INSTALLFOLDER]lib\squid\cachemgr.exe"
+                       Type="string"/>
+      </Component>
+      <Component Id="apppath_D65DD6CBC7684DACB3BB6B835E4950A6" Directory="INSTALLFOLDER" Guid="D65DD6CB-C768-4DAC-B3BB-6B835E4950A6">
+        <RegistryValue Id="apppath_negotiate_kerberos_auth_D65DD6CBC7684DACB3BB6B835E4950A6"
+                       KeyPath="yes"
+                       Action="write"
+                       Root="HKLM"
+                       Key="Software\Microsoft\Windows\CurrentVersion\App Paths\cachemgr.exe"
+                       Name="Path"
+                       Value="[INSTALLFOLDER]bin"
+                       Type="string"/>
+      </Component>
+      <Component Id="apppath_220972F1883A40ED8F2E22C85E7B79EB" Directory="INSTALLFOLDER" Guid="220972F1-883A-40ED-8F2E-22C85E7B79EB">
+        <RegistryValue Id="apppath_negotiate_kerberos_auth_220972F1883A40ED8F2E22C85E7B79EB"
+                       KeyPath="yes"
+                       Action="write"
+                       Root="HKLM"
+                       Key="Software\Microsoft\Windows\CurrentVersion\App Paths\basic_smb_auth.exe"
+                       Value="[INSTALLFOLDER]lib\squid\basic_smb_auth.exe"
+                       Type="string"/>
+      </Component>
+      <Component Id="apppath_A45E859CC8C145D89ECCED57AAD26FB8" Directory="INSTALLFOLDER" Guid="A45E859C-C8C1-45D8-9ECC-ED57AAD26FB8">
+        <RegistryValue Id="apppath_negotiate_kerberos_auth_A45E859CC8C145D89ECCED57AAD26FB8"
+                       KeyPath="yes"
+                       Action="write"
+                       Root="HKLM"
+                       Key="Software\Microsoft\Windows\CurrentVersion\App Paths\basic_smb_auth.exe"
+                       Name="Path"
+                       Value="[INSTALLFOLDER]bin"
+                       Type="string"/>
+      </Component>
+      <Component Id="apppath_65FA610A5828408AA7CA46DE665A4163" Directory="INSTALLFOLDER" Guid="65FA610A-5828-408A-A7CA-46DE665A4163">
+        <RegistryValue Id="apppath_negotiate_kerberos_auth_65FA610A5828408AA7CA46DE665A4163"
+                       KeyPath="yes"
+                       Action="write"
+                       Root="HKLM"
+                       Key="Software\Microsoft\Windows\CurrentVersion\App Paths\basic_sasl_auth.exe"
+                       Value="[INSTALLFOLDER]lib\squid\basic_sasl_auth.exe"
+                       Type="string"/>
+      </Component>
+      <Component Id="apppath_843C04F4AA8F4C80A67658A9B0388E89" Directory="INSTALLFOLDER" Guid="843C04F4-AA8F-4C80-A676-58A9B0388E89">
+        <RegistryValue Id="apppath_negotiate_kerberos_auth_843C04F4AA8F4C80A67658A9B0388E89"
+                       KeyPath="yes"
+                       Action="write"
+                       Root="HKLM"
+                       Key="Software\Microsoft\Windows\CurrentVersion\App Paths\basic_sasl_auth.exe"
+                       Name="Path"
+                       Value="[INSTALLFOLDER]bin"
+                       Type="string"/>
+      </Component>
+      <Component Id="apppath_1CBD5A2A044546ABBDD084783A5B54F4" Directory="INSTALLFOLDER" Guid="1CBD5A2A-0445-46AB-BDD0-84783A5B54F4">
+        <RegistryValue Id="apppath_negotiate_kerberos_auth_1CBD5A2A044546ABBDD084783A5B54F4"
+                       KeyPath="yes"
+                       Action="write"
+                       Root="HKLM"
+                       Key="Software\Microsoft\Windows\CurrentVersion\App Paths\basic_radius_auth.exe"
+                       Value="[INSTALLFOLDER]lib\squid\basic_radius_auth.exe"
+                       Type="string"/>
+      </Component>
+      <Component Id="apppath_4EF4F70879A74D628DFC83AE925419D7" Directory="INSTALLFOLDER" Guid="4EF4F708-79A7-4D62-8DFC-83AE925419D7">
+        <RegistryValue Id="apppath_negotiate_kerberos_auth_4EF4F70879A74D628DFC83AE925419D7"
+                       KeyPath="yes"
+                       Action="write"
+                       Root="HKLM"
+                       Key="Software\Microsoft\Windows\CurrentVersion\App Paths\basic_radius_auth.exe"
+                       Name="Path"
+                       Value="[INSTALLFOLDER]bin"
+                       Type="string"/>
+      </Component>
+      <Component Id="apppath_A4AC245C13E64F569CFE0717A8101844" Directory="INSTALLFOLDER" Guid="A4AC245C-13E6-4F56-9CFE-0717A8101844">
+        <RegistryValue Id="apppath_negotiate_kerberos_auth_A4AC245C13E64F569CFE0717A8101844"
+                       KeyPath="yes"
+                       Action="write"
+                       Root="HKLM"
+                       Key="Software\Microsoft\Windows\CurrentVersion\App Paths\basic_ncsa_auth.exe"
+                       Value="[INSTALLFOLDER]lib\squid\basic_ncsa_auth.exe"
+                       Type="string"/>
+      </Component>
+      <Component Id="apppath_FD1E6DE51F5E4A7080605CEA433085D8" Directory="INSTALLFOLDER" Guid="FD1E6DE5-1F5E-4A70-8060-5CEA433085D8">
+        <RegistryValue Id="apppath_negotiate_kerberos_auth_FD1E6DE51F5E4A7080605CEA433085D8"
+                       KeyPath="yes"
+                       Action="write"
+                       Root="HKLM"
+                       Key="Software\Microsoft\Windows\CurrentVersion\App Paths\basic_ncsa_auth.exe"
+                       Name="Path"
+                       Value="[INSTALLFOLDER]bin"
+                       Type="string"/>
+      </Component>
+      <Component Id="apppath_2362CFC4CEA344129C60F1242F6CB622" Directory="INSTALLFOLDER" Guid="2362CFC4-CEA3-4412-9C60-F1242F6CB622">
+        <RegistryValue Id="apppath_negotiate_kerberos_auth_2362CFC4CEA344129C60F1242F6CB622"
+                       KeyPath="yes"
+                       Action="write"
+                       Root="HKLM"
+                       Key="Software\Microsoft\Windows\CurrentVersion\App Paths\basic_ldap_auth.exe"
+                       Value="[INSTALLFOLDER]lib\squid\basic_ldap_auth.exe"
+                       Type="string"/>
+      </Component>
+      <Component Id="apppath_58F82249D09643298D57B64F0F24F56E" Directory="INSTALLFOLDER" Guid="58F82249-D096-4329-8D57-B64F0F24F56E">
+        <RegistryValue Id="apppath_negotiate_kerberos_auth_58F82249D09643298D57B64F0F24F56E"
+                       KeyPath="yes"
+                       Action="write"
+                       Root="HKLM"
+                       Key="Software\Microsoft\Windows\CurrentVersion\App Paths\basic_ldap_auth.exe"
+                       Name="Path"
+                       Value="[INSTALLFOLDER]bin"
+                       Type="string"/>
+      </Component>
+      <Component Id="apppath_8137014ED17F46DF915678BF76686F6B" Directory="INSTALLFOLDER" Guid="8137014E-D17F-46DF-9156-78BF76686F6B">
+        <RegistryValue Id="apppath_negotiate_kerberos_auth_8137014ED17F46DF915678BF76686F6B"
+                       KeyPath="yes"
+                       Action="write"
+                       Root="HKLM"
+                       Key="Software\Microsoft\Windows\CurrentVersion\App Paths\basic_getpwnam_auth.exe"
+                       Value="[INSTALLFOLDER]lib\squid\basic_getpwnam_auth.exe"
+                       Type="string"/>
+      </Component>
+      <Component Id="apppath_30B4F31EE6094D3C9F7A2608E45FBFDB" Directory="INSTALLFOLDER" Guid="30B4F31E-E609-4D3C-9F7A-2608E45FBFDB">
+        <RegistryValue Id="apppath_negotiate_kerberos_auth_30B4F31EE6094D3C9F7A2608E45FBFDB"
+                       KeyPath="yes"
+                       Action="write"
+                       Root="HKLM"
+                       Key="Software\Microsoft\Windows\CurrentVersion\App Paths\basic_getpwnam_auth.exe"
+                       Name="Path"
+                       Value="[INSTALLFOLDER]bin"
+                       Type="string"/>
+      </Component>
+      <Component Id="apppath_474C51FE53D147A6AAACAC8520E4296B" Directory="INSTALLFOLDER" Guid="474C51FE-53D1-47A6-AAAC-AC8520E4296B">
+        <RegistryValue Id="apppath_negotiate_kerberos_auth_474C51FE53D147A6AAACAC8520E4296B"
+                       KeyPath="yes"
+                       Action="write"
+                       Root="HKLM"
+                       Key="Software\Microsoft\Windows\CurrentVersion\App Paths\basic_fake_auth.exe"
+                       Value="[INSTALLFOLDER]lib\squid\basic_fake_auth.exe"
+                       Type="string"/>
+      </Component>
+      <Component Id="apppath_9D35DBBC37BF493A9D6806F15964B8DB" Directory="INSTALLFOLDER" Guid="9D35DBBC-37BF-493A-9D68-06F15964B8DB">
+        <RegistryValue Id="apppath_negotiate_kerberos_auth_9D35DBBC37BF493A9D6806F15964B8DB"
+                       KeyPath="yes"
+                       Action="write"
+                       Root="HKLM"
+                       Key="Software\Microsoft\Windows\CurrentVersion\App Paths\basic_fake_auth.exe"
+                       Name="Path"
+                       Value="[INSTALLFOLDER]bin"
+                       Type="string"/>
+      </Component>      
     </ComponentGroup>
   </Fragment>
 </Wix>
