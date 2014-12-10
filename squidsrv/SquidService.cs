@@ -110,7 +110,7 @@ namespace Diladele.Squid.Service
             lock (this.locker)
             {
                 this.squid = new Process();
-                this.squid.StartInfo.FileName = @"squid.exe";
+                this.squid.StartInfo.FileName = PredefinedPaths.InstallationFolder + @"\bin\squid.exe";
                 this.squid.StartInfo.CreateNoWindow = true;
 
                 this.squid.Start();
