@@ -599,9 +599,6 @@
             <Component Id="errorpage.css.default" Directory="squid" Guid="8BE45F4A-91BB-463D-8C40-9045548F50D5">
                 <File Id="errorpage.css.default" KeyPath="yes" Source="$(var.ResDir)\etc\squid\errorpage.css.default" />
             </Component>
-            <Component Id="license.key" Directory="squid" Guid="414BE780-85CA-4BEB-BD23-E3208C549D6C">
-                <File Id="license.key" KeyPath="yes" Source="$(var.ResDir)\etc\squid\license.key" />
-            </Component>
             <Component Id="mime.conf" Directory="squid" Guid="085AA8A9-FA52-4CEA-A299-20673D30C414">
                 <File Id="mime.conf" KeyPath="yes" Source="$(var.ResDir)\etc\squid\mime.conf" />
             </Component>
