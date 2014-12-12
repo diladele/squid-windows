@@ -17,11 +17,21 @@
     <Icon Id="AddRemoveIcon" SourceFile="SquidIcon.ico"/>
     <Property Id="ARPPRODUCTICON" Value="AddRemoveIcon" />
 
-
     <!-- Prepare to start the tray application as custom action -->
     <Property Id="WixShellExecTarget" Value="[#tray6FAE4CBABF7D43429B28E0B5977FD050]" />
     <CustomAction Id="LaunchApplication" BinaryKey="WixCA" DllEntry="WixShellExec" Impersonate="yes" />
-   
+
+    <!-- Installing certificates -->
+    <CustomAction Id="RunSslCrtd"
+          Directory="squid_1"
+          ExeCommand="[squid_1]ssl_crtd.exe -c -s &quot;[cache]squid_ssldb&quot;"
+          Execute="commit"
+          Return="ignore"/>
+
+    <InstallExecuteSequence>
+      <Custom Action="RunSslCrtd" Before="InstallFinalize" />
+    </InstallExecuteSequence>
+
     <UI>
       <UIRef Id="WixUI_InstallDir"/>
 
