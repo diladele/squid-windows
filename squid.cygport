@@ -37,6 +37,7 @@ src_compile() {
 	  --enable-ssl-crtd \
 	  --enable-icap-client \
 	  --enable-esi \
+	  --disable-eui \
 	  --enable-disk-io="AIO,Blocking,DiskThreads,IpcIo,Mmapped" \
 	  --enable-auth-basic="DB,LDAP,MSNT,MSNT-multi-domain,NCSA,POP3,RADIUS,SASL,SMB,fake,getpwnam" \
 	  --enable-auth-ntlm='fake,smb_lm' \
