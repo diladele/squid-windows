@@ -6972,6 +6972,9 @@ refresh_pattern .		0	20%	4320
 # windows_ipaddrchangemonitor on
 
 #  TAG: eui_lookup
+# Note: This option is only available if Squid is rebuilt with the
+#       --enable-eui
+#
 #	Whether to lookup the EUI or MAC address of a connected client.
 #Default:
 # eui_lookup on
