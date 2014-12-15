@@ -59,7 +59,7 @@ http_access deny all
 include "/cygdrive/c/programdata/Diladele/DiladeleWebSafety/4.0/etc/squid/squid.acl"
 
 # Squid normally listens to port 3128
-http_port 3128 ssl-bump generate-host-certificates=on dynamic_cert_mem_cache_size=4MB cert=/etc/squid/myca.pem
+http_port 3128 ssl-bump generate-host-certificates=on dynamic_cert_mem_cache_size=4MB cert=/cygdrive/c/programdata/Diladele/DiladeleWebSafety/4.0/etc/myca.pem
 
 # certificate storage
 sslcrtd_program /lib/squid/ssl_crtd -s /var/cache/squid_ssldb -M 4MB
