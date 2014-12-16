@@ -25,19 +25,19 @@
     <CustomAction Id="RemoveSsldbDirectoryPrepare" Property="RemoveSsldbDirectory"
             Value="&quot;cmd.exe&quot; /c rmdir /S /Q &quot;[cache]squid_ssldb&quot;&quot;" Execute="immediate"/>
     <CustomAction Id="RemoveSsldbDirectory" BinaryKey="WixCA" DllEntry="CAQuietExec"
-                Execute="deferred" Return="ignore"/>
+                Execute="deferred" Return="ignore" Impersonate="no"/>
 
     <CustomAction Id="RunSslCrtdPrepare" Property="RunSslCrtd"
             Value="&quot;[squid_1]ssl_crtd.exe&quot; -c -s &quot;[cache]squid_ssldb&quot;" Execute="immediate"/>
-    
+
     <CustomAction Id="RunSslCrtd" BinaryKey="WixCA" DllEntry="CAQuietExec"
-                Execute="deferred" Return="ignore"/>
+                Execute="deferred" Return="check" Impersonate="no"/>
 
     <InstallExecuteSequence>
       <Custom Action="RemoveSsldbDirectoryPrepare" After="CostFinalize"/>
       <Custom Action="RunSslCrtdPrepare" After="CostFinalize"/>
       <Custom Action="RemoveSsldbDirectory" Before="RunSslCrtd"/>
-      <Custom Action="RunSslCrtd" Before="InstallFinalize" />
+      <Custom Action="RunSslCrtd" Before="InstallFinalize">NOT Installed AND NOT REMOVE</Custom>
     </InstallExecuteSequence>
 
     <UI>
