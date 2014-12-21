@@ -54,7 +54,23 @@ class copier:
             full_path = os.path.join(from_bin,dll);
             if os.path.isfile(full_path):
                 shutil.copy2(full_path, target_dir)
-
+                
+    def copy_certificates(self, rootfolder):
+        # certificates to usr ssl
+        cert_from = os.path.join(self.src, "etc", "pki", "ca-trust", "extracted", "pem", "tls-ca-bundle.pem")
+        cert_to = os.path.join(self.dest, rootfolder, "ssl", "cert.pem")
+        os.makedirs(os.path.join(self.dest, rootfolder, "ssl"))
+        shutil.copy2(cert_from, cert_to);
+        
+        ca_bundle_from = os.path.join(self.src, "etc", "pki", "ca-trust", "extracted", "pem", "tls-ca-bundle.pem")
+        ca_bundle_to = os.path.join(self.dest, rootfolder, "ssl", "certs", "ca-bundle.crt")
+        os.makedirs(os.path.join(self.dest, rootfolder, "ssl", "certs"))
+        shutil.copy2(ca_bundle_from, ca_bundle_to);
+        
+        ca_bundle_trust_from = os.path.join(self.src, "etc", "pki", "ca-trust", "extracted", "openssl", "ca-bundle.trust.crt")
+        ca_bundle_trust_to = os.path.join(self.dest, rootfolder, "ssl", "certs", "ca-bundle.trust.crt")
+        shutil.copy2(ca_bundle_trust_from, ca_bundle_trust_to);
+                
     def copy_squid(self):
         if os.path.exists(self.dest):
             shutil.rmtree(self.dest)
@@ -64,7 +80,7 @@ class copier:
         from_etc_squid = os.path.join(self.src, "etc", "squid")
         to_etc_squid = os.path.join(self.dest, "etc", "squid")
         shutil.copytree(from_etc_squid, to_etc_squid)
-        
+
         # copy lib\squid
         from_lib_squid = os.path.join(self.src, "lib", "squid")
         to_lib_squid = os.path.join(self.dest, "lib", "squid")
@@ -106,6 +122,10 @@ class copier:
         squid_conf_from = os.path.join(".", "squid.conf")
         squid_conf_to = os.path.join(self.dest, "etc", "squid", "squid.conf")
         shutil.copy2(squid_conf_from, squid_conf_to);
+
+        # certificates to usr
+        self.copy_certificates("usr")
+        self.copy_certificates("etc")
 
 #
 # code
