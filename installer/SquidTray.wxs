@@ -10,7 +10,7 @@
           <Icon Id="SquidIcon" SourceFile="SquidIcon.ico"/>
           </Shortcut>
         <RemoveFolder Id="DesktopFolder" On="uninstall"/>
-        <RegistryValue Root="HKCU" Key="Software/Squid" Name="installed" Type="integer" Value="1" KeyPath="yes"/>
+        <RegistryValue Root="HKCU" Key="Software\Squid" Name="installed" Type="integer" Value="1" KeyPath="yes"/>
       </Component>
 
       <Component Id="cmpD058CD70843C402E81E16A44DC8ADD6C" Directory="bin" Guid="D058CD70-843C-402E-81E1-6A44DC8ADD6C">
