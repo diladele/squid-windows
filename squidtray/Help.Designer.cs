@@ -1,7 +1,7 @@
 ﻿/*
  * Copyright (C) 2015 Diladele B.V.
  *
- * Diladele software is distributed under GPL license.
+ * Diladele Squid Installer software is distributed under GPL license.
  */
 
 namespace Diladele.Squid.Tray
