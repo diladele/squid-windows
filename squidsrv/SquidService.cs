@@ -1,4 +1,10 @@
-﻿using System;
+﻿/*
+ * Copyright (C) 2015 Diladele B.V.
+ *
+ * Diladele software is distributed under GPL license.
+ */
+
+using System;
 using System.Diagnostics;
 using System.Globalization;
 using System.ServiceProcess;

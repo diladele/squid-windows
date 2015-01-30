@@ -1,4 +1,10 @@
-﻿using Microsoft.Win32;
+﻿/*
+ * Copyright (C) 2015 Diladele B.V.
+ *
+ * Diladele software is distributed under GPL license.
+ */
+
+using Microsoft.Win32;
 
 namespace Diladele.Squid.Tray
 {
