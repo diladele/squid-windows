@@ -117,21 +117,33 @@ class copier:
         purge_exe_to = os.path.join(self.dest, "bin", "purge.exe")
         shutil.copy2(purge_exe_from, purge_exe_to);
         
-		# copy configuration
-        squid_conf_from = os.path.join("updater", "squid.conf")
-        squid_conf_from_diladele = os.path.join("updater", "squid.conf.diladele")
-        squid_conf_from_updater_squid = os.path.join("updater", "updater_squid.exe")
-        squid_conf_from_settings = os.path.join("updater", "settings.json")
+        # copy configuration
+        squid_conf_from = os.path.join("staticres", "squid.conf")
+        squid_conf_from_diladele = os.path.join("staticres", "squid.conf.diladele")
+        squid_conf_from_updater_squid = os.path.join("staticres", "updater_squid.exe")
+        squid_conf_from_settings = os.path.join("staticres", "settings.json")
+        license = os.path.join("staticres", "LICENSE")
+        cygwin_license = os.path.join("staticres", "CYGWIN_LICENSE")
+        credits = os.path.join("staticres", "CREDITS")
+        contributors = os.path.join("staticres", "CONTRIBUTORS")
 
         squid_conf_to = os.path.join(self.dest, "etc", "squid", "squid.conf")
         squid_conf_to_diladele = os.path.join(self.dest, "etc", "squid", "squid.conf.diladele")
         squid_conf_to_updater_squid = os.path.join(self.dest, "bin", "updater_squid.exe")
         squid_conf_to_settings = os.path.join(self.dest, "bin", "settings.json")
+        license_to = os.path.join(self.dest, "bin", "LICENSE")
+        cygwin_license_to = os.path.join(self.dest, "bin", "CYGWIN_LICENSE")
+        credits_to = os.path.join(self.dest, "bin", "CREDITS")
+        contributors_to = os.path.join(self.dest, "bin", "CONTRIBUTORS")
 
         shutil.copy2(squid_conf_from, squid_conf_to);
         shutil.copy2(squid_conf_from_diladele, squid_conf_to_diladele);
         shutil.copy2(squid_conf_from_updater_squid, squid_conf_to_updater_squid);
         shutil.copy2(squid_conf_from_settings, squid_conf_to_settings);
+        shutil.copy2(license, license_to);
+        shutil.copy2(cygwin_license, cygwin_license_to);
+        shutil.copy2(credits, credits_to);
+        shutil.copy2(contributors, contributors_to);
 
         #create shared memory folder
         os.makedirs(os.path.join(self.dest, "dev/shm"));
