@@ -1,7 +1,0 @@
-{
-    "settings" : {
-        "version"  : "1.0.0.0a",
-        "platform" : "amd64",
-        "os"       : "windows"
-    }
-}
