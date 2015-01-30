@@ -8,6 +8,13 @@
     <MajorUpgrade DowngradeErrorMessage="A newer version of [ProductName] is already installed." />
     <MediaTemplate EmbedCab="yes"/>
 
+    <!-- Squid cmd shortcut -->
+    <Property Id="CMD_PATH">
+      <DirectorySearch Path="[WindowsFolder]System32" Depth="0" Id="WinSystem32Path" AssignToProperty="no">
+        <FileSearch Name="cmd.exe" Id="cmdFileSearch" />
+      </DirectorySearch>
+    </Property>
+
     <!-- licenses and themes -->
     <WixVariable Id="WixUILicenseRtf" Value="license.rtf" />
     <WixVariable Id="WixUIBannerBmp" Value="banner.bmp" />
