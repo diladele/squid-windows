@@ -31,7 +31,6 @@ namespace Diladele.Squid.Tray
         private Dictionary<string, ToolStripMenuItem> items;
 
         private About about;
-        private Help help;
         private System.Threading.Timer updateTimer;
 
         public SquidApplicationContext(Form f) : base(f)
@@ -104,10 +103,6 @@ namespace Diladele.Squid.Tray
             
             notifyIcon.ContextMenuStrip.Items.Add(new ToolStripSeparator());
 
-            item = new ToolStripMenuItem("&Help");
-            item.Click += OnHelp;
-            notifyIcon.ContextMenuStrip.Items.Add(item);
-
             item = new ToolStripMenuItem("&About");
             item.Click += OnAbout;
             notifyIcon.ContextMenuStrip.Items.Add(item);
@@ -175,20 +170,6 @@ namespace Diladele.Squid.Tray
             }
         }
 
-        private void OnHelp(object sender, EventArgs e)
-        {
-            if (help == null)
-            {
-                help = new Help();
-                help.FormClosed += OnHelpClosed;
-                help.Show();
-            }
-            else
-            {
-                about.Activate();
-            }
-        }
-
         private void OnAbout(object sender, EventArgs e)
         {
             if (about == null)
@@ -211,11 +192,6 @@ namespace Diladele.Squid.Tray
         private void OnAboutClosed(object sender, EventArgs e) 
         {
             this.about = null;
-        }
-
-        private void OnHelpClosed(object sender, EventArgs e)
-        {
-            this.help = null;
         }
 
         private void notifyIcon_MouseUp(object sender, MouseEventArgs e)
