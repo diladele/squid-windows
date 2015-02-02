@@ -15,7 +15,7 @@
         <Shortcut Id="SquidTerminalDesktopShortcut"
                   Name="Squid Terminal"
                   Description="Squid command line with properly set environment"
-                  Arguments="/K &quot;set PATH=[INSTALLFOLDER]bin;%PATH%&quot;"
+                  Arguments="/K &quot;color 02 &amp; cd /d[INSTALLFOLDER] &amp; set PATH=[INSTALLFOLDER]bin;%PATH%&quot;"
                   Target="[CMD_PATH]">
         </Shortcut>
         <Shortcut Id="ApplicationDesktopShortcut"
