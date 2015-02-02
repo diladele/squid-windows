@@ -8,7 +8,7 @@ This project provides MSI Windows Installer for Squid Proxy Server. It enables S
 
 **Installation instructions**
 -----------------------------
-    - Download squid.msi at http://squid.diladele.com
+    - Download [at http://squid.diladele.com](http://packages.diladele.com/squid/squid.msi) 
     - Run it and click "Next" button till the product is installed
 
 `Help`:
