@@ -6,9 +6,8 @@ squid3-windows
 
 This project provides MSI Windows Installer for Squid Proxy Server. It enables Squid installation in just a few clicks. Current build is based on Squid 3.3.3-2 build for Cygwin Windows 64 bit.
 
-**Download at http://squid.diladele.com **
-
-Installation instructions: 
+**Installation instructions**
+-----------------------------
     - Download squid.msi at http://squid.diladele.com
     - Run it and click "Next" button till the product is installed
 
