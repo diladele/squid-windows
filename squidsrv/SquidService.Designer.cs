@@ -1,4 +1,10 @@
-﻿namespace Diladele.Squid.Service
+﻿/*
+ * Copyright (C) 2015 Diladele B.V.
+ *
+ * Diladele Squid Installer software is distributed under GPL license.
+ */
+
+namespace Diladele.Squid.Service
 {
     partial class SquidService
     {

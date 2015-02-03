@@ -1,0 +1,7 @@
+{
+    "settings" : {
+        "version"  : "1.0.0.0c",
+        "platform" : "amd64",
+        "os"       : "windows"
+    }
+}

@@ -1,4 +1,10 @@
-﻿using System.ServiceProcess;
+﻿/*
+ * Copyright (C) 2015 Diladele B.V.
+ *
+ * Diladele Squid Installer software is distributed under GPL license.
+ */
+
+using System.ServiceProcess;
 
 namespace Diladele.Squid.Service
 {

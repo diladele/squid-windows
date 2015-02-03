@@ -19,9 +19,7 @@ class copier:
         else:
             self.sys32 = sys32
 
-    def copy_cygwin(self):
-        target_dir = os.path.join(self.dest, "bin")
-
+    def copy_cygwin(self, target_dir):
         # copy all windows cygwin dlls
         files = list(glob.iglob(os.path.join(self.sys32, "api-ms-win-core-*.dll")))
         files.extend(list(glob.iglob(os.path.join(self.sys32, "api-ms-win-security-*.dll"))))
@@ -119,9 +117,36 @@ class copier:
         purge_exe_to = os.path.join(self.dest, "bin", "purge.exe")
         shutil.copy2(purge_exe_from, purge_exe_to);
         
-        squid_conf_from = os.path.join(".", "squid.conf")
+        # copy configuration
+        squid_conf_from = os.path.join("staticres", "squid.conf")
+        squid_conf_from_diladele = os.path.join("staticres", "squid.conf.diladele")
+        squid_conf_from_updater_squid = os.path.join("staticres", "updater_squid.exe")
+        squid_conf_from_settings = os.path.join("staticres", "settings.json")
+        license = os.path.join("staticres", "LICENSE")
+        cygwin_license = os.path.join("staticres", "CYGWIN_LICENSE")
+        credits = os.path.join("staticres", "CREDITS")
+        contributors = os.path.join("staticres", "CONTRIBUTORS")
+
         squid_conf_to = os.path.join(self.dest, "etc", "squid", "squid.conf")
+        squid_conf_to_diladele = os.path.join(self.dest, "etc", "squid", "squid.conf.diladele")
+        squid_conf_to_updater_squid = os.path.join(self.dest, "bin", "updater_squid.exe")
+        squid_conf_to_settings = os.path.join(self.dest, "bin", "settings.json")
+        license_to = os.path.join(self.dest, "bin", "LICENSE")
+        cygwin_license_to = os.path.join(self.dest, "bin", "CYGWIN_LICENSE")
+        credits_to = os.path.join(self.dest, "bin", "CREDITS")
+        contributors_to = os.path.join(self.dest, "bin", "CONTRIBUTORS")
+
         shutil.copy2(squid_conf_from, squid_conf_to);
+        shutil.copy2(squid_conf_from_diladele, squid_conf_to_diladele);
+        shutil.copy2(squid_conf_from_updater_squid, squid_conf_to_updater_squid);
+        shutil.copy2(squid_conf_from_settings, squid_conf_to_settings);
+        shutil.copy2(license, license_to);
+        shutil.copy2(cygwin_license, cygwin_license_to);
+        shutil.copy2(credits, credits_to);
+        shutil.copy2(contributors, contributors_to);
+
+        #create shared memory folder
+        os.makedirs(os.path.join(self.dest, "dev/shm"));
 
         # certificates to usr
         self.copy_certificates("usr")
@@ -140,7 +165,12 @@ def main():
     
     c = copier(args.src, args.dest, args.sys32)
     c.copy_squid()
-    c.copy_cygwin()
+	
+    target_dir = os.path.join(args.dest, "bin")
+    c.copy_cygwin(target_dir)
+	
+    target_dir = os.path.join(args.dest, "lib/squid")
+    c.copy_cygwin(target_dir)
 
 #
 # entry point

@@ -1,4 +1,10 @@
-﻿using System;
+﻿/*
+ * Copyright (C) 2015 Diladele B.V.
+ *
+ * Diladele Squid Installer software is distributed under GPL license.
+ */
+
+using System;
 using System.ComponentModel;
 using System.Diagnostics;
 using System.ServiceProcess;

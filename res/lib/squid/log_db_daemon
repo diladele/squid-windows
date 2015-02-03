@@ -41,6 +41,8 @@ Default "DBI:mysql:database=squid"
 
 Write debug messages to Squid stderr or cache.log
 
+=back
+
 =cut
 
 # the first argument to this script is the log file path describing the DSN
@@ -195,6 +197,8 @@ while (my $line = <>) {
 $dbh->disconnect();
 
 __END__
+
+=pod
 
 =head1 DESCRIPTION
 
@@ -443,6 +447,12 @@ Marcello Romani, marcello.romani@libero.it
 Amos Jeffries, amosjeffries@squid-cache.org
 
 =head1 COPYRIGHT AND LICENSE
+
+ * Copyright (C) 1996-2015 The Squid Software Foundation and contributors
+ *
+ * Squid software is distributed under GPLv2+ license and includes
+ * contributions from numerous individuals and organizations.
+ * Please see the COPYING and CONTRIBUTORS files for details.
 
 Copyright (C) 2008 by Marcello Romani
 

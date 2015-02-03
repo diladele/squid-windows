@@ -2,7 +2,22 @@
 <Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
   <Fragment>
     <ComponentGroup Id="SquidTray">
+      <!--Component Id="SquidTerminalShortcut" Directory="DesktopFolder" Guid="C3BF753A-0C2A-4E08-A218-F775FB56F70C">
+        <Shortcut Id="SquidTerminalDesktopShortcut"
+                  Name="Squid Terminal"
+                  Description="Squid command line with properly set environment"
+                  Arguments="/K &quot;set PATH=[#bin];%PATH%&quot;"
+                  Target="[CMD_PATH]">
+        </Shortcut>
+      </Component-->
+      
       <Component Id="ApplicationShortcutDesktop" Directory="DesktopFolder" Guid="93CBE6DF-4905-49E8-96CA-CF3D15C18DE9">
+        <Shortcut Id="SquidTerminalDesktopShortcut"
+                  Name="Squid Terminal"
+                  Description="Squid command line with properly set environment"
+                  Arguments="/K &quot;color 02 &amp; cd /d[INSTALLFOLDER] &amp; set PATH=[INSTALLFOLDER]bin;%PATH%&quot;"
+                  Target="[CMD_PATH]">
+        </Shortcut>
         <Shortcut Id="ApplicationDesktopShortcut"
                   Name="Squid Server Tray"
                   Description="Starts a squid server system tray"
