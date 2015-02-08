@@ -1,4 +1,4 @@
-#	WELCOME TO SQUID 3.5.1-20150124-r13741
+#	WELCOME TO SQUID 3.5.1-20150206-r13746
 #	----------------------------
 #	
 #	This is the documentation for the Squid configuration file.
@@ -2407,7 +2407,7 @@ http_port 3128
 #	For more information use:
 #		/usr/lib/squid/ssl_crtd.exe -h
 #Default:
-# sslcrtd_program /usr/lib/squid/ssl_crtd.exe -s /usr/local/squid/var/lib/ssl_db -M 4MB
+# sslcrtd_program /usr/lib/squid/ssl_crtd.exe -s /var/run/squid/lib/ssl_db -M 4MB
 
 #  TAG: sslcrtd_children
 #	The maximum number of processes spawn to service ssl server.

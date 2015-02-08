@@ -45,7 +45,12 @@ class copier:
             "cygstdc++-6.dll",
             "cygwin1.dll",
             "cygxml2-2.dll",
-            "cygz.dll"
+            "cygz.dll",
+            "cyglber-2-4-2.dll",
+            "cygldap-2-4-2.dll",
+            "cygsasl2-3.dll",
+            "cygcrypt-0.dll",
+            "cygdb-5.3.dll"
         ]
 
         for dll in required_dlls:
@@ -100,20 +105,22 @@ class copier:
         # create var\run\squid
         to_var_run_squid = os.path.join(self.dest, "var", "run", "squid")
         os.makedirs(to_var_run_squid);
+        to_var_run_squid_run_squid = os.path.join(self.dest, "var", "run", "squid", "run", "squid")
+        os.makedirs(to_var_run_squid_run_squid);
         
         # copy usr\sbin\squid
-        squid_exe_from = os.path.join(self.src, "usr", "sbin", "squid.exe")
+        squid_exe_from = os.path.join(self.src, "usr", "sbin", "squid", "squid.exe")
         squid_exe_to = os.path.join(self.dest, "bin", "squid.exe")
         os.makedirs(os.path.join(self.dest, "bin"));
         shutil.copy2(squid_exe_from, squid_exe_to);
 
         # copy usr\sbin\squidclient
-        squid_client_exe_from = os.path.join(self.src, "usr", "sbin", "squidclient.exe")
+        squid_client_exe_from = os.path.join(self.src, "bin", "squid", "squidclient.exe")
         squid_client_exe_to = os.path.join(self.dest, "bin", "squidclient.exe")
         shutil.copy2(squid_client_exe_from, squid_client_exe_to);
 
         # copy usr\sbin\purge
-        purge_exe_from = os.path.join(self.src, "usr", "sbin", "purge.exe")
+        purge_exe_from = os.path.join(self.src, "bin", "squid", "purge.exe")
         purge_exe_to = os.path.join(self.dest, "bin", "purge.exe")
         shutil.copy2(purge_exe_from, purge_exe_to);
         
