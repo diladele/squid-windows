@@ -106,7 +106,7 @@ namespace Diladele.Squid.Tray
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(297, 24);
             this.label4.TabIndex = 5;
-            this.label4.Text = "Installer: 1.0.0.0c";
+            this.label4.Text = "Installer: 1.0.0.0d";
             // 
             // linkLabel2
             // 
