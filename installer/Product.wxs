@@ -46,10 +46,10 @@
       <Custom Action="RemoveSsldbDirectory" Before="RunSslCrtd"/>
       <Custom Action="RunSslCrtd" Before="InstallFinalize">NOT Installed AND NOT REMOVE</Custom>
     </InstallExecuteSequence>
-
+     
     <UI>
       <UIRef Id="WixUI_InstallDir"/>
-
+      
       <!-- Start tray application -->
       <Publish Dialog="ExitDialog"
              Control="Finish"
@@ -63,7 +63,7 @@
     </util:CloseApplication>
 
     <Property Id="WIXUI_INSTALLDIR" Value="INSTALLFOLDER"/>
-
+    
     <PropertyRef Id="NETFRAMEWORK20" />
 
     <Condition Message="The product requires administrator priviledge.">
@@ -93,9 +93,7 @@
 
   <Fragment>
     <Directory Id="TARGETDIR" Name="SourceDir">
-      <Directory Id="ProgramFiles64Folder">
         <Directory Id="INSTALLFOLDER" Name="Squid" />
-      </Directory>
       <Directory Id="DesktopFolder" Name="Desktop"/>
     </Directory>
   </Fragment>
