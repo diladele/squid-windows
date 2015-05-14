@@ -1,4 +1,4 @@
-#	WELCOME TO SQUID 3.5.1-20150206-r13746
+#	WELCOME TO SQUID 3.5.4-20150510-r13825
 #	----------------------------
 #	
 #	This is the documentation for the Squid configuration file.
@@ -268,6 +268,39 @@
 #	Replace this line with 'cache_peer' configuration.
 #Default:
 # none
+
+# OPTIONS FOR SMP
+# -----------------------------------------------------------------------------
+
+#  TAG: workers
+#	Number of main Squid processes or "workers" to fork and maintain.
+#	0: "no daemon" mode, like running "squid -N ..."
+#	1: "no SMP" mode, start one main Squid process daemon (default)
+#	N: start N main Squid process daemons (i.e., SMP mode)
+#
+#	In SMP mode, each worker does nearly all what a single Squid daemon
+#	does (e.g., listen on http_port and forward HTTP requests).
+#Default:
+# SMP support disabled.
+
+#  TAG: cpu_affinity_map
+#	Usage: cpu_affinity_map process_numbers=P1,P2,... cores=C1,C2,...
+#
+#	Sets 1:1 mapping between Squid processes and CPU cores. For example,
+#
+#	    cpu_affinity_map process_numbers=1,2,3,4 cores=1,3,5,7
+#
+#	affects processes 1 through 4 only and places them on the first
+#	four even cores, starting with core #1.
+#
+#	CPU cores are numbered starting from 1. Requires support for
+#	sched_getaffinity(2) and sched_setaffinity(2) system calls.
+#
+#	Multiple cpu_affinity_map options are merged.
+#
+#	See also: workers
+#Default:
+# Let operating system decide.
 
 # OPTIONS FOR AUTHENTICATION
 # -----------------------------------------------------------------------------
@@ -926,6 +959,18 @@
 #	  #   SslBump1: After getting TCP-level and HTTP CONNECT info.
 #	  #   SslBump2: After getting SSL Client Hello info.
 #	  #   SslBump3: After getting SSL Server Hello info.
+#
+#	acl aclname ssl::server_name .foo.com ...
+#	  # matches server name obtained from various sources [fast]
+#	  #
+#	  # The server name is obtained during Ssl-Bump steps from such sources
+#	  # as CONNECT request URI, client SNI, and SSL server certificate CN.
+#	  # During each Ssl-Bump step, Squid may improve its understanding of a
+#	  # "true server name". Unlike dstdomain, this ACL does not perform
+#	  # DNS lookups.
+#
+#	acl aclname ssl::server_name_regex [-i] \.foo\.com ...
+#	  # regex matches server name obtained from various sources [fast]
 #	acl aclname any-of acl1 acl2 ...
 #	  # match any one of the acls [fast or slow]
 #	  # The first matching ACL stops further ACL evaluation.
@@ -1810,9 +1855,10 @@ http_port 3128
 #	RFC2475, and RFC3260.
 #
 #	The TOS/DSCP byte must be exactly that - a octet value  0 - 255, or
-#	"default" to use whatever default your host has. Note that in
-#	practice often only multiples of 4 is usable as the two rightmost bits
-#	have been redefined for use by ECN (RFC 3168 section 23.1).
+#	"default" to use whatever default your host has.
+#	Note that only multiples of 4 are usable as the two rightmost bits have
+#	been redefined for use by ECN (RFC 3168 section 23.1).
+#	The squid parser will enforce this by masking away the ECN bits.
 #
 #	Processing proceeds in the order specified, and stops at first fully
 #	matching line.
@@ -1822,7 +1868,7 @@ http_port 3128
 # none
 
 #  TAG: clientside_tos
-#	Allows you to select a TOS/Diffserv value for packets being transmitted
+#	Allows you to select a TOS/DSCP value for packets being transmitted
 #	on the client-side, based on an ACL.
 #
 #	clientside_tos ds-field [!]aclname ...
@@ -1837,6 +1883,13 @@ http_port 3128
 #
 #	Note: This feature is incompatible with qos_flows. Any TOS values set here
 #	will be overwritten by TOS values in qos_flows.
+#
+#	The TOS/DSCP byte must be exactly that - a octet value  0 - 255, or
+#	"default" to use whatever default your host has.
+#	Note that only multiples of 4 are usable as the two rightmost bits have
+#	been redefined for use by ECN (RFC 3168 section 23.1).
+#	The squid parser will enforce this by masking away the ECN bits.
+#
 #Default:
 # none
 
@@ -1902,9 +1955,10 @@ http_port 3128
 #	know what you're specifying. For more information, see RFC2474,
 #	RFC2475, and RFC3260.
 #
-#	The TOS/DSCP byte must be exactly that - a octet value  0 - 255. Note that
-#	in practice often only multiples of 4 is usable as the two rightmost bits
-#	have been redefined for use by ECN (RFC 3168 section 23.1).
+#	The TOS/DSCP byte must be exactly that - a octet value  0 - 255.
+#	Note that only multiples of 4 are usable as the two rightmost bits have
+#	been redefined for use by ECN (RFC 3168 section 23.1).
+#	The squid parser will enforce this by masking away the ECN bits.
 #
 #	Mark values can be any unsigned 32-bit integer value.
 #
@@ -7814,34 +7868,4 @@ refresh_pattern .		0	20%	4320
 #	not all I/O types supports large values (eg on Windows).
 #Default:
 # Use operating system limits set by ulimit.
-
-#  TAG: workers
-#	Number of main Squid processes or "workers" to fork and maintain.
-#	0: "no daemon" mode, like running "squid -N ..."
-#	1: "no SMP" mode, start one main Squid process daemon (default)
-#	N: start N main Squid process daemons (i.e., SMP mode)
-#
-#	In SMP mode, each worker does nearly all what a single Squid daemon
-#	does (e.g., listen on http_port and forward HTTP requests).
-#Default:
-# SMP support disabled.
-
-#  TAG: cpu_affinity_map
-#	Usage: cpu_affinity_map process_numbers=P1,P2,... cores=C1,C2,...
-#
-#	Sets 1:1 mapping between Squid processes and CPU cores. For example,
-#
-#	    cpu_affinity_map process_numbers=1,2,3,4 cores=1,3,5,7
-#
-#	affects processes 1 through 4 only and places them on the first
-#	four even cores, starting with core #1.
-#
-#	CPU cores are numbered starting from 1. Requires support for
-#	sched_getaffinity(2) and sched_setaffinity(2) system calls.
-#
-#	Multiple cpu_affinity_map options are merged.
-#
-#	See also: workers
-#Default:
-# Let operating system decide.
 
