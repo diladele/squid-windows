@@ -79,7 +79,7 @@
     </Condition>
 
     <Condition Message="The product requires the operating system to be Windows 7 or higher.">
-      <![CDATA[Installed OR VersionNT64 >= 601]]>
+      <![CDATA[Installed OR VersionNT64 >= 600]]>
     </Condition>
 
     <Feature Id="SquidFeature" Title="Squid" Description="Installs Squid server." Level="1">
