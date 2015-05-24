@@ -78,7 +78,7 @@
       <![CDATA[Installed OR VersionNT64]]>
     </Condition>
 
-    <Condition Message="The product requires the operating system to be Windows 7 or higher.">
+    <Condition Message="The product requires at least Windows Vista or Server 2008.">
       <![CDATA[Installed OR VersionNT64 >= 600]]>
     </Condition>
 
