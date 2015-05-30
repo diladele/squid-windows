@@ -63,15 +63,19 @@
     </util:CloseApplication>
 
     <Property Id="WIXUI_INSTALLDIR" Value="INSTALLFOLDER"/>
-    
+
     <PropertyRef Id="NETFRAMEWORK20" />
+    <PropertyRef Id="NETFRAMEWORK30" />
+    <PropertyRef Id="NETFRAMEWORK35" />
+    <PropertyRef Id="NETFRAMEWORK40FULL" />
+    <PropertyRef Id="NETFRAMEWORK45" />
 
     <Condition Message="The product requires administrator priviledge.">
       <![CDATA[Installed OR Privileged]]>
     </Condition>
 
-    <Condition Message="The product requires Microsoft .NET 2.0 to be installed on the machine.">
-      <![CDATA[Installed OR NETFRAMEWORK20]]>
+    <Condition Message="The product requires at least Microsoft .NET 2.0 to be installed on the machine.">
+      <![CDATA[Installed OR NETFRAMEWORK20 OR NETFRAMEWORK30 OR NETFRAMEWORK35 OR NETFRAMEWORK40FULL OR NETFRAMEWORK45]]>
     </Condition>
 
     <Condition Message="The product requires the operating system to be 64 bit.">
