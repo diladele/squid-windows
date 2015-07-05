@@ -7,15 +7,13 @@
 using System;
 using System.Diagnostics;
 using System.Globalization;
+using System.IO;
+using System.Net;
 using System.ServiceProcess;
-using System.Timers;
+using Diladele.Squid.Tray;
 
 namespace Diladele.Squid.Service
 {
-    using System.Linq.Expressions;
-
-    using Diladele.Squid.Tray;
-
     public partial class SquidService : ServiceBase
     {
         private Process squid;
@@ -97,12 +95,20 @@ namespace Diladele.Squid.Service
             {
                 try
                 {
-                    var updater = new Process();
-                    updater.StartInfo.FileName = PredefinedPaths.InstallationFolder + @"\bin\updater_squid.exe";
-                    updater.StartInfo.CreateNoWindow = true;
+                    var remoteVersionFile = PredefinedPaths.InstallationFolder + @"\var\log\squid.version";
 
-                    updater.Start();
-                    updater.WaitForExit((int)TimeSpan.FromMinutes(1).TotalMilliseconds);
+                    var req = (HttpWebRequest)WebRequest.Create("https://defs.diladele.com/squid/version/windows");
+                    req.UserAgent = "Squid3.5.6/" + Environment.OSVersion.VersionString + "/x64 (win;0-0-0-0)";
+                    req.Headers.Add("Authorization", "Token 0000000000000000");
+
+                    WebResponse resp = req.GetResponse();
+                    StreamReader sr = new StreamReader(resp.GetResponseStream());
+                    var result = sr.ReadToEnd().Trim();
+
+                    using (StreamWriter file = new StreamWriter(remoteVersionFile))
+                    {
+                        file.WriteLine(result);
+                    }
                 }
                 catch (Exception e)
                 {

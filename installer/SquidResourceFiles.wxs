@@ -192,9 +192,6 @@
             <Component Id="squidclient.exe" Directory="bin" Guid="7C114FFB-038A-4813-BAE2-025F945B40B3">
                 <File Id="squidclient.exe" KeyPath="yes" Source="$(var.ResDir)\bin\squidclient.exe" />
             </Component>
-            <Component Id="updater_squid.exe" Directory="bin" Guid="01331AAE-FAD7-4314-9A33-69E0DC358457">
-                <File Id="updater_squid.exe" KeyPath="yes" Source="$(var.ResDir)\bin\updater_squid.exe" />
-            </Component>
             <Component Id="_5F4BCA89_10E3_4FC0_8C5E_14ABA3AF7387" Directory="dev" Guid="A1B7BCB4-E4ED-4870-986A-C046E3D98C73" KeyPath="yes">
                 <CreateFolder />
             </Component>
