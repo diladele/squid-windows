@@ -1,4 +1,4 @@
-#	WELCOME TO SQUID 3.5.5
+#	WELCOME TO SQUID 3.5.6
 #	----------------------------
 #	
 #	This is the documentation for the Squid configuration file.
@@ -877,11 +877,11 @@
 #
 #	acl aclname user_cert attribute values...
 #	  # match against attributes in a user SSL certificate
-#	  # attribute is one of DN/C/O/CN/L/ST [fast]
+#	  # attribute is one of DN/C/O/CN/L/ST or a numerical OID [fast]
 #
 #	acl aclname ca_cert attribute values...
 #	  # match against attributes a users issuing CA SSL certificate
-#	  # attribute is one of DN/C/O/CN/L/ST [fast]
+#	  # attribute is one of DN/C/O/CN/L/ST or a numerical OID  [fast]
 #
 #	acl aclname ext_user username ...
 #	acl aclname ext_user_regex [-i] pattern ...
@@ -1133,9 +1133,6 @@ acl CONNECT method CONNECT
 # acl_uses_indirect_client on
 
 #  TAG: delay_pool_uses_indirect_client	on|off
-# Note: This option is only available if Squid is rebuilt with the
-#       --enable-follow-x-forwarded-for and --enable-delay-pools
-#
 #	Controls whether the indirect client address
 #	(see follow_x_forwarded_for) is used instead of the
 #	direct client address in delay pools.
@@ -5530,9 +5527,6 @@ refresh_pattern .		0	20%	4320
 # -----------------------------------------------------------------------------
 
 #  TAG: delay_pools
-# Note: This option is only available if Squid is rebuilt with the
-#       --enable-delay-pools
-#
 #	This represents the number of delay pools to be used.  For example,
 #	if you have one class 2 delay pool and one class 3 delays pool, you
 #	have a total of 2 delay pools.
@@ -5543,9 +5537,6 @@ refresh_pattern .		0	20%	4320
 # delay_pools 0
 
 #  TAG: delay_class
-# Note: This option is only available if Squid is rebuilt with the
-#       --enable-delay-pools
-#
 #	This defines the class of each delay pool.  There must be exactly one
 #	delay_class line for each delay pool.  For example, to define two
 #	delay pools, one of class 2 and one of class 3, the settings above
@@ -5603,9 +5594,6 @@ refresh_pattern .		0	20%	4320
 # none
 
 #  TAG: delay_access
-# Note: This option is only available if Squid is rebuilt with the
-#       --enable-delay-pools
-#
 #	This is used to determine which delay pool a request falls into.
 #
 #	delay_access is sorted per pool and the matching starts with pool 1,
@@ -5628,9 +5616,6 @@ refresh_pattern .		0	20%	4320
 # Deny using the pool, unless allow rules exist in squid.conf for the pool.
 
 #  TAG: delay_parameters
-# Note: This option is only available if Squid is rebuilt with the
-#       --enable-delay-pools
-#
 #	This defines the parameters for a delay pool.  Each delay pool has
 #	a number of "buckets" associated with it, as explained in the
 #	description of delay_class.
@@ -5722,9 +5707,6 @@ refresh_pattern .		0	20%	4320
 # none
 
 #  TAG: delay_initial_bucket_level	(percent, 0-100)
-# Note: This option is only available if Squid is rebuilt with the
-#       --enable-delay-pools
-#
 #	The initial bucket percentage is used to determine how much is put
 #	in each bucket when squid starts, is reconfigured, or first notices
 #	a host accessing it (in class 2 and class 3, individual hosts and
@@ -5737,9 +5719,6 @@ refresh_pattern .		0	20%	4320
 # -----------------------------------------------------------------------------
 
 #  TAG: client_delay_pools
-# Note: This option is only available if Squid is rebuilt with the
-#       --enable-delay-pools
-#
 #	This option specifies the number of client delay pools used. It must
 #	preceed other client_delay_* options.
 #
@@ -5751,9 +5730,6 @@ refresh_pattern .		0	20%	4320
 # client_delay_pools 0
 
 #  TAG: client_delay_initial_bucket_level	(percent, 0-no_limit)
-# Note: This option is only available if Squid is rebuilt with the
-#       --enable-delay-pools
-#
 #	This option determines the initial bucket size as a percentage of
 #	max_bucket_size from client_delay_parameters. Buckets are created
 #	at the time of the "first" connection from the matching IP. Idle
@@ -5769,9 +5745,6 @@ refresh_pattern .		0	20%	4320
 # client_delay_initial_bucket_level 50
 
 #  TAG: client_delay_parameters
-# Note: This option is only available if Squid is rebuilt with the
-#       --enable-delay-pools
-#
 #
 #	This option configures client-side bandwidth limits using the
 #	following format:
@@ -5798,9 +5771,6 @@ refresh_pattern .		0	20%	4320
 # none
 
 #  TAG: client_delay_access
-# Note: This option is only available if Squid is rebuilt with the
-#       --enable-delay-pools
-#
 #	This option determines the client-side delay pool for the
 #	request:
 #
