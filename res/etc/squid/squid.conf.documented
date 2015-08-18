@@ -1,4 +1,4 @@
-#	WELCOME TO SQUID 3.5.6
+#	WELCOME TO SQUID 3.5.7-20150808-r13884
 #	----------------------------
 #	
 #	This is the documentation for the Squid configuration file.
@@ -527,6 +527,12 @@
 #	FORMAT specifications
 #
 #	  %LOGIN	Authenticated user login name
+#	  %un		A user name. Expands to the first available name
+#	  		from the following list of information sources:
+#			- authenticated user name, like %ul or %LOGIN
+#			- user name sent by an external ACL, like %EXT_USER
+#			- SSL client name, like %us in logformat
+#			- ident user name, like %ui in logformat
 #	  %EXT_USER	Username from previous external acl
 #	  %EXT_LOG	Log details from previous external acl
 #	  %EXT_TAG	Tag from previous external acl
@@ -3554,6 +3560,12 @@ http_port 3128
 #		ue	User name from external acl helper
 #		ui	User name from ident
 #		us	User name from SSL
+#		un	A user name. Expands to the first available name
+#			from the following list of information sources:
+#			- authenticated user name, like %ul
+#			- user name supplied by an external ACL, like %ue
+#			- SSL client name, like %us
+#			- ident user name, like %ui
 #		credentials Client credentials. The exact meaning depends on
 #			the authentication scheme: For Basic authentication,
 #			it is the password; for Digest, the realm sent by the

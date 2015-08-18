@@ -4,7 +4,7 @@ squid3-windows
 > Squid is a caching proxy for the Web supporting HTTP, HTTPS, FTP, and more. It reduces bandwidth and improves response times by caching and reusing frequently-requested web pages. Squid has extensive access controls and makes a great server accelerator. It runs on most available operating systems, including Windows and is licensed under the GNU GPL.
 > <cite> <http://www.squid-cache.org>
 
-This project provides MSI Windows Installer for Squid Proxy Server. It enables Squid installation in just a few clicks. Current build is based on Squid 3.5.6 build for Cygwin Windows 64 bit.
+This project provides MSI Windows Installer for Squid Proxy Server. It enables Squid installation in just a few clicks. Current build is based on Squid 3.5.7 build for Cygwin Windows 64 bit.
 
 **Installation instructions**
 -----------------------------
