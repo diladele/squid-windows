@@ -50,7 +50,8 @@ class copier:
             "cygldap-2-4-2.dll",
             "cygsasl2-3.dll",
             "cygcrypt-0.dll",
-            "cygdb-5.3.dll"
+            "cygdb-5.3.dll",
+			"cyglzma-5.dll"
         ]
 
         for dll in required_dlls:
