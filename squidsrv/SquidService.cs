@@ -98,7 +98,7 @@ namespace Diladele.Squid.Service
                     var remoteVersionFile = PredefinedPaths.InstallationFolder + @"\var\log\squid.version";
 
                     var req = (HttpWebRequest)WebRequest.Create("https://defs.diladele.com/squid/version/windows");
-                    req.UserAgent = "Squid3.5.14/" + Environment.OSVersion.VersionString + "/x64 (win;0-0-0-0)";
+                    req.UserAgent = "Squid3.5.16/" + Environment.OSVersion.VersionString + "/x64 (win;0-0-0-0)";
                     req.Headers.Add("Authorization", "Token 0000000000000000");
 
                     WebResponse resp = req.GetResponse();
