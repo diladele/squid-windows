@@ -1,4 +1,4 @@
-#	WELCOME TO SQUID 3.5.17
+#	WELCOME TO SQUID 3.5.19
 #	----------------------------
 #	
 #	This is the documentation for the Squid configuration file.
@@ -3183,8 +3183,6 @@ http_port 3128
 #	To avoid blocking locks, shared memory uses opportunistic algorithms
 #	that do not guarantee that every cachable entity that could have been
 #	shared among SMP workers will actually be shared.
-#
-#	Currently, entities exceeding 32KB in size cannot be shared.
 #Default:
 # "on" where supported if doing memory caching with multiple SMP workers.
 
