@@ -1,4 +1,4 @@
-#	WELCOME TO SQUID 3.5.19
+#	WELCOME TO SQUID 3.5.20
 #	----------------------------
 #	
 #	This is the documentation for the Squid configuration file.
@@ -5622,6 +5622,9 @@ refresh_pattern .		0	20%	4320
 # http_accel_surrogate_remote off
 
 #  TAG: esi_parser	libxml2|expat|custom
+# Note: This option is only available if Squid is rebuilt with the
+#       --enable-esi
+#
 #	ESI markup is not strictly XML compatible. The custom ESI parser
 #	will give higher performance, but cannot handle non ASCII character
 #	encodings.
