@@ -78,7 +78,7 @@ namespace Diladele.Squid.Tray
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(297, 24);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Version: 3.5.20 built with Cygwin 64 bit";
+            this.label2.Text = "Version: 3.5.21 built with Cygwin 64 bit";
             //
             // label1
             //
@@ -106,7 +106,7 @@ namespace Diladele.Squid.Tray
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(297, 24);
             this.label4.TabIndex = 5;
-            this.label4.Text = "Installer: 1.3.5.20";
+            this.label4.Text = "Installer: 1.3.5.21";
             //
             // linkLabel2
             //
