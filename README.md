@@ -19,10 +19,7 @@ In case you need a high-quality HTTP(s) traffic filtering solution on Windows, w
 
 Web Safety for Squid Proxy is an ICAP web filtering server that integrates with Squid proxy server and provides rich content and web filtering functionality to sanitize Internet traffic passing into an internal home/enterprise network. It may be used to block illegal or potentially malicious file downloads, remove annoying advertisements, prevent access to various categories of web sites and block resources with adult/explicit content.
 
-To try it out please have a look at the [Windows 10 tutorial](https://docs.diladele.com/docker/docker_windows_10/index.html).
-
-> For Windows 7 please have a look [here](https://docs.diladele.com/docker/docker_windows).
-
+To try it out please have a look at the [Windows 10 tutorial](https://www.diladele.com/virtual_appliance.html).
 
 **Help**
 --------
