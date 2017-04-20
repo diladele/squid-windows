@@ -1,4 +1,4 @@
-#	WELCOME TO SQUID 3.5.24
+#	WELCOME TO SQUID 3.5.25
 #	----------------------------
 #	
 #	This is the documentation for the Squid configuration file.
@@ -4760,7 +4760,9 @@ coredump_dir /var/cache/squid
 #	will be considered fresh.
 #
 #	'Max' is an upper limit on how long objects without an explicit
-#	expiry time will be considered fresh.
+#	expiry time will be considered fresh. The value is also used
+#	to form Cache-Control: max-age header for a request sent from
+#	Squid to origin/parent.
 #
 #	options: override-expire
 #		 override-lastmod
