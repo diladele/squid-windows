@@ -26,7 +26,7 @@ To try it out please have a look at the [Windows 10 tutorial](https://docs.dilad
 --------
 
 Squid documentation can be found at http://www.squid-cache.org
-In case of any errors in the *installer only*, please send an email to support@diladele.com or post your question in the following google group https://groups.google.com/forum/#!forum/quintolabs-content-security-for-squid-proxy
+In case of any errors in the *installer only*, please send an email to support@diladele.com or post your question in the following google group https://groups.google.com/d/forum/web-safety
 
 For squid specific questions please use one of Squid mailing lists http://www.squid-cache.org/Support/mailing-lists.html.
 
