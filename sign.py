@@ -7,14 +7,13 @@ def sign(file, pfx):
     cmd = " ".join(
         [
             "c:/Program Files (x86)/Windows Kits/8.1/bin/x64/signtool.exe", 
-            "sign", 
-            "/ph", 
-            "/v", 
-            #"/ac " + os.path.abspath("contrib/certificates/production/After_10-10-10_MSCV-VSClass3.cer"), 
-            "/f " + pfx, 
-            "/p " + os.environ['DILADELE_B_V_CERTIFICATE_PASSWORD'], 
-            "/d", '"Squid Proxy for Windows"', 
-            "/t", "http://timestamp.verisign.com/scripts/timestamp.dll", "\"" + os.path.abspath(file) + "\"" 
+            "sign",
+            "/a",
+            "/tr",
+            "http://rfc3161timestamp.globalsign.com/advanced",
+            "/td",
+            "SHA256",
+            "\"" + os.path.abspath(file) + "\""
         ]
     )
     if 0 != subprocess.call(cmd) :
