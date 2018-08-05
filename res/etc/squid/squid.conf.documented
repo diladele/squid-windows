@@ -1,4 +1,4 @@
-#	WELCOME TO SQUID 3.5.27
+#	WELCOME TO SQUID 3.5.28
 #	----------------------------
 #	
 #	This is the documentation for the Squid configuration file.
@@ -718,18 +718,27 @@
 #	acl aclname dst [-n] ip-address/mask ...	# URL host's IP address [slow]
 #	acl aclname localip ip-address/mask ... # IP address the client connected to [fast]
 #
-#	acl aclname arp      mac-address ... (xx:xx:xx:xx:xx:xx notation)
+#if USE_SQUID_EUI
+#	acl aclname arp      mac-address ...
+#	acl aclname eui64    eui64-address ...
 #	  # [fast]
+#	  # MAC (EUI-48) and EUI-64 addresses use xx:xx:xx:xx:xx:xx notation.
+#	  #
 #	  # The 'arp' ACL code is not portable to all operating systems.
 #	  # It works on Linux, Solaris, Windows, FreeBSD, and some other
 #	  # BSD variants.
 #	  #
-#	  # NOTE: Squid can only determine the MAC/EUI address for IPv4
+#	  # The eui_lookup directive is required to be 'on' (the default)
+#	  # and Squid built with --enable-eui for MAC/EUI addresses to be
+#	  # available for this ACL.
+#	  #
+#	  # Squid can only determine the MAC/EUI address for IPv4
 #	  # clients that are on the same subnet. If the client is on a
 #	  # different subnet, then Squid cannot find out its address.
 #	  #
-#	  # NOTE 2: IPv6 protocol does not contain ARP. MAC/EUI is either
+#	  # IPv6 protocol does not contain ARP. MAC/EUI is either
 #	  # encoded directly in the IPv6 address or not available.
+#endif
 #
 #	acl aclname srcdomain   .foo.com ...
 #	  # reverse lookup, from client IP [slow]
@@ -756,6 +765,7 @@
 #	  # cache_peer_access mycache_mydomain.net deny all
 #
 #	acl aclname peername myPeer ...
+#	acl aclname peername_regex [-i] regex-pattern ...
 #	  # [fast]
 #	  # match against a named cache_peer entry
 #	  # set unique name= on cache_peer lines for reliable use.
@@ -1919,6 +1929,8 @@ http_port 3128
 #	been redefined for use by ECN (RFC 3168 section 23.1).
 #	The squid parser will enforce this by masking away the ECN bits.
 #
+#	This clause only supports fast acl types.
+#	See http://wiki.squid-cache.org/SquidFaq/SquidAcl for details.
 #Default:
 # none
 
@@ -1962,6 +1974,9 @@ http_port 3128
 #
 #	Note: This feature is incompatible with qos_flows. Any mark values set here
 #	will be overwritten by mark values in qos_flows.
+#
+#	This clause only supports fast acl types.
+#	See http://wiki.squid-cache.org/SquidFaq/SquidAcl for details.
 #Default:
 # none
 
@@ -2076,6 +2091,8 @@ http_port 3128
 #	When needing to contact peers use the no-tproxy cache_peer option and the
 #	client_dst_passthru directive re-enable normal forwarding such as this.
 #
+#	This clause only supports fast acl types.
+#	See http://wiki.squid-cache.org/SquidFaq/SquidAcl for details.
 #Default:
 # Address selection is performed by the operating system.
 
