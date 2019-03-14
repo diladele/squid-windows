@@ -13,11 +13,6 @@ This project provides MSI Windows Installer for Squid Proxy Server. It enables S
 
 Please have a look at the tutorial describing [*How to Install Squid 3.5 on Windows*](https://docs.diladele.com/howtos/installing_squid_windows/index.html).
 
-**Cloud Guard URL Rewriter**
-----------------------------
-
-Cloud based URL re-writer for Squid for Windows (like commonly used SquidGuard but running in the cloud) is available at https://guard.diladele.com/login/. The article showing how to enable HTTPS decryption on Squid for Windows can be read [here](https://docs.diladele.com/faq/squid/sslbump_squid_windows.html).
-
 **HTTP and HTTPS Filtering on Windows Using Squid and ICAP**
 -----------------------------
 In case you need a high-quality HTTP(s) traffic filtering solution on Windows, we recommend **Diladele Web Safety** running in Docker. 
