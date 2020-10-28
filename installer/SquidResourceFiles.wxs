@@ -138,8 +138,14 @@
             <Component Id="cygcrypt_0.dll" Directory="bin" Guid="F12B9197-7195-4FCF-86F4-40BCEBE8B55D">
                 <File Id="cygcrypt_0.dll" KeyPath="yes" Source="$(var.ResDir)\bin\cygcrypt-0.dll" />
             </Component>
+            <Component Id="cygcrypto_1.1.dll" Directory="bin" Guid="C5460B29-77B1-412D-B6AA-45A81B368FB6">
+                <File Id="cygcrypto_1.1.dll" KeyPath="yes" Source="$(var.ResDir)\bin\cygcrypto-1.1.dll" />
+            </Component>
             <Component Id="cygcrypto_1.0.0.dll" Directory="bin" Guid="BE49A661-6B8E-4E1A-9856-94DEB266832E">
                 <File Id="cygcrypto_1.0.0.dll" KeyPath="yes" Source="$(var.ResDir)\bin\cygcrypto-1.0.0.dll" />
+            </Component>
+            <Component Id="cygcrypt_2.dll" Directory="bin" Guid="D52722EF-E2B7-4CA0-99A6-2660DEF727EF">
+                <File Id="cygcrypt_2.dll" KeyPath="yes" Source="$(var.ResDir)\bin\cygcrypt-2.dll" />
             </Component>
             <Component Id="cygdb_5.3.dll" Directory="bin" Guid="0FAA3C97-34D1-49F4-8E55-B77F992CC9AD">
                 <File Id="cygdb_5.3.dll" KeyPath="yes" Source="$(var.ResDir)\bin\cygdb-5.3.dll" />
@@ -186,11 +192,17 @@
             <Component Id="cygssl_1.0.0.dll" Directory="bin" Guid="E09512D0-E742-49CD-8FDF-AA234CD0BE09">
                 <File Id="cygssl_1.0.0.dll" KeyPath="yes" Source="$(var.ResDir)\bin\cygssl-1.0.0.dll" />
             </Component>
+                <Component Id="cygssl_1.1.dll" Directory="bin" Guid="5A654B90-F0E0-4F39-996A-0D89416BF072">
+                <File Id="cygssl_1.1.dll" KeyPath="yes" Source="$(var.ResDir)\bin\cygssl-1.1.dll" />
+            </Component>
             <Component Id="cygstdc___6.dll" Directory="bin" Guid="DCEB9FAA-B615-4B7F-817C-1F90734A9041">
                 <File Id="cygstdc___6.dll" KeyPath="yes" Source="$(var.ResDir)\bin\cygstdc++-6.dll" />
             </Component>
             <Component Id="cygwin1.dll" Directory="bin" Guid="6A0FF5DF-1424-4818-B606-2F4A20136CB7">
                 <File Id="cygwin1.dll" KeyPath="yes" Source="$(var.ResDir)\bin\cygwin1.dll" />
+            </Component>
+            <Component Id="cygnettle_6.dll" Directory="bin" Guid="393F663A-D136-42BE-B60A-6CAE2C1DDE11">
+                <File Id="cygnettle_6.dll" KeyPath="yes" Source="$(var.ResDir)\bin\cygnettle-6.dll" />
             </Component>
             <Component Id="CYGWIN_LICENSE" Directory="bin" Guid="F6EE116C-8ED4-4A8C-A0D4-5FFE38659F25">
                 <File Id="CYGWIN_LICENSE" KeyPath="yes" Source="$(var.ResDir)\bin\CYGWIN_LICENSE" />
@@ -243,8 +255,8 @@
             <Component Id="squid.conf" Directory="squid" Guid="4A22A489-9640-42E1-BCEF-36FC8D43AA88">
                 <File Id="squid.conf" KeyPath="yes" Source="$(var.ResDir)\etc\squid\squid.conf" />
             </Component>
-            <Component Id="squid.conf.default" Directory="squid" Guid="570599F3-866A-4593-937D-09B6F7B40D82">
-                <File Id="squid.conf.default" KeyPath="yes" Source="$(var.ResDir)\etc\squid\squid.conf.default" />
+            <Component Id="allowed_domains.acl" Directory="squid" Guid="BE1BF532-8C53-46C9-8EBC-45442694333D">
+                <File Id="allowed_domains.acl" KeyPath="yes" Source="$(var.ResDir)\etc\squid\allowed-domains.acl" />
             </Component>
             <Component Id="squid.conf.diladele" Directory="squid" Guid="8881754C-C8D7-469E-AD66-4B4CD2643433">
                 <File Id="squid.conf.diladele" KeyPath="yes" Source="$(var.ResDir)\etc\squid\squid.conf.diladele" />
@@ -420,8 +432,14 @@
             <Component Id="cygcrypt_0.dll_1" Directory="squid_1" Guid="BE12D5AC-714A-461D-B683-E3AEA97838B1">
                 <File Id="cygcrypt_0.dll_1" KeyPath="yes" Source="$(var.ResDir)\lib\squid\cygcrypt-0.dll" />
             </Component>
+            <Component Id="cygcrypto_1.1.dll_1" Directory="squid_1" Guid="D408D7E0-8944-41A4-93BA-1B03A8AA386B">
+                <File Id="cygcrypto_1.1.dll_1" KeyPath="yes" Source="$(var.ResDir)\lib\squid\cygcrypto-1.1.dll" />
+            </Component>
             <Component Id="cygcrypto_1.0.0.dll_1" Directory="squid_1" Guid="805DAEF8-5C53-4D0A-B7B7-967997C6C397">
                 <File Id="cygcrypto_1.0.0.dll_1" KeyPath="yes" Source="$(var.ResDir)\lib\squid\cygcrypto-1.0.0.dll" />
+            </Component> 
+            <Component Id="cygcrypt_2.dll_1" Directory="squid_1" Guid="522EAB04-6319-43E6-B15A-1B8E894B519F">
+                <File Id="cygcrypt_2.dll_1" KeyPath="yes" Source="$(var.ResDir)\lib\squid\cygcrypt-2.dll" />
             </Component>
             <Component Id="cygdb_5.3.dll_1" Directory="squid_1" Guid="F97A6C4B-A80D-462C-B805-4BF105B1A8B5">
                 <File Id="cygdb_5.3.dll_1" KeyPath="yes" Source="$(var.ResDir)\lib\squid\cygdb-5.3.dll" />
@@ -468,11 +486,17 @@
             <Component Id="cygssl_1.0.0.dll_1" Directory="squid_1" Guid="4C96C81A-6DCB-4FEE-8953-900E7BD56C0F">
                 <File Id="cygssl_1.0.0.dll_1" KeyPath="yes" Source="$(var.ResDir)\lib\squid\cygssl-1.0.0.dll" />
             </Component>
+            <Component Id="cygssl_1.1.dll_1" Directory="squid_1" Guid="7D2CC652-B78E-4F1D-849F-E21E10E38DAE">
+                <File Id="cygssl_1.1.dll_1" KeyPath="yes" Source="$(var.ResDir)\lib\squid\cygssl-1.1.dll" />
+            </Component>
             <Component Id="cygstdc___6.dll_1" Directory="squid_1" Guid="A2D8E59A-40EF-48C9-B34D-B9F224F48342">
                 <File Id="cygstdc___6.dll_1" KeyPath="yes" Source="$(var.ResDir)\lib\squid\cygstdc++-6.dll" />
             </Component>
             <Component Id="cygwin1.dll_1" Directory="squid_1" Guid="E1024674-AD25-4199-BC78-B3BA6FD79CAB">
                 <File Id="cygwin1.dll_1" KeyPath="yes" Source="$(var.ResDir)\lib\squid\cygwin1.dll" />
+            </Component>
+            <Component Id="cygnettle_6.dll_1" Directory="squid_1" Guid="6A321B34-4D80-4EEB-A49D-2E9F21DF1EFC">
+                <File Id="cygnettle_6.dll_1" KeyPath="yes" Source="$(var.ResDir)\lib\squid\cygnettle-6.dll" />
             </Component>
             <Component Id="cygxml2_2.dll_1" Directory="squid_1" Guid="3764117F-5628-4DD1-B00F-CDACB60949AA">
                 <File Id="cygxml2_2.dll_1" KeyPath="yes" Source="$(var.ResDir)\lib\squid\cygxml2-2.dll" />
