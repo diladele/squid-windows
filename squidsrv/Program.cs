@@ -4,6 +4,7 @@
  * Diladele Squid Installer software is distributed under GPL license.
  */
 
+using System;
 using System.ServiceProcess;
 
 namespace Diladele.Squid.Service
@@ -13,14 +14,17 @@ namespace Diladele.Squid.Service
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
-        static void Main()
+        static void Main(string[] args)
         {
-            ServiceBase[] ServicesToRun;
-            ServicesToRun = new ServiceBase[]
-            { 
-                new SquidService()
-            };
-            ServiceBase.Run(ServicesToRun);
+            var squidService = new SquidService();
+            if (Environment.UserInteractive)
+            {
+                squidService.TestStartupAndStop(args);
+            }
+            else
+            {
+                ServiceBase.Run(new ServiceBase[] { squidService });
+            }
         }
     }
 }

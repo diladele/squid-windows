@@ -1,1 +1,1 @@
-heat.exe dir ".\res" -dr INSTALLFOLDER -cg SquidFilesGroup -gg -g1 -sf -srd -ke -sw5150 -nologo -suid -var "var.ResDir" -out ".\installer\SquidResourceFiles.wxs"
+"c:\Program Files (x86)\WiX Toolset v3.11\bin\heat.exe" dir ".\res" -dr INSTALLFOLDER -cg SquidFilesGroup -gg -g1 -sf -srd -ke -sw5150 -nologo -suid -var "var.ResDir" -out ".\installer\SquidResourceFiles.wxs"
