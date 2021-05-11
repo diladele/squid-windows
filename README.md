@@ -19,7 +19,7 @@ In case you need a high-quality HTTP(s) traffic filtering solution on Windows, w
 
 Web Filtering Proxy is a native Windows web filtering solution that seamlessly integrates with Active Directory and provides rich content and web filtering functionality to sanitize Internet traffic passing into home/enterprise networks. It may be used to block illegal or potentially malicious file downloads, remove annoying advertisements, prevent access to various categories of web sites and block resources with adult/explicit content.
 
-To try it out please visit the [download page](https://webproxy.diladele.com/). 
+To try out a community-free version please visit the [download page](https://webproxy.diladele.com/). 
 Administator guide and tutorials are available [here](https://webproxy.diladele.com/docs/). 
 
 **Help**
