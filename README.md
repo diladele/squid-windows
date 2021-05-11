@@ -13,14 +13,14 @@ This project provides MSI Windows Installer for Squid Proxy Server. It enables S
 
 Please have a look at the tutorial describing [*How to Install Squid 3.5 on Windows*](https://docs.diladele.com/howtos/installing_squid_windows/index.html).
 
-**HTTP and HTTPS Filtering on Windows Using Squid and ICAP**
+**Native HTTP and HTTPS Filtering on Windows**
 -----------------------------
-In case you need a high-quality HTTP(s) traffic filtering solution on Windows, we recommend **Diladele Web Safety** running in Docker. 
+In case you need a high-quality HTTP(s) traffic filtering solution on Windows, we recommend [**Diladele Web Filtering Proxy**](https://webproxy.diladele.com/). 
 
-Web Safety for Squid Proxy is an ICAP web filtering server that integrates with Squid proxy server and provides rich content and web filtering functionality to sanitize Internet traffic passing into an internal home/enterprise network. It may be used to block illegal or potentially malicious file downloads, remove annoying advertisements, prevent access to various categories of web sites and block resources with adult/explicit content.
+Web Filtering Proxy is a native Windows web filtering solution that seamlessly integrates with Active Directory and provides rich content and web filtering functionality to sanitize Internet traffic passing into home/enterprise networks. It may be used to block illegal or potentially malicious file downloads, remove annoying advertisements, prevent access to various categories of web sites and block resources with adult/explicit content.
 
-To try it out please have a look at the [Windows 10 tutorial](https://docs.diladele.com/docker/docker_windows_10/index.html). 
-> For Windows 7 please have a look [here](https://docs.diladele.com/docker/docker_windows). 
+To try it out please visit the [download page](https://webproxy.diladele.com/). 
+Administator guide and tutorials are available [here](https://webproxy.diladele.com/docs/). 
 
 **Help**
 --------
