@@ -5,3 +5,17 @@ installer/bin/
 squid/diladele/
 *.suo
 sign.bat
+.vs/squidwin/v16/Browse.VC.db
+.vs/squidwin/v16/Browse.VC.opendb
+.vs/squidwin/v16/Server/sqlite3/db.lock
+.vs/squidwin/v16/Server/sqlite3/storage.ide
+.vs/squidwin/v16/ipch/AutoPCH/5cd8d9314fbf27e7/LT-UNLINKD.ipch
+.vs/squidwin/v16/Server/sqlite3/storage.ide-shm
+.vs/squidwin/v16/Server/sqlite3/storage.ide-wal
+res/etc/squid/allowed-domains.acl
+res/etc/squid/squid.conf_canon
+bin/x64/Release/squid.msi
+bin/x64/Debug/squid.msi
+bin/x64/Release/squid.7z
+res/bin/squid.exe
+
