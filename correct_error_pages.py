@@ -1,4 +1,4 @@
-#!/usr/bin/env python 
+#!/usr/bin/env python
 import sys
 import os
 import platform
@@ -32,14 +32,14 @@ def correct_symbolic_links(error_directory):
         for file in files:
             if os.path.isdir(file):
                 directories.append(file)
-        
+
         for file in files:
             if os.path.isfile(file):
                 prefix = ntpath.basename(file).split("-", 1)[0]
                 for dir in directories:
                     dirprefix = ntpath.basename(dir).split("-", 1)[0]
                     if dirprefix == prefix:
-                        print dirprefix + " " + prefix
+                        print(dirprefix + " " + prefix)
                         os.remove(file)
                         symlink(dir, file)
                         break
@@ -49,12 +49,12 @@ def correct_symbolic_links(error_directory):
 def main():
     parser = argparse.ArgumentParser(description='Builds Squid target directory structure.')
     parser.add_argument("--errorpages", help="Absolute path to the folder with error pages.", required=True)
-    
-    args = parser.parse_args()    
-    
+
+    args = parser.parse_args()
+
     correct_symbolic_links(args.errorpages)
 
 #
 # entry point
 #
-main() 
+main()

@@ -35,57 +35,90 @@ namespace Diladele.Squid.Service
             this.locker = new object();
         }
 
+        internal void TestStartupAndStop(string[] args)
+        {
+            this.OnStart(args);
+            Console.WriteLine("Press enter to finish");
+            Console.ReadLine();
+            this.OnStop();
+        }
+
         protected override void OnStart(string[] args)
         {
-            this.eventLog.WriteEntry("Squid is starting...", EventLogEntryType.Information);
+            try
+            {
+                this.eventLog.WriteEntry("Squid is starting...", EventLogEntryType.Information);
 
-            StartSquidProcess();
+                StartSquidProcess();
 
-            this.timer = new System.Threading.Timer(this.OnTimer, null, TimeSpan.Zero, TimeSpan.FromSeconds(20));
-            this.updateTimer = new System.Threading.Timer(this.OnUpdateTimer, null, TimeSpan.Zero, TimeSpan.FromHours(6));
+                this.timer = new System.Threading.Timer(this.OnTimer, null, TimeSpan.Zero, TimeSpan.FromSeconds(20));
+                this.updateTimer = new System.Threading.Timer(this.OnUpdateTimer, null, TimeSpan.Zero, TimeSpan.FromHours(6));
+            }
+            catch (Exception e)
+            {
+                eventLog.WriteEntry("Squid could not be started: " + e.Message, EventLogEntryType.Error);
+                throw;
+            }
         }
 
         protected override void OnStop()
         {
-            this.eventLog.WriteEntry("Squid is stopping...", EventLogEntryType.Information);
-
-            if (timer != null)
+            try
             {
-                timer.Dispose();
-                timer = null;
-            }
+                this.eventLog.WriteEntry("Squid is stopping...", EventLogEntryType.Information);
 
-            if (updateTimer != null)
+                if (timer != null)
+                {
+                    timer.Dispose();
+                    timer = null;
+                }
+
+                if (updateTimer != null)
+                {
+                    updateTimer.Dispose();
+                    updateTimer = null;
+                }
+
+                lock (this.locker)
+                {
+                    this.Kill(this.squid);
+                    this.squid = null;
+                }
+
+                var processes = Process.GetProcessesByName("squid");
+                foreach (var p in processes)
+                {
+                    this.Kill(p);
+                }
+
+                this.eventLog.WriteEntry("Squid stopped.", EventLogEntryType.Information);
+            }
+            catch (Exception e)
             {
-                updateTimer.Dispose();
-                updateTimer = null;
+                eventLog.WriteEntry("Squid could not be stopped: " + e.Message, EventLogEntryType.Error);
+                throw;
             }
-
-            lock(this.locker)
-            {
-                this.Kill(this.squid);
-                this.squid = null;
-            }
-
-            var processes = Process.GetProcessesByName("squid");
-            foreach (var p in processes)
-            {
-                this.Kill(p);
-            }
-
-            this.eventLog.WriteEntry("Squid stopped.", EventLogEntryType.Information);
         }
+
         private void OnTimer(object state)
         {
-            lock (this.locker)
+            try
             {
-                var processes = Process.GetProcessesByName("squid");
-                if (processes == null || processes.Length == 0)
+                lock (this.locker)
                 {
-                    eventLog.WriteEntry("Cannot find a squid process. Trying to start it...", EventLogEntryType.Information);
-                    this.squid = null;
-                    StartSquidProcess();
+                    var processes = Process.GetProcessesByName("squid");
+                    if (processes == null || processes.Length == 0)
+                    {
+                        eventLog.WriteEntry("Cannot find a squid process. Trying to start it...", EventLogEntryType.Information);
+                        this.squid = null;
+                        StartSquidProcess();
+                    }
                 }
+            }
+            catch (Exception e)
+            {
+                eventLog.WriteEntry("Squid could not be restarted: " + e.Message, EventLogEntryType.Error);
+                throw;
             }
         }
 
@@ -98,7 +131,7 @@ namespace Diladele.Squid.Service
                     var remoteVersionFile = PredefinedPaths.InstallationFolder + @"\var\log\squid.version";
 
                     var req = (HttpWebRequest)WebRequest.Create("https://defs.diladele.com/squid/version/windows");
-                    req.UserAgent = "Squid3.5.28/" + Environment.OSVersion.VersionString + "/x64 (win;0-0-0-0)";
+                    req.UserAgent = "Squid4.14/" + Environment.OSVersion.VersionString + "/x64 (win;0-0-0-0)";
                     req.Headers.Add("Authorization", "Token 0000000000000000");
 
                     WebResponse resp = req.GetResponse();
@@ -124,8 +157,10 @@ namespace Diladele.Squid.Service
                 this.squid = new Process();
                 this.squid.StartInfo.FileName = PredefinedPaths.InstallationFolder + @"\bin\squid.exe";
                 this.squid.StartInfo.CreateNoWindow = true;
+                this.squid.StartInfo.Arguments = "-N";
 
                 this.squid.Start();
+
                 this.eventLog.WriteEntry(
                     string.Format(
                         CultureInfo.InvariantCulture,
@@ -150,6 +185,7 @@ namespace Diladele.Squid.Service
                         CultureInfo.InvariantCulture,
                         "Could not terminate squid process '{0}'.",
                         p.Id),
+
                     EventLogEntryType.Warning);
             }
         }
