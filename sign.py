@@ -2,35 +2,65 @@ import os
 import argparse
 import subprocess
 
-def sign(file, pfx):
-    
-    cmd = " ".join(
-        [
-            "c:/Program Files (x86)/Windows Kits/8.1/bin/x64/signtool.exe", 
-            "sign",
-            "/a",
-            "/tr",
-            "http://rfc3161timestamp.globalsign.com/advanced",
-            "/td",
-            "SHA256",
-            "\"" + os.path.abspath(file) + "\""
-        ]
-    )
-    if 0 != subprocess.call(cmd) :
-        raise Exception("can not sign file " + cmd) 
 
 #
-# code
 #
+#
+class signer:
+
+    def __init__(self):
+
+        self.signtool = "c:/program files (x86)/windows kits/10/bin/10.0.19041.0/x64/signtool.exe"
+
+
+    def sign(self, file):
+
+        if not os.path.isfile(file):
+            raise Exception("file " + file + " does not exist!") 
+
+        cmd = " ".join(
+            [
+                self.signtool, 
+                "sign",
+                "/debug",
+                "/a",
+                "/tr",
+                "http://rfc3161timestamp.globalsign.com/advanced",
+                "/td",
+                "SHA256",
+                "\"" + os.path.abspath(file) + "\""
+            ]
+        )
+        if 0 != subprocess.call(cmd) :
+            raise Exception("can not sign file " + cmd) 
+
+    def verify(self, file):
+
+        if not os.path.isfile(file):
+            raise Exception("file " + file + " does not exist!") 
+
+        cmd = " ".join(
+            [
+                self.signtool, 
+                "verify",
+                "/debug",
+                "/v",
+                "/pa",
+                "\"" + os.path.abspath(file) + "\""
+            ]
+        )
+        if 0 != subprocess.call(cmd) :
+            raise Exception("can not verify file " + cmd) 
+
 def main():
-    parser = argparse.ArgumentParser(description='Signs MSI installer.')
-    parser.add_argument("--msi", help="full path to MSI to sign", required=True)
-    parser.add_argument("--pfx", help="full path to PFX encoded certificate", required=True)
-    
-    args = parser.parse_args()    
-    sign(args.msi, args.pfx)
+    path = "m:\\squid-windows\\bin\\x64\\Debug\\squid.msi"
+
+    signer().sign(path)
+    signer().verify(path)
+
+
 
 #
-# entry point
+#
 #
 main()
