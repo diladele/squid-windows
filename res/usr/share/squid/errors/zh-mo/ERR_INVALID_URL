@@ -1,1 +1,46 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"> <html><head> <meta http-equiv="Content-Type" content="text/html; charset=utf-8"> <title>错误: 您所请求的网址（URL）无法获取</title> <style type="text/css"><!--   %l  body :lang(fa) { direction: rtl; font-size: 100%; font-family: Tahoma, Roya, sans-serif; float: right; } :lang(he) { direction: rtl; }  --></style> </head><body id=%c> <div id="titles"> <h1>ERROR</h1> <h2>The requested URL could not be retrieved</h2> </div> <hr>  <div id="content"> <p>当尝试取回该 URL 时遇到下面的错误：<a href="%U">%U</a></p>  <blockquote id="error"> <p><b>无效的网址</b></p> </blockquote>  <p>请求的 URL 地址有些部分不正确。</p>  <p>可能的问题包括：</p> <ul> <li><p>缺少或不正确的通讯协议（应该如 <q>http://</q>或类似的开头）</p></li> <li><p>缺少欲连结的主机名称</p></li> <li><p>网址路径中有不合法双重转义符</p></li> <li><p>主机名称中包含不合法的字符；下划线是不允许的。</p></li> </ul>  <p>缓存服务器的管理员 <a href="mailto:%w%W">%w</a>.</p> <br> </div>  <hr> <div id="footer"> <p>已由 %h (%s) 生成 %T</p> <!-- %c --> </div> </body></html> 
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+<meta type="copyright" content="Copyright (C) 1996-2021 The Squid Software Foundation and contributors">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>錯誤: 欲連結之網址（URL）無法正確的傳回</title>
+<style type="text/css"><!-- 
+ %l
+
+body
+:lang(fa) { direction: rtl; font-size: 100%; font-family: Tahoma, Roya, sans-serif; float: right; }
+:lang(he) { direction: rtl; }
+ --></style>
+</head><body id="%c">
+<div id="titles">
+<h1>錯誤</h1>
+<h2>欲連結之網址（URL）無法正確的傳回</h2>
+</div>
+<hr>
+
+<div id="content">
+<p>The following error was encountered while trying to retrieve the URL: <a href="%U">%U</a></p>
+
+<blockquote id="error">
+<p><b>不正確的位置</b></p>
+</blockquote>
+
+<p>Some aspect of the requested URL is incorrect.</p>
+
+<p>Some possible problems are:</p>
+<ul>
+<li><p>缺少或不正確的通訊協定宣告（應該是  <q>http://</q> 或是類似的開頭） </p></li>
+<li><p>缺少欲連結的主機名稱</p></li>
+<li><p>不合法的網站連結路徑（缺少 <q>//</q>）</p></li>
+<li><p>欲連結的主機名稱包含不合法的字元；底線這個字元是不被允許存在的。</p></li>
+</ul>
+
+<p>Your cache administrator is <a href="mailto:%w%W">%w</a>.</p>
+<br>
+</div>
+
+<hr>
+<div id="footer">
+<p>Generated %T by %h (%s)</p>
+<!-- %c -->
+</div>
+</body></html>

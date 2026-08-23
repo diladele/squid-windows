@@ -51,7 +51,9 @@ class copier:
             "cygsasl2-3.dll",
             "cygcrypt-0.dll",
             "cygdb-5.3.dll",
-			"cyglzma-5.dll"
+            "cyglzma-5.dll",
+            "cygcrypto-3.dll",
+            "cygssl-3.dll"
         ]
 
         for dll in required_dlls:
@@ -93,7 +95,7 @@ class copier:
         # copy usr\share\squid
         from_usr_share_squid = os.path.join(self.src, "usr", "share", "squid")
         to_usr_share_squid = os.path.join(self.dest, "usr", "share", "squid")
-        #shutil.copytree(from_usr_share_squid, to_usr_share_squid)
+        # shutil.copytree(from_usr_share_squid, to_usr_share_squid)
 
         # create var\cache\squid
         to_var_cache_squid = os.path.join(self.dest, "var", "cache", "squid")
