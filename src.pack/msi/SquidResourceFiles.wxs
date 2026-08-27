@@ -12,703 +12,703 @@
     </Fragment>
     <Fragment>
         <ComponentGroup Id="SquidFilesGroup">
-            <Component Id="CONTRIBUTORS" Directory="bin" Guid="B360C995-AC39-4364-A0A8-57CE737DF059">
+            <Component Id="CONTRIBUTORS" Directory="bin" Guid="4F6C654E-0E55-450D-9727-D35514642A41">
                 <File Id="CONTRIBUTORS" KeyPath="yes" Source="$(var.ResDir)\bin\CONTRIBUTORS" />
             </Component>
-            <Component Id="CREDITS" Directory="bin" Guid="06FD5ABD-03F2-40B9-A0F8-4E2AAE4DD042">
+            <Component Id="CREDITS" Directory="bin" Guid="FC55B6AE-8477-4470-866E-73DFEB3917F9">
                 <File Id="CREDITS" KeyPath="yes" Source="$(var.ResDir)\bin\CREDITS" />
             </Component>
-            <Component Id="cygcom_err_2.dll" Directory="bin" Guid="FB356B33-2175-448B-BEF0-A22FC310284A">
+            <Component Id="cygcom_err_2.dll" Directory="bin" Guid="2A16CEB0-4202-4955-A6B1-9487F05FC659">
                 <File Id="cygcom_err_2.dll" KeyPath="yes" Source="$(var.ResDir)\bin\cygcom_err-2.dll" />
             </Component>
-            <Component Id="cygcrypto_1.1.dll" Directory="bin" Guid="257BD083-1714-4E0F-A1C3-C50F6A94A7BD">
+            <Component Id="cygcrypto_1.1.dll" Directory="bin" Guid="FBB309A1-77A9-4985-B500-D641411E51A0">
                 <File Id="cygcrypto_1.1.dll" KeyPath="yes" Source="$(var.ResDir)\bin\cygcrypto-1.1.dll" />
             </Component>
-            <Component Id="cygcrypto_3.dll" Directory="bin" Guid="984AC504-61C6-4C42-AABC-3AE94F302B0A">
+            <Component Id="cygcrypto_3.dll" Directory="bin" Guid="F2511E30-28C7-4C9C-AE5E-5084AEAE91C4">
                 <File Id="cygcrypto_3.dll" KeyPath="yes" Source="$(var.ResDir)\bin\cygcrypto-3.dll" />
             </Component>
-            <Component Id="cygdb_5.3.dll" Directory="bin" Guid="4C9043C9-B3BE-4B4E-9897-E75A252D4D68">
+            <Component Id="cygdb_5.3.dll" Directory="bin" Guid="BE06EC66-AF19-4893-BBF6-52D4DBC9DEFB">
                 <File Id="cygdb_5.3.dll" KeyPath="yes" Source="$(var.ResDir)\bin\cygdb-5.3.dll" />
             </Component>
-            <Component Id="cygexpat_1.dll" Directory="bin" Guid="DBED2D45-0447-40DC-9420-D59A5BA60512">
+            <Component Id="cygexpat_1.dll" Directory="bin" Guid="05E3B970-D180-44A7-88BF-53A43487CF2D">
                 <File Id="cygexpat_1.dll" KeyPath="yes" Source="$(var.ResDir)\bin\cygexpat-1.dll" />
             </Component>
-            <Component Id="cyggcc_s_seh_1.dll" Directory="bin" Guid="A10B3490-B5B3-4155-8873-09ADA86CD8EA">
+            <Component Id="cyggcc_s_seh_1.dll" Directory="bin" Guid="C5074A2A-C3AA-46F4-9A58-FD3D8F7DD161">
                 <File Id="cyggcc_s_seh_1.dll" KeyPath="yes" Source="$(var.ResDir)\bin\cyggcc_s-seh-1.dll" />
             </Component>
-            <Component Id="cyggssapi_krb5_2.dll" Directory="bin" Guid="A280274C-0699-44D1-ACB5-F66CF360A86F">
+            <Component Id="cyggssapi_krb5_2.dll" Directory="bin" Guid="7C8046C6-5B37-466C-8C30-D7CCF63BDFC2">
                 <File Id="cyggssapi_krb5_2.dll" KeyPath="yes" Source="$(var.ResDir)\bin\cyggssapi_krb5-2.dll" />
             </Component>
-            <Component Id="cygiconv_2.dll" Directory="bin" Guid="87E2C54C-683B-4AE2-BA9E-4ADD47D70E9E">
+            <Component Id="cygiconv_2.dll" Directory="bin" Guid="095C918C-8188-470C-81ED-A4B00BAA0455">
                 <File Id="cygiconv_2.dll" KeyPath="yes" Source="$(var.ResDir)\bin\cygiconv-2.dll" />
             </Component>
-            <Component Id="cygintl_8.dll" Directory="bin" Guid="29BD5911-3FDD-452C-AAD6-404877B313B2">
+            <Component Id="cygintl_8.dll" Directory="bin" Guid="9FDDA221-FAE4-46F2-9744-317E2BC3DB8F">
                 <File Id="cygintl_8.dll" KeyPath="yes" Source="$(var.ResDir)\bin\cygintl-8.dll" />
             </Component>
-            <Component Id="cygk5crypto_3.dll" Directory="bin" Guid="A47538D5-CA21-457D-B2DD-61C5ED09642B">
+            <Component Id="cygk5crypto_3.dll" Directory="bin" Guid="0047952C-09F5-4B62-B06A-0590EEA5BBEE">
                 <File Id="cygk5crypto_3.dll" KeyPath="yes" Source="$(var.ResDir)\bin\cygk5crypto-3.dll" />
             </Component>
-            <Component Id="cygkrb5_3.dll" Directory="bin" Guid="73D13A2A-D693-4742-AB3D-FB3E1841EA81">
+            <Component Id="cygkrb5_3.dll" Directory="bin" Guid="06CBE3A4-309E-4EB7-83D2-BECC48500573">
                 <File Id="cygkrb5_3.dll" KeyPath="yes" Source="$(var.ResDir)\bin\cygkrb5-3.dll" />
             </Component>
-            <Component Id="cygkrb5support_0.dll" Directory="bin" Guid="BC53F20F-CF43-4452-89DF-E148795CABF0">
+            <Component Id="cygkrb5support_0.dll" Directory="bin" Guid="FF2E5FB6-5923-4A0A-9751-9996F23F5274">
                 <File Id="cygkrb5support_0.dll" KeyPath="yes" Source="$(var.ResDir)\bin\cygkrb5support-0.dll" />
             </Component>
-            <Component Id="cyglber_2_4_2.dll" Directory="bin" Guid="795F85C4-FBA9-4813-9327-A844EEA2615E">
+            <Component Id="cyglber_2_4_2.dll" Directory="bin" Guid="F0924343-FDF4-47AC-AB53-BC0A3DBD3419">
                 <File Id="cyglber_2_4_2.dll" KeyPath="yes" Source="$(var.ResDir)\bin\cyglber-2-4-2.dll" />
             </Component>
-            <Component Id="cygldap_2_4_2.dll" Directory="bin" Guid="F1058AF4-CA49-4219-A8A5-DB9D9D66A4C2">
+            <Component Id="cygldap_2_4_2.dll" Directory="bin" Guid="56E179C3-6A1C-4CE7-A473-AE6092509E1D">
                 <File Id="cygldap_2_4_2.dll" KeyPath="yes" Source="$(var.ResDir)\bin\cygldap-2-4-2.dll" />
             </Component>
-            <Component Id="cygltdl_7.dll" Directory="bin" Guid="14388D6A-F444-4901-BCFD-4B984AD6E516">
+            <Component Id="cygltdl_7.dll" Directory="bin" Guid="AAF85E35-3A86-4356-B8A8-3261CC8308E3">
                 <File Id="cygltdl_7.dll" KeyPath="yes" Source="$(var.ResDir)\bin\cygltdl-7.dll" />
             </Component>
-            <Component Id="cyglzma_5.dll" Directory="bin" Guid="03A200FC-4A62-43BA-8575-2980EDDF60AC">
+            <Component Id="cyglzma_5.dll" Directory="bin" Guid="E96AB2BE-E46C-40E5-BE61-62F4C903BA4A">
                 <File Id="cyglzma_5.dll" KeyPath="yes" Source="$(var.ResDir)\bin\cyglzma-5.dll" />
             </Component>
-            <Component Id="cygsasl2_3.dll" Directory="bin" Guid="E35CB618-58A1-4501-A26A-B417548D2CFC">
+            <Component Id="cygsasl2_3.dll" Directory="bin" Guid="4CD84153-8911-46F9-B138-1B44A87C4D17">
                 <File Id="cygsasl2_3.dll" KeyPath="yes" Source="$(var.ResDir)\bin\cygsasl2-3.dll" />
             </Component>
-            <Component Id="cygssl_1.1.dll" Directory="bin" Guid="DF1BED04-548F-4841-B812-E376CD6FFF5B">
+            <Component Id="cygssl_1.1.dll" Directory="bin" Guid="0B184ED9-9605-4E86-A2F1-4F672E10637A">
                 <File Id="cygssl_1.1.dll" KeyPath="yes" Source="$(var.ResDir)\bin\cygssl-1.1.dll" />
             </Component>
-            <Component Id="cygssl_3.dll" Directory="bin" Guid="05598186-0371-4C09-AF22-F1066EE81621">
+            <Component Id="cygssl_3.dll" Directory="bin" Guid="A5E3DA5B-90A8-4ADD-843F-E2EF4E25F271">
                 <File Id="cygssl_3.dll" KeyPath="yes" Source="$(var.ResDir)\bin\cygssl-3.dll" />
             </Component>
-            <Component Id="cygstdc___6.dll" Directory="bin" Guid="07BA9EF2-B11A-4736-B632-3596C83BCC5A">
+            <Component Id="cygstdc___6.dll" Directory="bin" Guid="B332DDA7-E2B6-4027-9577-01F9564A8DF4">
                 <File Id="cygstdc___6.dll" KeyPath="yes" Source="$(var.ResDir)\bin\cygstdc++-6.dll" />
             </Component>
-            <Component Id="cygwin1.dll" Directory="bin" Guid="B0B3D4FE-4A9C-414A-BE16-4D50ABCA406D">
+            <Component Id="cygwin1.dll" Directory="bin" Guid="18D6EE6B-7DD8-4E74-8294-3622B3D1BFA6">
                 <File Id="cygwin1.dll" KeyPath="yes" Source="$(var.ResDir)\bin\cygwin1.dll" />
             </Component>
-            <Component Id="CYGWIN_LICENSE" Directory="bin" Guid="D8D5AC31-9907-4956-9CE6-13F66A85CF57">
+            <Component Id="CYGWIN_LICENSE" Directory="bin" Guid="D66FFEA7-ADE0-430B-8058-09D61EDC29C9">
                 <File Id="CYGWIN_LICENSE" KeyPath="yes" Source="$(var.ResDir)\bin\CYGWIN_LICENSE" />
             </Component>
-            <Component Id="cygxml2_2.dll" Directory="bin" Guid="4B88DE23-8F1C-42D0-98BA-6EDB9E888CC3">
+            <Component Id="cygxml2_2.dll" Directory="bin" Guid="F612EAE7-A0B0-4A9E-B743-5CEBE9D7ECBB">
                 <File Id="cygxml2_2.dll" KeyPath="yes" Source="$(var.ResDir)\bin\cygxml2-2.dll" />
             </Component>
-            <Component Id="cygz.dll" Directory="bin" Guid="1667022D-44A2-4D45-A095-D20B0C908663">
+            <Component Id="cygz.dll" Directory="bin" Guid="0BA23728-D354-464D-BA1A-96BE2F1981CD">
                 <File Id="cygz.dll" KeyPath="yes" Source="$(var.ResDir)\bin\cygz.dll" />
             </Component>
-            <Component Id="LICENSE" Directory="bin" Guid="AAB36F00-3F5B-4941-9C3E-D7E33A1AD06F">
+            <Component Id="LICENSE" Directory="bin" Guid="56345EAD-44F8-45BB-ACFF-6B066501AAFF">
                 <File Id="LICENSE" KeyPath="yes" Source="$(var.ResDir)\bin\LICENSE" />
             </Component>
-            <Component Id="settings.json" Directory="bin" Guid="51F24920-C15C-4AC0-AF0A-23C4F56D4717">
+            <Component Id="settings.json" Directory="bin" Guid="30AE392D-36D4-4F04-92B5-D32486487FD0">
                 <File Id="settings.json" KeyPath="yes" Source="$(var.ResDir)\bin\settings.json" />
             </Component>
-            <Component Id="squid.exe" Directory="bin" Guid="1191045A-E982-4D24-A021-7CE6E282DDA9">
+            <Component Id="squid.exe" Directory="bin" Guid="BFA1754C-9B00-4744-8C6F-24D8F12190D7">
                 <File Id="squid.exe" KeyPath="yes" Source="$(var.ResDir)\bin\squid.exe" />
             </Component>
-            <Component Id="C672B3A1_033E_470E_83EC_A8798AC0A45F" Directory="dev" Guid="66B0014B-7FD8-45F8-88E7-8AF9B6ACB73B" KeyPath="yes">
+            <Component Id="E32CB6C0_770A_40A0_A856_3A1AF62326B3" Directory="dev" Guid="6E3CDF62-C49F-4756-B908-03E34CE3E50A" KeyPath="yes">
                 <CreateFolder />
             </Component>
-            <Component Id="_209D8742_9680_4450_8B83_B672BEDF81E1" Directory="shm" Guid="7329FA4C-58FA-45D9-9481-74BD4BFBD945" KeyPath="yes">
+            <Component Id="_5B5C7C60_B89A_445C_80FF_C2EF9E7F191B" Directory="shm" Guid="665DA8DB-DCAF-455D-AB31-8AEE2B1F4547" KeyPath="yes">
                 <CreateFolder />
             </Component>
-            <Component Id="errorpage.css" Directory="squid" Guid="15949CDA-1C82-4DF5-B077-2C6B3B18B920">
+            <Component Id="errorpage.css" Directory="squid" Guid="7CFDE3DD-5687-4EDB-B54A-16CB91DE54F7">
                 <File Id="errorpage.css" KeyPath="yes" Source="$(var.ResDir)\etc\squid\errorpage.css" />
             </Component>
-            <Component Id="errorpage.css.default" Directory="squid" Guid="18C52524-69A6-4F84-97FA-F25BE6499B84">
+            <Component Id="errorpage.css.default" Directory="squid" Guid="0CB9DE02-32B7-40B4-8102-D4A5B97742F4">
                 <File Id="errorpage.css.default" KeyPath="yes" Source="$(var.ResDir)\etc\squid\errorpage.css.default" />
             </Component>
-            <Component Id="mime.conf" Directory="squid" Guid="BCE08412-BCD6-4E01-AF1A-F7194085AB59">
+            <Component Id="mime.conf" Directory="squid" Guid="BE06D469-7EC8-4320-9539-67401849E98E">
                 <File Id="mime.conf" KeyPath="yes" Source="$(var.ResDir)\etc\squid\mime.conf" />
             </Component>
-            <Component Id="mime.conf.default" Directory="squid" Guid="B37F2A15-1B36-4CE3-A875-0BCE16DAB921">
+            <Component Id="mime.conf.default" Directory="squid" Guid="BAF1FB99-5883-4BEF-971D-5772EEDDE52A">
                 <File Id="mime.conf.default" KeyPath="yes" Source="$(var.ResDir)\etc\squid\mime.conf.default" />
             </Component>
-            <Component Id="squid.conf" Directory="squid" Guid="FA41143E-9565-4B4E-A046-D986BF0C7118">
+            <Component Id="squid.conf" Directory="squid" Guid="92886080-3E54-4ABE-A450-280D1AB26193">
                 <File Id="squid.conf" KeyPath="yes" Source="$(var.ResDir)\etc\squid\squid.conf" />
             </Component>
-            <Component Id="squid.conf.default" Directory="squid" Guid="2D3DAA75-B2C4-4653-85FA-70A949C1DE04">
+            <Component Id="squid.conf.default" Directory="squid" Guid="CBC5FB06-E3AF-4215-9AB1-28A648DAD24D">
                 <File Id="squid.conf.default" KeyPath="yes" Source="$(var.ResDir)\etc\squid\squid.conf.default" />
             </Component>
-            <Component Id="squid.conf.documented" Directory="squid" Guid="EE1B33C0-70B1-4820-B494-6CE5EC52F942">
+            <Component Id="squid.conf.documented" Directory="squid" Guid="8D79B0F5-7F97-41DC-9191-8401C98C3C6B">
                 <File Id="squid.conf.documented" KeyPath="yes" Source="$(var.ResDir)\etc\squid\squid.conf.documented" />
             </Component>
-            <Component Id="cert.pem" Directory="ssl" Guid="4527BBC6-CF7E-46A1-AC93-709940EF9B4D">
+            <Component Id="cert.pem" Directory="ssl" Guid="D55F8089-D947-4632-8C98-2C4FA5E17109">
                 <File Id="cert.pem" KeyPath="yes" Source="$(var.ResDir)\etc\ssl\cert.pem" />
             </Component>
-            <Component Id="ca_bundle.crt" Directory="certs" Guid="8AB05F5E-9D54-4B49-80AB-E7961AC2A7E6">
+            <Component Id="ca_bundle.crt" Directory="certs" Guid="F1A58BC0-6A9E-4549-A02B-BB9556EC7A95">
                 <File Id="ca_bundle.crt" KeyPath="yes" Source="$(var.ResDir)\etc\ssl\certs\ca-bundle.crt" />
             </Component>
-            <Component Id="ca_bundle.trust.crt" Directory="certs" Guid="A9DE9425-1251-413D-A13B-0B164E1137E5">
+            <Component Id="ca_bundle.trust.crt" Directory="certs" Guid="C3367B11-3E79-4FB2-8F5B-372793530451">
                 <File Id="ca_bundle.trust.crt" KeyPath="yes" Source="$(var.ResDir)\etc\ssl\certs\ca-bundle.trust.crt" />
             </Component>
-            <Component Id="basic_db_auth" Directory="squid_1" Guid="AA1B000D-9F74-4D0A-B165-7D0A66BA0D13">
+            <Component Id="basic_db_auth" Directory="squid_1" Guid="5A91ABBA-00B1-42EA-9236-CDE681D422E8">
                 <File Id="basic_db_auth" KeyPath="yes" Source="$(var.ResDir)\lib\squid\basic_db_auth" />
             </Component>
-            <Component Id="basic_fake_auth.exe" Directory="squid_1" Guid="A16F3190-0655-4F9B-875E-4208F40ABD6E">
+            <Component Id="basic_fake_auth.exe" Directory="squid_1" Guid="755E8FF6-A4D0-4C54-B415-A43C3F435169">
                 <File Id="basic_fake_auth.exe" KeyPath="yes" Source="$(var.ResDir)\lib\squid\basic_fake_auth.exe" />
             </Component>
-            <Component Id="basic_getpwnam_auth.exe" Directory="squid_1" Guid="80E3F762-9EB9-4A1B-9E08-A2D4C05BB1FF">
+            <Component Id="basic_getpwnam_auth.exe" Directory="squid_1" Guid="0B33B194-60C3-4D81-B677-8C667280F3CB">
                 <File Id="basic_getpwnam_auth.exe" KeyPath="yes" Source="$(var.ResDir)\lib\squid\basic_getpwnam_auth.exe" />
             </Component>
-            <Component Id="basic_ldap_auth.exe" Directory="squid_1" Guid="000FAFDD-BE9D-4DA2-B290-F28B55DC3EFA">
+            <Component Id="basic_ldap_auth.exe" Directory="squid_1" Guid="0ED5506E-32EE-4B8C-9DE8-45C6502C93AD">
                 <File Id="basic_ldap_auth.exe" KeyPath="yes" Source="$(var.ResDir)\lib\squid\basic_ldap_auth.exe" />
             </Component>
-            <Component Id="basic_ncsa_auth.exe" Directory="squid_1" Guid="EAF5592E-059F-478B-B38B-23595C0D45A7">
+            <Component Id="basic_ncsa_auth.exe" Directory="squid_1" Guid="5F4919B8-2F99-4E27-8813-B9B23ABC01EA">
                 <File Id="basic_ncsa_auth.exe" KeyPath="yes" Source="$(var.ResDir)\lib\squid\basic_ncsa_auth.exe" />
             </Component>
-            <Component Id="basic_pop3_auth" Directory="squid_1" Guid="7D29E422-516B-4AE3-85A6-23A76A369BDA">
+            <Component Id="basic_pop3_auth" Directory="squid_1" Guid="F0080832-C670-46BA-A4E9-D65CBC4A372B">
                 <File Id="basic_pop3_auth" KeyPath="yes" Source="$(var.ResDir)\lib\squid\basic_pop3_auth" />
             </Component>
-            <Component Id="basic_radius_auth.exe" Directory="squid_1" Guid="47779FAF-38A7-410C-BDF4-55F2395C3041">
+            <Component Id="basic_radius_auth.exe" Directory="squid_1" Guid="F20DE1A3-AFDD-4647-8658-EF1DE636BD3A">
                 <File Id="basic_radius_auth.exe" KeyPath="yes" Source="$(var.ResDir)\lib\squid\basic_radius_auth.exe" />
             </Component>
-            <Component Id="basic_sasl_auth.exe" Directory="squid_1" Guid="9FD6FFB6-E9C3-4D3D-AC31-6114331E49C8">
+            <Component Id="basic_sasl_auth.exe" Directory="squid_1" Guid="1E1855DA-14AB-4DAF-BE4B-7BA2A5FE12C8">
                 <File Id="basic_sasl_auth.exe" KeyPath="yes" Source="$(var.ResDir)\lib\squid\basic_sasl_auth.exe" />
             </Component>
-            <Component Id="basic_smb_auth.exe" Directory="squid_1" Guid="66D6FFD4-626B-49B4-8ED9-25B192B7E21D">
+            <Component Id="basic_smb_auth.exe" Directory="squid_1" Guid="E7032BE9-3E13-46E1-B86E-11C65C17E3CF">
                 <File Id="basic_smb_auth.exe" KeyPath="yes" Source="$(var.ResDir)\lib\squid\basic_smb_auth.exe" />
             </Component>
-            <Component Id="basic_smb_auth.sh" Directory="squid_1" Guid="64D7ED34-2E74-415C-9494-16C337890427">
+            <Component Id="basic_smb_auth.sh" Directory="squid_1" Guid="294318F0-00D3-40AB-9AE3-084B3C20D906">
                 <File Id="basic_smb_auth.sh" KeyPath="yes" Source="$(var.ResDir)\lib\squid\basic_smb_auth.sh" />
             </Component>
-            <Component Id="cert_tool" Directory="squid_1" Guid="0E217F09-169D-4B65-AE81-7B547AAD6D06">
+            <Component Id="cert_tool" Directory="squid_1" Guid="C2B6B91C-0364-4019-8991-248822EFEDCA">
                 <File Id="cert_tool" KeyPath="yes" Source="$(var.ResDir)\lib\squid\cert_tool" />
             </Component>
-            <Component Id="cygcom_err_2.dll_1" Directory="squid_1" Guid="6AFEAB3E-0CD7-42EF-85F7-0E8A8552213E">
+            <Component Id="cygcom_err_2.dll_1" Directory="squid_1" Guid="261A30C1-F715-4E0B-8415-0E3B9D446974">
                 <File Id="cygcom_err_2.dll_1" KeyPath="yes" Source="$(var.ResDir)\lib\squid\cygcom_err-2.dll" />
             </Component>
-            <Component Id="cygcrypto_1.1.dll_1" Directory="squid_1" Guid="7E37939E-E22C-42A8-A595-AA4BADA34B37">
+            <Component Id="cygcrypto_1.1.dll_1" Directory="squid_1" Guid="22910F9E-DA8A-489D-938F-81AAD758C664">
                 <File Id="cygcrypto_1.1.dll_1" KeyPath="yes" Source="$(var.ResDir)\lib\squid\cygcrypto-1.1.dll" />
             </Component>
-            <Component Id="cygcrypto_3.dll_1" Directory="squid_1" Guid="AC242B2F-3E89-4055-9E6A-3DEF5A6205C8">
+            <Component Id="cygcrypto_3.dll_1" Directory="squid_1" Guid="12CD1922-107D-4D40-8766-05F8F96E7329">
                 <File Id="cygcrypto_3.dll_1" KeyPath="yes" Source="$(var.ResDir)\lib\squid\cygcrypto-3.dll" />
             </Component>
-            <Component Id="cygdb_5.3.dll_1" Directory="squid_1" Guid="B7932D54-08A7-4A1F-AD8F-D7B6969702CF">
+            <Component Id="cygdb_5.3.dll_1" Directory="squid_1" Guid="A30BA868-F4C1-48BE-B2E5-C2C64BE7E246">
                 <File Id="cygdb_5.3.dll_1" KeyPath="yes" Source="$(var.ResDir)\lib\squid\cygdb-5.3.dll" />
             </Component>
-            <Component Id="cygexpat_1.dll_1" Directory="squid_1" Guid="D7212FF5-4E2D-42BF-929B-84290D503885">
+            <Component Id="cygexpat_1.dll_1" Directory="squid_1" Guid="719FB612-4696-4FAD-A8A4-B38C68670528">
                 <File Id="cygexpat_1.dll_1" KeyPath="yes" Source="$(var.ResDir)\lib\squid\cygexpat-1.dll" />
             </Component>
-            <Component Id="cyggcc_s_seh_1.dll_1" Directory="squid_1" Guid="B7B5C054-096C-48B2-84A1-07B732B7E1DB">
+            <Component Id="cyggcc_s_seh_1.dll_1" Directory="squid_1" Guid="49BEC743-6D68-4F9D-B60C-9DFB7D5F9C77">
                 <File Id="cyggcc_s_seh_1.dll_1" KeyPath="yes" Source="$(var.ResDir)\lib\squid\cyggcc_s-seh-1.dll" />
             </Component>
-            <Component Id="cyggssapi_krb5_2.dll_1" Directory="squid_1" Guid="13DF6F12-D42A-4997-AD2B-535EE64EFAB3">
+            <Component Id="cyggssapi_krb5_2.dll_1" Directory="squid_1" Guid="59852DE3-9046-46AA-8503-D9C5C78C6735">
                 <File Id="cyggssapi_krb5_2.dll_1" KeyPath="yes" Source="$(var.ResDir)\lib\squid\cyggssapi_krb5-2.dll" />
             </Component>
-            <Component Id="cygiconv_2.dll_1" Directory="squid_1" Guid="EEF0284D-EFDD-4F85-9721-26510A6C76DD">
+            <Component Id="cygiconv_2.dll_1" Directory="squid_1" Guid="6E1FE406-36F7-4D63-91D7-E2576374D11B">
                 <File Id="cygiconv_2.dll_1" KeyPath="yes" Source="$(var.ResDir)\lib\squid\cygiconv-2.dll" />
             </Component>
-            <Component Id="cygintl_8.dll_1" Directory="squid_1" Guid="BB1811D2-08B7-4367-BC25-03A244B3FA78">
+            <Component Id="cygintl_8.dll_1" Directory="squid_1" Guid="AA5E1B4B-E2BC-424E-A440-01745925DDE5">
                 <File Id="cygintl_8.dll_1" KeyPath="yes" Source="$(var.ResDir)\lib\squid\cygintl-8.dll" />
             </Component>
-            <Component Id="cygk5crypto_3.dll_1" Directory="squid_1" Guid="EF3E35B2-7EC4-4D23-809B-36C4C77A6BE3">
+            <Component Id="cygk5crypto_3.dll_1" Directory="squid_1" Guid="14DE3EC8-B085-42BB-B82F-304FE41A4A38">
                 <File Id="cygk5crypto_3.dll_1" KeyPath="yes" Source="$(var.ResDir)\lib\squid\cygk5crypto-3.dll" />
             </Component>
-            <Component Id="cygkrb5_3.dll_1" Directory="squid_1" Guid="E60FB581-2706-4D2A-998B-58BA815916E7">
+            <Component Id="cygkrb5_3.dll_1" Directory="squid_1" Guid="574F8827-3783-42D1-8329-C220C759A8B3">
                 <File Id="cygkrb5_3.dll_1" KeyPath="yes" Source="$(var.ResDir)\lib\squid\cygkrb5-3.dll" />
             </Component>
-            <Component Id="cygkrb5support_0.dll_1" Directory="squid_1" Guid="791457E8-D00B-46AB-93E6-6DE0B5824713">
+            <Component Id="cygkrb5support_0.dll_1" Directory="squid_1" Guid="3AA94364-CF8C-474F-9CAD-19C39DB21162">
                 <File Id="cygkrb5support_0.dll_1" KeyPath="yes" Source="$(var.ResDir)\lib\squid\cygkrb5support-0.dll" />
             </Component>
-            <Component Id="cyglber_2_4_2.dll_1" Directory="squid_1" Guid="6DB4B03F-E561-409C-9466-8144BFD923F0">
+            <Component Id="cyglber_2_4_2.dll_1" Directory="squid_1" Guid="F9C33ED8-85AC-4A55-9A0F-5402F7B3C79B">
                 <File Id="cyglber_2_4_2.dll_1" KeyPath="yes" Source="$(var.ResDir)\lib\squid\cyglber-2-4-2.dll" />
             </Component>
-            <Component Id="cygldap_2_4_2.dll_1" Directory="squid_1" Guid="33BA7182-8DFC-46E8-885C-530CC0EE940D">
+            <Component Id="cygldap_2_4_2.dll_1" Directory="squid_1" Guid="EA5A3B1E-8346-4715-BBC2-94E6516B106C">
                 <File Id="cygldap_2_4_2.dll_1" KeyPath="yes" Source="$(var.ResDir)\lib\squid\cygldap-2-4-2.dll" />
             </Component>
-            <Component Id="cygltdl_7.dll_1" Directory="squid_1" Guid="551A8817-CF7E-4992-9DFE-2A04E2967933">
+            <Component Id="cygltdl_7.dll_1" Directory="squid_1" Guid="8425A284-8467-4AFA-AEA6-0992E48567B0">
                 <File Id="cygltdl_7.dll_1" KeyPath="yes" Source="$(var.ResDir)\lib\squid\cygltdl-7.dll" />
             </Component>
-            <Component Id="cyglzma_5.dll_1" Directory="squid_1" Guid="6E80C535-5545-406A-928E-61A05433FC4D">
+            <Component Id="cyglzma_5.dll_1" Directory="squid_1" Guid="713F9F14-080B-40CF-BDAC-26C1236F7DE1">
                 <File Id="cyglzma_5.dll_1" KeyPath="yes" Source="$(var.ResDir)\lib\squid\cyglzma-5.dll" />
             </Component>
-            <Component Id="cygsasl2_3.dll_1" Directory="squid_1" Guid="765F0390-2455-43EC-AD01-9F4B0B421306">
+            <Component Id="cygsasl2_3.dll_1" Directory="squid_1" Guid="759F38ED-02F1-4B51-BB68-261E90E78418">
                 <File Id="cygsasl2_3.dll_1" KeyPath="yes" Source="$(var.ResDir)\lib\squid\cygsasl2-3.dll" />
             </Component>
-            <Component Id="cygssl_1.1.dll_1" Directory="squid_1" Guid="0B0310C0-B15F-44E5-92A4-6FB656FBDAA1">
+            <Component Id="cygssl_1.1.dll_1" Directory="squid_1" Guid="67EA10EA-E252-4EA0-A326-C3C132DAE9FD">
                 <File Id="cygssl_1.1.dll_1" KeyPath="yes" Source="$(var.ResDir)\lib\squid\cygssl-1.1.dll" />
             </Component>
-            <Component Id="cygssl_3.dll_1" Directory="squid_1" Guid="2EBFF1E9-7135-4082-A8EE-767555855A66">
+            <Component Id="cygssl_3.dll_1" Directory="squid_1" Guid="F7AFA319-3052-47D2-95F4-196E339E98C2">
                 <File Id="cygssl_3.dll_1" KeyPath="yes" Source="$(var.ResDir)\lib\squid\cygssl-3.dll" />
             </Component>
-            <Component Id="cygstdc___6.dll_1" Directory="squid_1" Guid="A094E289-7740-478B-86C9-FBF4C7AD51C1">
+            <Component Id="cygstdc___6.dll_1" Directory="squid_1" Guid="4C10EF43-61B7-4A89-BE3C-17EC7503F31C">
                 <File Id="cygstdc___6.dll_1" KeyPath="yes" Source="$(var.ResDir)\lib\squid\cygstdc++-6.dll" />
             </Component>
-            <Component Id="cygwin1.dll_1" Directory="squid_1" Guid="E76D5FF5-D57C-4B34-9897-B7CD914870E4">
+            <Component Id="cygwin1.dll_1" Directory="squid_1" Guid="8AC91489-2E8E-4F14-9F1C-42F8185BBE92">
                 <File Id="cygwin1.dll_1" KeyPath="yes" Source="$(var.ResDir)\lib\squid\cygwin1.dll" />
             </Component>
-            <Component Id="cygxml2_2.dll_1" Directory="squid_1" Guid="DB5DC587-9FFF-49AF-A801-6EE36AAFC37C">
+            <Component Id="cygxml2_2.dll_1" Directory="squid_1" Guid="89A92796-3546-430F-84E6-EC2A25826A75">
                 <File Id="cygxml2_2.dll_1" KeyPath="yes" Source="$(var.ResDir)\lib\squid\cygxml2-2.dll" />
             </Component>
-            <Component Id="cygz.dll_1" Directory="squid_1" Guid="D36E8E9B-048F-4BF3-ADB3-975C5ABCDE47">
+            <Component Id="cygz.dll_1" Directory="squid_1" Guid="8B124D1D-444F-47C2-8B79-03FAADAD8860">
                 <File Id="cygz.dll_1" KeyPath="yes" Source="$(var.ResDir)\lib\squid\cygz.dll" />
             </Component>
-            <Component Id="digest_edirectory_auth.exe" Directory="squid_1" Guid="F6FBA2A0-EEA1-4101-8AB5-1B3A72AC2575">
+            <Component Id="digest_edirectory_auth.exe" Directory="squid_1" Guid="F5242BE1-40D0-4F15-8103-970465CDA36D">
                 <File Id="digest_edirectory_auth.exe" KeyPath="yes" Source="$(var.ResDir)\lib\squid\digest_edirectory_auth.exe" />
             </Component>
-            <Component Id="digest_file_auth.exe" Directory="squid_1" Guid="6B22410B-50DB-40DA-9A24-987AE3AED842">
+            <Component Id="digest_file_auth.exe" Directory="squid_1" Guid="E8BA7FB0-FFAA-439A-9759-0D9B2B63A292">
                 <File Id="digest_file_auth.exe" KeyPath="yes" Source="$(var.ResDir)\lib\squid\digest_file_auth.exe" />
             </Component>
-            <Component Id="digest_ldap_auth.exe" Directory="squid_1" Guid="7CE035C5-6C29-4993-90C7-F827A9C203A7">
+            <Component Id="digest_ldap_auth.exe" Directory="squid_1" Guid="33D37F38-7A09-4461-8B85-05AD2A4EBC7A">
                 <File Id="digest_ldap_auth.exe" KeyPath="yes" Source="$(var.ResDir)\lib\squid\digest_ldap_auth.exe" />
             </Component>
-            <Component Id="diskd.exe" Directory="squid_1" Guid="57A70693-9C36-4B3E-BFA4-F5E8FA37C3CC">
+            <Component Id="diskd.exe" Directory="squid_1" Guid="663CE64B-46D4-4474-AEE6-D30B3CD541F3">
                 <File Id="diskd.exe" KeyPath="yes" Source="$(var.ResDir)\lib\squid\diskd.exe" />
             </Component>
-            <Component Id="ext_edirectory_userip_acl.exe" Directory="squid_1" Guid="6364B8BB-7F6F-44E8-ABC1-1652E364CABA">
+            <Component Id="ext_edirectory_userip_acl.exe" Directory="squid_1" Guid="F9ED0DB6-154C-402F-96F5-379969FBB2DB">
                 <File Id="ext_edirectory_userip_acl.exe" KeyPath="yes" Source="$(var.ResDir)\lib\squid\ext_edirectory_userip_acl.exe" />
             </Component>
-            <Component Id="ext_file_userip_acl.exe" Directory="squid_1" Guid="70DC09D1-A064-4ACC-B205-C28691986FB7">
+            <Component Id="ext_file_userip_acl.exe" Directory="squid_1" Guid="784584A8-777E-4034-BB6D-F1CFF15D8DE5">
                 <File Id="ext_file_userip_acl.exe" KeyPath="yes" Source="$(var.ResDir)\lib\squid\ext_file_userip_acl.exe" />
             </Component>
-            <Component Id="ext_kerberos_ldap_group_acl.exe" Directory="squid_1" Guid="9D4FA5C4-4D49-4572-ABC6-34C5B639CC9E">
+            <Component Id="ext_kerberos_ldap_group_acl.exe" Directory="squid_1" Guid="26052B0E-BF95-4B4D-94AB-9CBE30B706B7">
                 <File Id="ext_kerberos_ldap_group_acl.exe" KeyPath="yes" Source="$(var.ResDir)\lib\squid\ext_kerberos_ldap_group_acl.exe" />
             </Component>
-            <Component Id="ext_ldap_group_acl.exe" Directory="squid_1" Guid="8643CB58-326E-4C3F-84EE-21153C2D864B">
+            <Component Id="ext_ldap_group_acl.exe" Directory="squid_1" Guid="DC633E73-73A9-4DC0-B507-9E0AF03230C8">
                 <File Id="ext_ldap_group_acl.exe" KeyPath="yes" Source="$(var.ResDir)\lib\squid\ext_ldap_group_acl.exe" />
             </Component>
-            <Component Id="ext_session_acl.exe" Directory="squid_1" Guid="611F9E8D-8C72-47AC-A18F-E00F19A803F3">
+            <Component Id="ext_session_acl.exe" Directory="squid_1" Guid="4810874B-06D8-43D5-AA84-A1FA9CF10A7C">
                 <File Id="ext_session_acl.exe" KeyPath="yes" Source="$(var.ResDir)\lib\squid\ext_session_acl.exe" />
             </Component>
-            <Component Id="ext_sql_session_acl" Directory="squid_1" Guid="B11A4170-2BD1-4675-B310-32B12BEEF309">
+            <Component Id="ext_sql_session_acl" Directory="squid_1" Guid="7E2FD368-EC37-4F79-8F27-CDB3B9C676FA">
                 <File Id="ext_sql_session_acl" KeyPath="yes" Source="$(var.ResDir)\lib\squid\ext_sql_session_acl" />
             </Component>
-            <Component Id="ext_unix_group_acl.exe" Directory="squid_1" Guid="04FAA0F1-D444-4362-B905-4173CC8CA98A">
+            <Component Id="ext_unix_group_acl.exe" Directory="squid_1" Guid="BBC0873D-F7A1-4535-A047-ABE97BFE97CE">
                 <File Id="ext_unix_group_acl.exe" KeyPath="yes" Source="$(var.ResDir)\lib\squid\ext_unix_group_acl.exe" />
             </Component>
-            <Component Id="ext_wbinfo_group_acl" Directory="squid_1" Guid="A01DB8A1-F7AD-4ED9-8363-4FA9B7783318">
+            <Component Id="ext_wbinfo_group_acl" Directory="squid_1" Guid="4EF21717-0586-48AC-BE0B-74B626AF6106">
                 <File Id="ext_wbinfo_group_acl" KeyPath="yes" Source="$(var.ResDir)\lib\squid\ext_wbinfo_group_acl" />
             </Component>
-            <Component Id="helper_mux" Directory="squid_1" Guid="E16586E2-1175-4206-AC5C-765A224D9C85">
+            <Component Id="helper_mux" Directory="squid_1" Guid="D07337BE-3683-46AF-9F78-0EA4D1626C11">
                 <File Id="helper_mux" KeyPath="yes" Source="$(var.ResDir)\lib\squid\helper-mux" />
             </Component>
-            <Component Id="log_db_daemon" Directory="squid_1" Guid="931FC8B1-6781-4941-9A06-57C60FDDAD1F">
+            <Component Id="log_db_daemon" Directory="squid_1" Guid="EC808537-E57C-48F4-AC98-6142EB2254E4">
                 <File Id="log_db_daemon" KeyPath="yes" Source="$(var.ResDir)\lib\squid\log_db_daemon" />
             </Component>
-            <Component Id="log_file_daemon.exe" Directory="squid_1" Guid="C29A3300-55FF-4BC8-A103-7E02E66B000F">
+            <Component Id="log_file_daemon.exe" Directory="squid_1" Guid="721C0BD0-F77B-443D-B03C-242FD953B84D">
                 <File Id="log_file_daemon.exe" KeyPath="yes" Source="$(var.ResDir)\lib\squid\log_file_daemon.exe" />
             </Component>
-            <Component Id="negotiate_kerberos_auth.exe" Directory="squid_1" Guid="E84EE768-50C3-4862-A8BA-A365AAF674C7">
+            <Component Id="negotiate_kerberos_auth.exe" Directory="squid_1" Guid="D9E198DB-0BBC-4C80-9BCC-3340C48BA048">
                 <File Id="negotiate_kerberos_auth.exe" KeyPath="yes" Source="$(var.ResDir)\lib\squid\negotiate_kerberos_auth.exe" />
             </Component>
-            <Component Id="negotiate_kerberos_auth_test.exe" Directory="squid_1" Guid="CDA340B9-4F15-46F4-8551-08A68E3067E0">
+            <Component Id="negotiate_kerberos_auth_test.exe" Directory="squid_1" Guid="0D96A7C1-5C60-4A87-A9C4-877A2A838397">
                 <File Id="negotiate_kerberos_auth_test.exe" KeyPath="yes" Source="$(var.ResDir)\lib\squid\negotiate_kerberos_auth_test.exe" />
             </Component>
-            <Component Id="negotiate_wrapper_auth.exe" Directory="squid_1" Guid="2E02178A-9773-4080-A984-6C1289017176">
+            <Component Id="negotiate_wrapper_auth.exe" Directory="squid_1" Guid="1E91C57B-2B8D-4D40-A152-D42DC1BD10B1">
                 <File Id="negotiate_wrapper_auth.exe" KeyPath="yes" Source="$(var.ResDir)\lib\squid\negotiate_wrapper_auth.exe" />
             </Component>
-            <Component Id="ntlm_fake_auth.exe" Directory="squid_1" Guid="6548C7AB-0F52-4CEA-9FF4-882739992DF3">
+            <Component Id="ntlm_fake_auth.exe" Directory="squid_1" Guid="69809124-69CE-496D-9ABB-F364E6C69CF0">
                 <File Id="ntlm_fake_auth.exe" KeyPath="yes" Source="$(var.ResDir)\lib\squid\ntlm_fake_auth.exe" />
             </Component>
-            <Component Id="security_fake_certverify" Directory="squid_1" Guid="CA4E2437-001F-46C6-934F-4CC0E7E88A64">
+            <Component Id="security_fake_certverify" Directory="squid_1" Guid="716C3588-D1B5-49D7-8ADE-F7CA2DECE013">
                 <File Id="security_fake_certverify" KeyPath="yes" Source="$(var.ResDir)\lib\squid\security_fake_certverify" />
             </Component>
-            <Component Id="security_file_certgen.exe" Directory="squid_1" Guid="1223C699-6D6E-4080-96DA-C30A993526F0">
+            <Component Id="security_file_certgen.exe" Directory="squid_1" Guid="DA80D518-B5A5-4F96-B597-80C41281491E">
                 <File Id="security_file_certgen.exe" KeyPath="yes" Source="$(var.ResDir)\lib\squid\security_file_certgen.exe" />
             </Component>
-            <Component Id="storeid_file_rewrite" Directory="squid_1" Guid="214C961F-CF05-4CF7-BAD7-7B21D8214F1C">
+            <Component Id="storeid_file_rewrite" Directory="squid_1" Guid="141D474F-801F-4FD1-8F4D-CCEA22165C7C">
                 <File Id="storeid_file_rewrite" KeyPath="yes" Source="$(var.ResDir)\lib\squid\storeid_file_rewrite" />
             </Component>
-            <Component Id="unlinkd.exe" Directory="squid_1" Guid="2FEC6330-AB32-41D5-8AF8-F741E1075951">
+            <Component Id="unlinkd.exe" Directory="squid_1" Guid="5E5CD02F-C07A-47AB-98BE-E4974276CFEC">
                 <File Id="unlinkd.exe" KeyPath="yes" Source="$(var.ResDir)\lib\squid\unlinkd.exe" />
             </Component>
-            <Component Id="url_fake_rewrite.exe" Directory="squid_1" Guid="33A05F8E-545C-46D7-870B-CFC5EEC9A4CC">
+            <Component Id="url_fake_rewrite.exe" Directory="squid_1" Guid="BAA101AA-ED99-4998-93CB-654BE3B4CD42">
                 <File Id="url_fake_rewrite.exe" KeyPath="yes" Source="$(var.ResDir)\lib\squid\url_fake_rewrite.exe" />
             </Component>
-            <Component Id="url_fake_rewrite.sh" Directory="squid_1" Guid="CACD6AB5-BF65-4F15-8633-8CE803702D03">
+            <Component Id="url_fake_rewrite.sh" Directory="squid_1" Guid="43569296-13EC-4512-91D9-344839A1D528">
                 <File Id="url_fake_rewrite.sh" KeyPath="yes" Source="$(var.ResDir)\lib\squid\url_fake_rewrite.sh" />
             </Component>
-            <Component Id="url_lfs_rewrite" Directory="squid_1" Guid="AAB2AFA0-8D0C-4E3A-8CB0-1481ED690403">
+            <Component Id="url_lfs_rewrite" Directory="squid_1" Guid="BD8FB9A7-E831-46F3-8DA6-F746D9E6DE51">
                 <File Id="url_lfs_rewrite" KeyPath="yes" Source="$(var.ResDir)\lib\squid\url_lfs_rewrite" />
             </Component>
-            <Component Id="mib.txt" Directory="squid_2" Guid="2F51F728-8712-4556-AE3A-F4F19B51AE33">
+            <Component Id="mib.txt" Directory="squid_2" Guid="7575F0F3-C688-4E4D-B90D-F98796FE858B">
                 <File Id="mib.txt" KeyPath="yes" Source="$(var.ResDir)\usr\share\squid\mib.txt" />
             </Component>
-            <Component Id="COPYRIGHT" Directory="errors" Guid="9D4A1E07-B314-4783-A1AC-1067C4BEAA2D">
+            <Component Id="COPYRIGHT" Directory="errors" Guid="1D2DCB61-E61E-4F8B-8FBE-CBD66CA229FB">
                 <File Id="COPYRIGHT" KeyPath="yes" Source="$(var.ResDir)\usr\share\squid\errors\COPYRIGHT" />
             </Component>
-            <Component Id="TRANSLATORS" Directory="errors" Guid="8842819B-D5A7-49BE-8F7D-DE204130ACA1">
+            <Component Id="TRANSLATORS" Directory="errors" Guid="AC9030A3-CFE3-4188-A864-16B59AD95FC9">
                 <File Id="TRANSLATORS" KeyPath="yes" Source="$(var.ResDir)\usr\share\squid\errors\TRANSLATORS" />
             </Component>
-            <Component Id="error_details.txt" Directory="templates" Guid="94E74C86-6145-4F32-9860-213247173F22">
+            <Component Id="error_details.txt" Directory="templates" Guid="83AC7428-843A-40E7-85C2-46E1D6DCA293">
                 <File Id="error_details.txt" KeyPath="yes" Source="$(var.ResDir)\usr\share\squid\errors\templates\error-details.txt" />
             </Component>
-            <Component Id="ERR_ACCESS_DENIED" Directory="templates" Guid="44503BF9-E269-4D66-A84B-09E75D94C1B2">
+            <Component Id="ERR_ACCESS_DENIED" Directory="templates" Guid="945B61C5-AADB-4DAB-909D-12957091B962">
                 <File Id="ERR_ACCESS_DENIED" KeyPath="yes" Source="$(var.ResDir)\usr\share\squid\errors\templates\ERR_ACCESS_DENIED" />
             </Component>
-            <Component Id="ERR_ACL_TIME_QUOTA_EXCEEDED" Directory="templates" Guid="BA3689B5-5592-4C8C-8990-E40BC7EF7DC3">
+            <Component Id="ERR_ACL_TIME_QUOTA_EXCEEDED" Directory="templates" Guid="66C903BB-B82D-47DB-8689-199A08CA51B8">
                 <File Id="ERR_ACL_TIME_QUOTA_EXCEEDED" KeyPath="yes" Source="$(var.ResDir)\usr\share\squid\errors\templates\ERR_ACL_TIME_QUOTA_EXCEEDED" />
             </Component>
-            <Component Id="ERR_AGENT_CONFIGURE" Directory="templates" Guid="D113030F-553E-4282-B468-AB8C77E72C07">
+            <Component Id="ERR_AGENT_CONFIGURE" Directory="templates" Guid="6BFA0879-CE2E-4EC1-A11D-AB745DC5FD59">
                 <File Id="ERR_AGENT_CONFIGURE" KeyPath="yes" Source="$(var.ResDir)\usr\share\squid\errors\templates\ERR_AGENT_CONFIGURE" />
             </Component>
-            <Component Id="ERR_AGENT_WPAD" Directory="templates" Guid="FDE4219A-A066-42D4-90AD-5219BC9161D3">
+            <Component Id="ERR_AGENT_WPAD" Directory="templates" Guid="DC48E9F2-E3C1-4A07-9870-B988F85C82B2">
                 <File Id="ERR_AGENT_WPAD" KeyPath="yes" Source="$(var.ResDir)\usr\share\squid\errors\templates\ERR_AGENT_WPAD" />
             </Component>
-            <Component Id="ERR_CACHE_ACCESS_DENIED" Directory="templates" Guid="325BC078-EA5E-4272-AAEA-51C44CBE0BF8">
+            <Component Id="ERR_CACHE_ACCESS_DENIED" Directory="templates" Guid="589BA919-7B6B-41CB-8F25-47362179CDB0">
                 <File Id="ERR_CACHE_ACCESS_DENIED" KeyPath="yes" Source="$(var.ResDir)\usr\share\squid\errors\templates\ERR_CACHE_ACCESS_DENIED" />
             </Component>
-            <Component Id="ERR_CACHE_MGR_ACCESS_DENIED" Directory="templates" Guid="9E26364F-AD38-4D1B-88AE-8598EBBD436C">
+            <Component Id="ERR_CACHE_MGR_ACCESS_DENIED" Directory="templates" Guid="E43E1376-FD0C-4954-8F3C-1B3CE4CBC209">
                 <File Id="ERR_CACHE_MGR_ACCESS_DENIED" KeyPath="yes" Source="$(var.ResDir)\usr\share\squid\errors\templates\ERR_CACHE_MGR_ACCESS_DENIED" />
             </Component>
-            <Component Id="ERR_CANNOT_FORWARD" Directory="templates" Guid="6C9688A9-0DD1-4CCA-9095-5F17088DAC5A">
+            <Component Id="ERR_CANNOT_FORWARD" Directory="templates" Guid="AF947286-224E-4A6A-9D1A-2FF8CC61D4AD">
                 <File Id="ERR_CANNOT_FORWARD" KeyPath="yes" Source="$(var.ResDir)\usr\share\squid\errors\templates\ERR_CANNOT_FORWARD" />
             </Component>
-            <Component Id="ERR_CONFLICT_HOST" Directory="templates" Guid="0E1D2A38-F46B-4A5D-987B-CD7D442AB92E">
+            <Component Id="ERR_CONFLICT_HOST" Directory="templates" Guid="A150688C-7B91-49CA-9FB5-8CCE85A96550">
                 <File Id="ERR_CONFLICT_HOST" KeyPath="yes" Source="$(var.ResDir)\usr\share\squid\errors\templates\ERR_CONFLICT_HOST" />
             </Component>
-            <Component Id="ERR_CONNECT_FAIL" Directory="templates" Guid="5E27DC10-4953-4454-A119-981BAFEFB73E">
+            <Component Id="ERR_CONNECT_FAIL" Directory="templates" Guid="7E9436D8-E161-4B5B-B636-11064B97EA42">
                 <File Id="ERR_CONNECT_FAIL" KeyPath="yes" Source="$(var.ResDir)\usr\share\squid\errors\templates\ERR_CONNECT_FAIL" />
             </Component>
-            <Component Id="ERR_DIR_LISTING" Directory="templates" Guid="1DE799B2-BB62-4188-B7D2-8CCE35E7C875">
+            <Component Id="ERR_DIR_LISTING" Directory="templates" Guid="0F555455-0683-4ABA-B98F-07683FDC5BEF">
                 <File Id="ERR_DIR_LISTING" KeyPath="yes" Source="$(var.ResDir)\usr\share\squid\errors\templates\ERR_DIR_LISTING" />
             </Component>
-            <Component Id="ERR_DNS_FAIL" Directory="templates" Guid="BA6D5AAD-5411-4245-8B53-62775AEA0BF1">
+            <Component Id="ERR_DNS_FAIL" Directory="templates" Guid="561E7022-BFBC-4551-A367-4C635AACCF1B">
                 <File Id="ERR_DNS_FAIL" KeyPath="yes" Source="$(var.ResDir)\usr\share\squid\errors\templates\ERR_DNS_FAIL" />
             </Component>
-            <Component Id="ERR_ESI" Directory="templates" Guid="57BF8040-A1E3-4DD8-A954-901D10918AED">
+            <Component Id="ERR_ESI" Directory="templates" Guid="D994974C-3F76-4F04-9839-B5DFB86C953A">
                 <File Id="ERR_ESI" KeyPath="yes" Source="$(var.ResDir)\usr\share\squid\errors\templates\ERR_ESI" />
             </Component>
-            <Component Id="ERR_FORWARDING_DENIED" Directory="templates" Guid="0D5891B5-9434-4E74-A27C-A259C3EA708D">
+            <Component Id="ERR_FORWARDING_DENIED" Directory="templates" Guid="5A873653-B088-4778-91D1-D28E38DE992D">
                 <File Id="ERR_FORWARDING_DENIED" KeyPath="yes" Source="$(var.ResDir)\usr\share\squid\errors\templates\ERR_FORWARDING_DENIED" />
             </Component>
-            <Component Id="ERR_FTP_DISABLED" Directory="templates" Guid="00CDF73F-5DC5-410C-8C13-ACF5C997623C">
+            <Component Id="ERR_FTP_DISABLED" Directory="templates" Guid="BC5DD720-6D37-46FF-BFDA-F53E96CBB946">
                 <File Id="ERR_FTP_DISABLED" KeyPath="yes" Source="$(var.ResDir)\usr\share\squid\errors\templates\ERR_FTP_DISABLED" />
             </Component>
-            <Component Id="ERR_FTP_FAILURE" Directory="templates" Guid="7E8CE6D9-42B2-434C-8CD1-C9B9CABA4526">
+            <Component Id="ERR_FTP_FAILURE" Directory="templates" Guid="34BDCEB5-8D4A-496A-AFC4-026720ADC6AB">
                 <File Id="ERR_FTP_FAILURE" KeyPath="yes" Source="$(var.ResDir)\usr\share\squid\errors\templates\ERR_FTP_FAILURE" />
             </Component>
-            <Component Id="ERR_FTP_FORBIDDEN" Directory="templates" Guid="6B6933F1-89EB-45F4-86F8-A1780FFC5DF4">
+            <Component Id="ERR_FTP_FORBIDDEN" Directory="templates" Guid="CEA57E49-35F9-4640-A85B-4C483BE2113E">
                 <File Id="ERR_FTP_FORBIDDEN" KeyPath="yes" Source="$(var.ResDir)\usr\share\squid\errors\templates\ERR_FTP_FORBIDDEN" />
             </Component>
-            <Component Id="ERR_FTP_NOT_FOUND" Directory="templates" Guid="103AFA7B-9164-48BC-B1F5-D786CD846F63">
+            <Component Id="ERR_FTP_NOT_FOUND" Directory="templates" Guid="0014807E-206D-43C2-9337-5B7736BA9989">
                 <File Id="ERR_FTP_NOT_FOUND" KeyPath="yes" Source="$(var.ResDir)\usr\share\squid\errors\templates\ERR_FTP_NOT_FOUND" />
             </Component>
-            <Component Id="ERR_FTP_PUT_CREATED" Directory="templates" Guid="CE2BDA38-6930-4FFF-9C97-285FDC89035B">
+            <Component Id="ERR_FTP_PUT_CREATED" Directory="templates" Guid="9BBE7731-0C7D-442C-AB4A-AE6AC0CEAB34">
                 <File Id="ERR_FTP_PUT_CREATED" KeyPath="yes" Source="$(var.ResDir)\usr\share\squid\errors\templates\ERR_FTP_PUT_CREATED" />
             </Component>
-            <Component Id="ERR_FTP_PUT_ERROR" Directory="templates" Guid="43B7DB07-4425-492F-88B7-D2F90EFA7FAF">
+            <Component Id="ERR_FTP_PUT_ERROR" Directory="templates" Guid="0CB498AB-ACBE-40AC-B41D-2D8CD8CB0FBB">
                 <File Id="ERR_FTP_PUT_ERROR" KeyPath="yes" Source="$(var.ResDir)\usr\share\squid\errors\templates\ERR_FTP_PUT_ERROR" />
             </Component>
-            <Component Id="ERR_FTP_PUT_MODIFIED" Directory="templates" Guid="3829C0AA-C5EE-40A7-BC3C-C12DEC6212B0">
+            <Component Id="ERR_FTP_PUT_MODIFIED" Directory="templates" Guid="9997C378-5F2B-4D0B-B768-E037578DD1FD">
                 <File Id="ERR_FTP_PUT_MODIFIED" KeyPath="yes" Source="$(var.ResDir)\usr\share\squid\errors\templates\ERR_FTP_PUT_MODIFIED" />
             </Component>
-            <Component Id="ERR_FTP_UNAVAILABLE" Directory="templates" Guid="9779BDC9-53D1-4DF0-9307-8C5ECABE2448">
+            <Component Id="ERR_FTP_UNAVAILABLE" Directory="templates" Guid="B3B39B7E-52D1-4476-A59C-E8A13A3EA1B0">
                 <File Id="ERR_FTP_UNAVAILABLE" KeyPath="yes" Source="$(var.ResDir)\usr\share\squid\errors\templates\ERR_FTP_UNAVAILABLE" />
             </Component>
-            <Component Id="ERR_GATEWAY_FAILURE" Directory="templates" Guid="2F3930B7-8ECC-42EE-A7E8-15E85FE9A3D4">
+            <Component Id="ERR_GATEWAY_FAILURE" Directory="templates" Guid="B9105517-B822-4431-81BE-1A4D439F718A">
                 <File Id="ERR_GATEWAY_FAILURE" KeyPath="yes" Source="$(var.ResDir)\usr\share\squid\errors\templates\ERR_GATEWAY_FAILURE" />
             </Component>
-            <Component Id="ERR_ICAP_FAILURE" Directory="templates" Guid="0B54B96B-2BC0-4A53-A15E-405AD4147205">
+            <Component Id="ERR_ICAP_FAILURE" Directory="templates" Guid="30699558-B36F-411D-AC21-1D04F57DF251">
                 <File Id="ERR_ICAP_FAILURE" KeyPath="yes" Source="$(var.ResDir)\usr\share\squid\errors\templates\ERR_ICAP_FAILURE" />
             </Component>
-            <Component Id="ERR_INVALID_REQ" Directory="templates" Guid="3D9EDB3D-007A-47D9-BC5C-DD27BE93DDEB">
+            <Component Id="ERR_INVALID_REQ" Directory="templates" Guid="80EFCC5D-A5C1-4E03-AFAC-3B7D52641C18">
                 <File Id="ERR_INVALID_REQ" KeyPath="yes" Source="$(var.ResDir)\usr\share\squid\errors\templates\ERR_INVALID_REQ" />
             </Component>
-            <Component Id="ERR_INVALID_RESP" Directory="templates" Guid="5647E52E-46C7-47E2-89D7-9DA108DD9736">
+            <Component Id="ERR_INVALID_RESP" Directory="templates" Guid="CEA63BA4-F614-4878-B280-7F05B5FC30F8">
                 <File Id="ERR_INVALID_RESP" KeyPath="yes" Source="$(var.ResDir)\usr\share\squid\errors\templates\ERR_INVALID_RESP" />
             </Component>
-            <Component Id="ERR_INVALID_URL" Directory="templates" Guid="240D707D-9329-4E24-9394-BA6914106D4A">
+            <Component Id="ERR_INVALID_URL" Directory="templates" Guid="9F799123-A43E-44DA-9FB7-9EFBF2FF8053">
                 <File Id="ERR_INVALID_URL" KeyPath="yes" Source="$(var.ResDir)\usr\share\squid\errors\templates\ERR_INVALID_URL" />
             </Component>
-            <Component Id="ERR_LIFETIME_EXP" Directory="templates" Guid="F625A803-DA56-4D01-8402-EFF960840AE8">
+            <Component Id="ERR_LIFETIME_EXP" Directory="templates" Guid="72A6F297-90EB-4046-96E0-1FFED4254DEB">
                 <File Id="ERR_LIFETIME_EXP" KeyPath="yes" Source="$(var.ResDir)\usr\share\squid\errors\templates\ERR_LIFETIME_EXP" />
             </Component>
-            <Component Id="ERR_NO_RELAY" Directory="templates" Guid="DC258020-1AC6-4C3F-AF91-272176D3017B">
+            <Component Id="ERR_NO_RELAY" Directory="templates" Guid="8DC43335-C637-46FE-A155-3EFB6259ADA9">
                 <File Id="ERR_NO_RELAY" KeyPath="yes" Source="$(var.ResDir)\usr\share\squid\errors\templates\ERR_NO_RELAY" />
             </Component>
-            <Component Id="ERR_ONLY_IF_CACHED_MISS" Directory="templates" Guid="706F4FE4-2933-47B8-A7FA-273B8B88E7F8">
+            <Component Id="ERR_ONLY_IF_CACHED_MISS" Directory="templates" Guid="597375D3-7A71-4D20-943E-279A3E13DC3C">
                 <File Id="ERR_ONLY_IF_CACHED_MISS" KeyPath="yes" Source="$(var.ResDir)\usr\share\squid\errors\templates\ERR_ONLY_IF_CACHED_MISS" />
             </Component>
-            <Component Id="ERR_PRECONDITION_FAILED" Directory="templates" Guid="F0FB3D35-8DA3-45D3-A198-1A8B2FDB9550">
+            <Component Id="ERR_PRECONDITION_FAILED" Directory="templates" Guid="E685A3DA-789E-4BCF-AC28-867E2304639A">
                 <File Id="ERR_PRECONDITION_FAILED" KeyPath="yes" Source="$(var.ResDir)\usr\share\squid\errors\templates\ERR_PRECONDITION_FAILED" />
             </Component>
-            <Component Id="ERR_PROTOCOL_UNKNOWN" Directory="templates" Guid="AFB2968D-7D6A-4DF4-BE65-DC4626E160ED">
+            <Component Id="ERR_PROTOCOL_UNKNOWN" Directory="templates" Guid="48C55F18-B891-4769-B548-B42AED01EF37">
                 <File Id="ERR_PROTOCOL_UNKNOWN" KeyPath="yes" Source="$(var.ResDir)\usr\share\squid\errors\templates\ERR_PROTOCOL_UNKNOWN" />
             </Component>
-            <Component Id="ERR_READ_ERROR" Directory="templates" Guid="7F4C7F24-2092-4829-A39A-99119B52CCBC">
+            <Component Id="ERR_READ_ERROR" Directory="templates" Guid="B8D81BFA-D2EE-4F9C-8045-CEDB710AF20C">
                 <File Id="ERR_READ_ERROR" KeyPath="yes" Source="$(var.ResDir)\usr\share\squid\errors\templates\ERR_READ_ERROR" />
             </Component>
-            <Component Id="ERR_READ_TIMEOUT" Directory="templates" Guid="5AF8D93F-A650-4F25-9148-15AEE534289B">
+            <Component Id="ERR_READ_TIMEOUT" Directory="templates" Guid="B4D52EB4-4B84-4A2C-BAC1-7811C95DF497">
                 <File Id="ERR_READ_TIMEOUT" KeyPath="yes" Source="$(var.ResDir)\usr\share\squid\errors\templates\ERR_READ_TIMEOUT" />
             </Component>
-            <Component Id="ERR_SECURE_CONNECT_FAIL" Directory="templates" Guid="F3DD431B-966C-4A74-AED2-62D747F4BDDD">
+            <Component Id="ERR_SECURE_CONNECT_FAIL" Directory="templates" Guid="F1EE1369-A0A9-4A35-BFCE-036A922CCE75">
                 <File Id="ERR_SECURE_CONNECT_FAIL" KeyPath="yes" Source="$(var.ResDir)\usr\share\squid\errors\templates\ERR_SECURE_CONNECT_FAIL" />
             </Component>
-            <Component Id="ERR_SHUTTING_DOWN" Directory="templates" Guid="67FA36D3-23EF-4E1E-865C-7BC907DC0128">
+            <Component Id="ERR_SHUTTING_DOWN" Directory="templates" Guid="E7942BBC-F07E-49A5-8454-AD5E3344E181">
                 <File Id="ERR_SHUTTING_DOWN" KeyPath="yes" Source="$(var.ResDir)\usr\share\squid\errors\templates\ERR_SHUTTING_DOWN" />
             </Component>
-            <Component Id="ERR_SOCKET_FAILURE" Directory="templates" Guid="025D723E-9887-48B6-AD26-8BDB63EAF0A5">
+            <Component Id="ERR_SOCKET_FAILURE" Directory="templates" Guid="82AC6E6B-0F69-4B43-833A-6FBA99A36DC5">
                 <File Id="ERR_SOCKET_FAILURE" KeyPath="yes" Source="$(var.ResDir)\usr\share\squid\errors\templates\ERR_SOCKET_FAILURE" />
             </Component>
-            <Component Id="ERR_TOO_BIG" Directory="templates" Guid="DF0C8871-4B22-42F8-97B6-777D7646A9AA">
+            <Component Id="ERR_TOO_BIG" Directory="templates" Guid="C9EA3329-A9EB-4849-9241-EB42348DE52F">
                 <File Id="ERR_TOO_BIG" KeyPath="yes" Source="$(var.ResDir)\usr\share\squid\errors\templates\ERR_TOO_BIG" />
             </Component>
-            <Component Id="ERR_UNSUP_HTTPVERSION" Directory="templates" Guid="E354B089-CDCC-4248-A42E-2BFA10225734">
+            <Component Id="ERR_UNSUP_HTTPVERSION" Directory="templates" Guid="6EDD4862-BA7D-459E-860A-26CCE8568EBA">
                 <File Id="ERR_UNSUP_HTTPVERSION" KeyPath="yes" Source="$(var.ResDir)\usr\share\squid\errors\templates\ERR_UNSUP_HTTPVERSION" />
             </Component>
-            <Component Id="ERR_UNSUP_REQ" Directory="templates" Guid="43FA32CF-1A47-4C59-8CE5-2F0CAA939195">
+            <Component Id="ERR_UNSUP_REQ" Directory="templates" Guid="F11AF1F8-0BB8-4043-B7AD-9A13AE6A05B7">
                 <File Id="ERR_UNSUP_REQ" KeyPath="yes" Source="$(var.ResDir)\usr\share\squid\errors\templates\ERR_UNSUP_REQ" />
             </Component>
-            <Component Id="ERR_URN_RESOLVE" Directory="templates" Guid="0E72B36A-277A-4AEF-BA28-EABFF9A665CB">
+            <Component Id="ERR_URN_RESOLVE" Directory="templates" Guid="0B6DC1B5-0E2B-4790-8ADC-3FAE753AD1F9">
                 <File Id="ERR_URN_RESOLVE" KeyPath="yes" Source="$(var.ResDir)\usr\share\squid\errors\templates\ERR_URN_RESOLVE" />
             </Component>
-            <Component Id="ERR_WRITE_ERROR" Directory="templates" Guid="E3C1A017-6D30-4708-BC93-86654E366225">
+            <Component Id="ERR_WRITE_ERROR" Directory="templates" Guid="E15631A5-C312-41C7-9720-1624AE4F7366">
                 <File Id="ERR_WRITE_ERROR" KeyPath="yes" Source="$(var.ResDir)\usr\share\squid\errors\templates\ERR_WRITE_ERROR" />
             </Component>
-            <Component Id="ERR_ZERO_SIZE_OBJECT" Directory="templates" Guid="3E873D48-1897-4C73-A202-FC80A37053EE">
+            <Component Id="ERR_ZERO_SIZE_OBJECT" Directory="templates" Guid="A65C19E1-488D-4B1D-A53F-ADE38E465EFB">
                 <File Id="ERR_ZERO_SIZE_OBJECT" KeyPath="yes" Source="$(var.ResDir)\usr\share\squid\errors\templates\ERR_ZERO_SIZE_OBJECT" />
             </Component>
-            <Component Id="SN.png" Directory="icons" Guid="1D0D2A8C-9088-4BD5-8EB4-930CDA41CD11">
+            <Component Id="SN.png" Directory="icons" Guid="1E3784C5-653F-4C2B-B614-57CF832FF56F">
                 <File Id="SN.png" KeyPath="yes" Source="$(var.ResDir)\usr\share\squid\icons\SN.png" />
             </Component>
-            <Component Id="application.png" Directory="silk" Guid="61C413AF-BB97-4DD2-9459-256589A23162">
+            <Component Id="application.png" Directory="silk" Guid="20009E11-6BA8-4251-AFF3-043116EEF7BF">
                 <File Id="application.png" KeyPath="yes" Source="$(var.ResDir)\usr\share\squid\icons\silk\application.png" />
             </Component>
-            <Component Id="arrow_up.png" Directory="silk" Guid="C61995EC-861D-4C0D-84AD-3976FAD50C82">
+            <Component Id="arrow_up.png" Directory="silk" Guid="61D77FB5-4CC3-4153-8584-E7FBC1AFB6CF">
                 <File Id="arrow_up.png" KeyPath="yes" Source="$(var.ResDir)\usr\share\squid\icons\silk\arrow_up.png" />
             </Component>
-            <Component Id="bomb.png" Directory="silk" Guid="4FDD8931-6C94-48FA-9BD5-574AE4EEC6C0">
+            <Component Id="bomb.png" Directory="silk" Guid="06B520A3-61E0-40B8-93CE-1861DD676890">
                 <File Id="bomb.png" KeyPath="yes" Source="$(var.ResDir)\usr\share\squid\icons\silk\bomb.png" />
             </Component>
-            <Component Id="box.png" Directory="silk" Guid="E13E0C34-62B0-4334-88A7-61EB0B565F24">
+            <Component Id="box.png" Directory="silk" Guid="F4275EFF-76F9-4E41-9B0B-0050040BFCF3">
                 <File Id="box.png" KeyPath="yes" Source="$(var.ResDir)\usr\share\squid\icons\silk\box.png" />
             </Component>
-            <Component Id="bricks.png" Directory="silk" Guid="DAC565DD-7477-429C-8BCD-BB10D5AA9B80">
+            <Component Id="bricks.png" Directory="silk" Guid="707A8338-839E-4E23-9440-EA7B7202D806">
                 <File Id="bricks.png" KeyPath="yes" Source="$(var.ResDir)\usr\share\squid\icons\silk\bricks.png" />
             </Component>
-            <Component Id="bullet_red.png" Directory="silk" Guid="A3912876-89FC-43E5-8EF7-2DD33F6F476F">
+            <Component Id="bullet_red.png" Directory="silk" Guid="712978D6-4CC7-475F-B3AF-CD3475938432">
                 <File Id="bullet_red.png" KeyPath="yes" Source="$(var.ResDir)\usr\share\squid\icons\silk\bullet_red.png" />
             </Component>
-            <Component Id="cd.png" Directory="silk" Guid="147E00A2-9CC7-435E-AAEA-6EE8BC361B7A">
+            <Component Id="cd.png" Directory="silk" Guid="3C628329-2CCF-4279-B356-03324A8F945D">
                 <File Id="cd.png" KeyPath="yes" Source="$(var.ResDir)\usr\share\squid\icons\silk\cd.png" />
             </Component>
-            <Component Id="chart_line.png" Directory="silk" Guid="55BF8C6E-F874-4F91-81AA-D7C2A7CD4BB2">
+            <Component Id="chart_line.png" Directory="silk" Guid="C76E135E-2F30-4DC9-AE5B-CDB6131EB37A">
                 <File Id="chart_line.png" KeyPath="yes" Source="$(var.ResDir)\usr\share\squid\icons\silk\chart_line.png" />
             </Component>
-            <Component Id="compress.png" Directory="silk" Guid="040D30C7-64DF-437F-9D4E-D626911A3B6F">
+            <Component Id="compress.png" Directory="silk" Guid="E8471A9F-DE71-4B54-8478-B61180CA5830">
                 <File Id="compress.png" KeyPath="yes" Source="$(var.ResDir)\usr\share\squid\icons\silk\compress.png" />
             </Component>
-            <Component Id="computer_link.png" Directory="silk" Guid="279B17BC-374F-4E03-8BBF-DD432D26012B">
+            <Component Id="computer_link.png" Directory="silk" Guid="12F3118F-CE70-44CB-94ED-0C21E173D69F">
                 <File Id="computer_link.png" KeyPath="yes" Source="$(var.ResDir)\usr\share\squid\icons\silk\computer_link.png" />
             </Component>
-            <Component Id="css.png" Directory="silk" Guid="2080ED61-47CA-4BAF-977B-F381E9F85059">
+            <Component Id="css.png" Directory="silk" Guid="F8D4B910-0918-4925-9C5A-94A9862187CC">
                 <File Id="css.png" KeyPath="yes" Source="$(var.ResDir)\usr\share\squid\icons\silk\css.png" />
             </Component>
-            <Component Id="cup.png" Directory="silk" Guid="3DAF06C9-8AE2-4612-A85F-61611E0814A5">
+            <Component Id="cup.png" Directory="silk" Guid="0E9F665E-D060-4985-B04B-0A175B2EC6A5">
                 <File Id="cup.png" KeyPath="yes" Source="$(var.ResDir)\usr\share\squid\icons\silk\cup.png" />
             </Component>
-            <Component Id="database.png" Directory="silk" Guid="7889FE1B-518C-4C7D-98F7-52B381E39D39">
+            <Component Id="database.png" Directory="silk" Guid="6A8BF5F8-E2D7-47EE-A930-D41C0A91F206">
                 <File Id="database.png" KeyPath="yes" Source="$(var.ResDir)\usr\share\squid\icons\silk\database.png" />
             </Component>
-            <Component Id="database_table.png" Directory="silk" Guid="EA4767D9-94B0-46B8-8FED-6935CA759D5A">
+            <Component Id="database_table.png" Directory="silk" Guid="77F76D06-33EE-4A3F-90BD-4D7874CBC08E">
                 <File Id="database_table.png" KeyPath="yes" Source="$(var.ResDir)\usr\share\squid\icons\silk\database_table.png" />
             </Component>
-            <Component Id="drive_disk.png" Directory="silk" Guid="A02D53C9-2C8F-4EE5-AF9D-02F34C1ECB6A">
+            <Component Id="drive_disk.png" Directory="silk" Guid="0AC4F6C6-49B8-4552-9FC6-8E91E0420B7F">
                 <File Id="drive_disk.png" KeyPath="yes" Source="$(var.ResDir)\usr\share\squid\icons\silk\drive_disk.png" />
             </Component>
-            <Component Id="film.png" Directory="silk" Guid="76610461-202A-4DC1-983C-7F7846CA6EB1">
+            <Component Id="film.png" Directory="silk" Guid="40CB874E-F5F0-4274-A386-489489B3BFE3">
                 <File Id="film.png" KeyPath="yes" Source="$(var.ResDir)\usr\share\squid\icons\silk\film.png" />
             </Component>
-            <Component Id="film_key.png" Directory="silk" Guid="C5403D7F-8C39-4BF4-BA66-EFF13D2B4F8C">
+            <Component Id="film_key.png" Directory="silk" Guid="67C555AC-D13B-4EBD-BE5B-90457F9C98EA">
                 <File Id="film_key.png" KeyPath="yes" Source="$(var.ResDir)\usr\share\squid\icons\silk\film_key.png" />
             </Component>
-            <Component Id="folder.png" Directory="silk" Guid="F296AD56-A7B4-4B05-AC05-88A7FED592F1">
+            <Component Id="folder.png" Directory="silk" Guid="1EA1555F-189F-4B9D-86FA-86CBFFDC21E7">
                 <File Id="folder.png" KeyPath="yes" Source="$(var.ResDir)\usr\share\squid\icons\silk\folder.png" />
             </Component>
-            <Component Id="folder_table.png" Directory="silk" Guid="C36CEF87-764E-4D46-9DAD-2A169A98FE1B">
+            <Component Id="folder_table.png" Directory="silk" Guid="FC156E1D-9435-49D4-902B-49B8A268E2F1">
                 <File Id="folder_table.png" KeyPath="yes" Source="$(var.ResDir)\usr\share\squid\icons\silk\folder_table.png" />
             </Component>
-            <Component Id="image.png" Directory="silk" Guid="E67B9DAB-05D5-4443-AB29-2C3DF1C6681B">
+            <Component Id="image.png" Directory="silk" Guid="4C297C12-A5BD-4799-9747-4439871CFB9F">
                 <File Id="image.png" KeyPath="yes" Source="$(var.ResDir)\usr\share\squid\icons\silk\image.png" />
             </Component>
-            <Component Id="information.png" Directory="silk" Guid="40810AD5-8146-4FB3-958E-F66B8BFA7C24">
+            <Component Id="information.png" Directory="silk" Guid="52B4CC6B-BFE0-419C-BCCF-2E544271743A">
                 <File Id="information.png" KeyPath="yes" Source="$(var.ResDir)\usr\share\squid\icons\silk\information.png" />
             </Component>
-            <Component Id="layers.png" Directory="silk" Guid="8522C0BC-D01B-4EBA-8098-53620C8C30A0">
+            <Component Id="layers.png" Directory="silk" Guid="CE9C4391-5FFB-434D-BE34-1C0FAA78E45C">
                 <File Id="layers.png" KeyPath="yes" Source="$(var.ResDir)\usr\share\squid\icons\silk\layers.png" />
             </Component>
-            <Component Id="layout.png" Directory="silk" Guid="780C373A-84AC-46BA-8DF7-E8CF294A24D4">
+            <Component Id="layout.png" Directory="silk" Guid="2435FF9F-ABF5-434D-AE33-E1CD44C7A58B">
                 <File Id="layout.png" KeyPath="yes" Source="$(var.ResDir)\usr\share\squid\icons\silk\layout.png" />
             </Component>
-            <Component Id="link.png" Directory="silk" Guid="E8D1F542-9D92-40CE-8CCC-C4AD92EC3796">
+            <Component Id="link.png" Directory="silk" Guid="668E6679-F6EF-437A-8D3D-DC2B713575F0">
                 <File Id="link.png" KeyPath="yes" Source="$(var.ResDir)\usr\share\squid\icons\silk\link.png" />
             </Component>
-            <Component Id="music.png" Directory="silk" Guid="EBF177BC-5A90-4BEA-AB99-860973D77401">
+            <Component Id="music.png" Directory="silk" Guid="DED9F1E0-1A56-467D-B398-14AB897BFE56">
                 <File Id="music.png" KeyPath="yes" Source="$(var.ResDir)\usr\share\squid\icons\silk\music.png" />
             </Component>
-            <Component Id="package.png" Directory="silk" Guid="B1DE7AF7-18BA-4C41-8B8D-9F83A6ECC0DC">
+            <Component Id="package.png" Directory="silk" Guid="152CDA12-0DB4-445E-AE5A-DA4E9A64FDBA">
                 <File Id="package.png" KeyPath="yes" Source="$(var.ResDir)\usr\share\squid\icons\silk\package.png" />
             </Component>
-            <Component Id="package_go.png" Directory="silk" Guid="2E5238BD-6257-4CFD-9376-A25833CDB887">
+            <Component Id="package_go.png" Directory="silk" Guid="ED611DBB-F163-4760-AA51-E6B3F12CD12F">
                 <File Id="package_go.png" KeyPath="yes" Source="$(var.ResDir)\usr\share\squid\icons\silk\package_go.png" />
             </Component>
-            <Component Id="page_code.png" Directory="silk" Guid="54954462-2FE1-42F4-8C66-349E0837C9D9">
+            <Component Id="page_code.png" Directory="silk" Guid="29804B50-2C25-4757-A4BB-9F39F20E867C">
                 <File Id="page_code.png" KeyPath="yes" Source="$(var.ResDir)\usr\share\squid\icons\silk\page_code.png" />
             </Component>
-            <Component Id="page_excel.png" Directory="silk" Guid="FB6598B6-6702-42E1-852B-DA6C73D88AF0">
+            <Component Id="page_excel.png" Directory="silk" Guid="835C9177-2841-4E09-A49E-A8FD9AEE7850">
                 <File Id="page_excel.png" KeyPath="yes" Source="$(var.ResDir)\usr\share\squid\icons\silk\page_excel.png" />
             </Component>
-            <Component Id="page_green.png" Directory="silk" Guid="C2DF214B-30E1-460B-814E-5702F1BAA1C4">
+            <Component Id="page_green.png" Directory="silk" Guid="521813C7-E59C-4B01-A2EA-C2FC8DAB17E2">
                 <File Id="page_green.png" KeyPath="yes" Source="$(var.ResDir)\usr\share\squid\icons\silk\page_green.png" />
             </Component>
-            <Component Id="page_white.png" Directory="silk" Guid="A2C34C79-19CF-4F71-85BF-2F5651FC1D10">
+            <Component Id="page_white.png" Directory="silk" Guid="595BE836-930E-4B2B-A7BC-CA663D1057D8">
                 <File Id="page_white.png" KeyPath="yes" Source="$(var.ResDir)\usr\share\squid\icons\silk\page_white.png" />
             </Component>
-            <Component Id="page_white_acrobat.png" Directory="silk" Guid="9363F9C1-2226-4362-A564-12B690CE4928">
+            <Component Id="page_white_acrobat.png" Directory="silk" Guid="7FE85835-DBC6-4372-8F08-508B3DBD6D20">
                 <File Id="page_white_acrobat.png" KeyPath="yes" Source="$(var.ResDir)\usr\share\squid\icons\silk\page_white_acrobat.png" />
             </Component>
-            <Component Id="page_white_c.png" Directory="silk" Guid="D7530E2E-C1A5-4FE9-8919-DBEA67FE7A00">
+            <Component Id="page_white_c.png" Directory="silk" Guid="7D2CA7C2-C314-4588-A6FF-C2F7AF4B2257">
                 <File Id="page_white_c.png" KeyPath="yes" Source="$(var.ResDir)\usr\share\squid\icons\silk\page_white_c.png" />
             </Component>
-            <Component Id="page_white_cplusplus.png" Directory="silk" Guid="8D898F0C-F6B0-432F-96C0-21291A59A70E">
+            <Component Id="page_white_cplusplus.png" Directory="silk" Guid="8C6ED7E6-DE92-49DD-8C44-A29C9843AC3F">
                 <File Id="page_white_cplusplus.png" KeyPath="yes" Source="$(var.ResDir)\usr\share\squid\icons\silk\page_white_cplusplus.png" />
             </Component>
-            <Component Id="page_white_flash.png" Directory="silk" Guid="FBC67F0D-6595-47A9-8645-026224AC0903">
+            <Component Id="page_white_flash.png" Directory="silk" Guid="2E0DB249-B449-4DA5-960C-84A54D283A43">
                 <File Id="page_white_flash.png" KeyPath="yes" Source="$(var.ResDir)\usr\share\squid\icons\silk\page_white_flash.png" />
             </Component>
-            <Component Id="page_white_magnify.png" Directory="silk" Guid="487189E6-4696-4127-A2B2-5037EB694ED9">
+            <Component Id="page_white_magnify.png" Directory="silk" Guid="223CBEA7-AF46-449B-9F63-DAA349ABEEA7">
                 <File Id="page_white_magnify.png" KeyPath="yes" Source="$(var.ResDir)\usr\share\squid\icons\silk\page_white_magnify.png" />
             </Component>
-            <Component Id="page_white_picture.png" Directory="silk" Guid="BF977C1B-44FE-4741-8279-16400D10924B">
+            <Component Id="page_white_picture.png" Directory="silk" Guid="EA28BF06-5119-4554-AE61-27BDBD19A14C">
                 <File Id="page_white_picture.png" KeyPath="yes" Source="$(var.ResDir)\usr\share\squid\icons\silk\page_white_picture.png" />
             </Component>
-            <Component Id="page_white_powerpoint.png" Directory="silk" Guid="499E0EAD-7CE1-4EA4-9796-DDEC5C02A5BC">
+            <Component Id="page_white_powerpoint.png" Directory="silk" Guid="22E6CB34-CEB4-47A0-9C21-0116019BC7EA">
                 <File Id="page_white_powerpoint.png" KeyPath="yes" Source="$(var.ResDir)\usr\share\squid\icons\silk\page_white_powerpoint.png" />
             </Component>
-            <Component Id="page_white_stack.png" Directory="silk" Guid="B7B2C705-1EFF-4016-9130-731ADBC379B2">
+            <Component Id="page_white_stack.png" Directory="silk" Guid="3A628E2E-F3A6-4721-BFE7-6C575E2F4B7F">
                 <File Id="page_white_stack.png" KeyPath="yes" Source="$(var.ResDir)\usr\share\squid\icons\silk\page_white_stack.png" />
             </Component>
-            <Component Id="page_white_text.png" Directory="silk" Guid="281D322F-3E29-4F1B-9096-1D985F68B2AC">
+            <Component Id="page_white_text.png" Directory="silk" Guid="9E152D61-8B23-4D78-8ED0-25D49950EF0B">
                 <File Id="page_white_text.png" KeyPath="yes" Source="$(var.ResDir)\usr\share\squid\icons\silk\page_white_text.png" />
             </Component>
-            <Component Id="page_white_word.png" Directory="silk" Guid="6DFB54E5-2D5C-472B-8366-BA8CB3125224">
+            <Component Id="page_white_word.png" Directory="silk" Guid="2115A1C4-2C96-469C-B824-18FF1D942D5F">
                 <File Id="page_white_word.png" KeyPath="yes" Source="$(var.ResDir)\usr\share\squid\icons\silk\page_white_word.png" />
             </Component>
-            <Component Id="page_white_zip.png" Directory="silk" Guid="5CB08AB2-7CE6-438E-BF22-00CB8A24C4E8">
+            <Component Id="page_white_zip.png" Directory="silk" Guid="CA4FC893-B496-4F9A-9543-74644332F214">
                 <File Id="page_white_zip.png" KeyPath="yes" Source="$(var.ResDir)\usr\share\squid\icons\silk\page_white_zip.png" />
             </Component>
-            <Component Id="page_world.png" Directory="silk" Guid="C49A804D-8369-412A-81F9-1016BB5D55BD">
+            <Component Id="page_world.png" Directory="silk" Guid="86DDCF5A-3882-416A-A0EB-DCC3A0517783">
                 <File Id="page_world.png" KeyPath="yes" Source="$(var.ResDir)\usr\share\squid\icons\silk\page_world.png" />
             </Component>
-            <Component Id="photo.png" Directory="silk" Guid="6235DF0F-05BB-4937-9EBB-A7091C8AAFD1">
+            <Component Id="photo.png" Directory="silk" Guid="234A9E53-D117-4659-BDCF-6D62E5D32DF5">
                 <File Id="photo.png" KeyPath="yes" Source="$(var.ResDir)\usr\share\squid\icons\silk\photo.png" />
             </Component>
-            <Component Id="picture.png" Directory="silk" Guid="D9F81FB6-3A26-4C13-A1F4-7BF7B441DA42">
+            <Component Id="picture.png" Directory="silk" Guid="495CE446-A145-4D43-8B77-1054678C1AF8">
                 <File Id="picture.png" KeyPath="yes" Source="$(var.ResDir)\usr\share\squid\icons\silk\picture.png" />
             </Component>
-            <Component Id="plugin.png" Directory="silk" Guid="CD324F3A-3546-4CC3-8380-029B6382885A">
+            <Component Id="plugin.png" Directory="silk" Guid="51202C3F-E9B5-4F7F-AFB3-3F39A27619B5">
                 <File Id="plugin.png" KeyPath="yes" Source="$(var.ResDir)\usr\share\squid\icons\silk\plugin.png" />
             </Component>
-            <Component Id="plugin_add.png" Directory="silk" Guid="2F950094-1A24-4E94-BAAE-70E9BCC831C1">
+            <Component Id="plugin_add.png" Directory="silk" Guid="348F2C5D-CB0A-434F-AF0B-452B11DB53D9">
                 <File Id="plugin_add.png" KeyPath="yes" Source="$(var.ResDir)\usr\share\squid\icons\silk\plugin_add.png" />
             </Component>
-            <Component Id="script.png" Directory="silk" Guid="D9FDA84E-59E5-4442-96B5-8E7918DFAB7F">
+            <Component Id="script.png" Directory="silk" Guid="F47ADE9C-58E8-4522-A04D-8A51BB090466">
                 <File Id="script.png" KeyPath="yes" Source="$(var.ResDir)\usr\share\squid\icons\silk\script.png" />
             </Component>
-            <Component Id="script_gear.png" Directory="silk" Guid="EE479605-F361-4310-9CA6-DB66D0EA4541">
+            <Component Id="script_gear.png" Directory="silk" Guid="44325DB0-CB6C-4496-975F-D8B5C4C9A592">
                 <File Id="script_gear.png" KeyPath="yes" Source="$(var.ResDir)\usr\share\squid\icons\silk\script_gear.png" />
             </Component>
-            <Component Id="script_palette.png" Directory="silk" Guid="A2D8C5F9-2CF7-4783-843A-CF050FE4BD3C">
+            <Component Id="script_palette.png" Directory="silk" Guid="E49BE228-237B-4B86-8EB9-8EC5E9046DFD">
                 <File Id="script_palette.png" KeyPath="yes" Source="$(var.ResDir)\usr\share\squid\icons\silk\script_palette.png" />
             </Component>
-            <Component Id="basic_db_auth.8" Directory="man8" Guid="6C6211F6-51DF-4F0F-9A60-02FA8FCA8FEC">
+            <Component Id="basic_db_auth.8" Directory="man8" Guid="4999CD6B-05D9-48F9-9D2D-5CECC1CD1142">
                 <File Id="basic_db_auth.8" KeyPath="yes" Source="$(var.ResDir)\usr\share\squid\man\man8\basic_db_auth.8" />
             </Component>
-            <Component Id="basic_getpwnam_auth.8" Directory="man8" Guid="163F4441-0BA1-470E-B6E4-0FFE574F18B5">
+            <Component Id="basic_getpwnam_auth.8" Directory="man8" Guid="DC556AF8-3CA0-4E05-B116-9F30522902FE">
                 <File Id="basic_getpwnam_auth.8" KeyPath="yes" Source="$(var.ResDir)\usr\share\squid\man\man8\basic_getpwnam_auth.8" />
             </Component>
-            <Component Id="basic_ldap_auth.8" Directory="man8" Guid="495D5593-540F-4B34-A99B-055FCBAF5CA2">
+            <Component Id="basic_ldap_auth.8" Directory="man8" Guid="9792BFCE-FC2C-4C85-9A4F-47F9C2BB32B2">
                 <File Id="basic_ldap_auth.8" KeyPath="yes" Source="$(var.ResDir)\usr\share\squid\man\man8\basic_ldap_auth.8" />
             </Component>
-            <Component Id="basic_ncsa_auth.8" Directory="man8" Guid="E2D1CCC0-9BE2-40B0-8491-25E7BF052AC1">
+            <Component Id="basic_ncsa_auth.8" Directory="man8" Guid="4F59C77F-CEC2-4777-9EF3-ED2BDAB5DB3B">
                 <File Id="basic_ncsa_auth.8" KeyPath="yes" Source="$(var.ResDir)\usr\share\squid\man\man8\basic_ncsa_auth.8" />
             </Component>
-            <Component Id="basic_pop3_auth.8" Directory="man8" Guid="BACDA8F4-EE90-4A2A-BA16-FF791A850E5E">
+            <Component Id="basic_pop3_auth.8" Directory="man8" Guid="205157C5-79B3-42D7-B4C5-199B6BD4C403">
                 <File Id="basic_pop3_auth.8" KeyPath="yes" Source="$(var.ResDir)\usr\share\squid\man\man8\basic_pop3_auth.8" />
             </Component>
-            <Component Id="basic_radius_auth.8" Directory="man8" Guid="D76139CE-9CD9-421E-81B2-DB25DAA0281E">
+            <Component Id="basic_radius_auth.8" Directory="man8" Guid="39299CBA-7FE2-41CE-BA42-23C43B50DBE1">
                 <File Id="basic_radius_auth.8" KeyPath="yes" Source="$(var.ResDir)\usr\share\squid\man\man8\basic_radius_auth.8" />
             </Component>
-            <Component Id="basic_sasl_auth.8" Directory="man8" Guid="A20456DC-F101-4EC2-AD31-6BD26DE34B6A">
+            <Component Id="basic_sasl_auth.8" Directory="man8" Guid="94E8BF84-C33F-42BF-94C9-D96F147BA039">
                 <File Id="basic_sasl_auth.8" KeyPath="yes" Source="$(var.ResDir)\usr\share\squid\man\man8\basic_sasl_auth.8" />
             </Component>
-            <Component Id="digest_file_auth.8" Directory="man8" Guid="76DA51C9-6E43-47ED-B6A8-A68AE6C8A13E">
+            <Component Id="digest_file_auth.8" Directory="man8" Guid="493524C2-5ED7-4DF2-92F7-53DC1C4C1A61">
                 <File Id="digest_file_auth.8" KeyPath="yes" Source="$(var.ResDir)\usr\share\squid\man\man8\digest_file_auth.8" />
             </Component>
-            <Component Id="ext_edirectory_userip_acl.8" Directory="man8" Guid="7D4ABB9D-7234-42DA-8E06-5B2C2C286527">
+            <Component Id="ext_edirectory_userip_acl.8" Directory="man8" Guid="69BD7513-8E35-4261-9821-7DAD4B0DA740">
                 <File Id="ext_edirectory_userip_acl.8" KeyPath="yes" Source="$(var.ResDir)\usr\share\squid\man\man8\ext_edirectory_userip_acl.8" />
             </Component>
-            <Component Id="ext_file_userip_acl.8" Directory="man8" Guid="A667CB53-46E9-4E08-9DF1-8188355AEE8F">
+            <Component Id="ext_file_userip_acl.8" Directory="man8" Guid="4F0BEDC6-E198-4D00-B01F-1D63974E6827">
                 <File Id="ext_file_userip_acl.8" KeyPath="yes" Source="$(var.ResDir)\usr\share\squid\man\man8\ext_file_userip_acl.8" />
             </Component>
-            <Component Id="ext_ldap_group_acl.8" Directory="man8" Guid="93CA153B-4894-479D-AD85-005B08CCF2CD">
+            <Component Id="ext_ldap_group_acl.8" Directory="man8" Guid="EB14F324-3C71-4A0B-A92F-C8893A36DF85">
                 <File Id="ext_ldap_group_acl.8" KeyPath="yes" Source="$(var.ResDir)\usr\share\squid\man\man8\ext_ldap_group_acl.8" />
             </Component>
-            <Component Id="ext_session_acl.8" Directory="man8" Guid="CD5CE4CB-9B27-4573-A7FC-4D29F6289C74">
+            <Component Id="ext_session_acl.8" Directory="man8" Guid="55CF5627-4056-4352-B853-11CAC2A12BB6">
                 <File Id="ext_session_acl.8" KeyPath="yes" Source="$(var.ResDir)\usr\share\squid\man\man8\ext_session_acl.8" />
             </Component>
-            <Component Id="ext_sql_session_acl.8" Directory="man8" Guid="A0F7DB08-2554-4DC4-B6A7-57EBDB99C5A4">
+            <Component Id="ext_sql_session_acl.8" Directory="man8" Guid="A70F944E-CD6F-49CF-9BEB-AFB5918F03CC">
                 <File Id="ext_sql_session_acl.8" KeyPath="yes" Source="$(var.ResDir)\usr\share\squid\man\man8\ext_sql_session_acl.8" />
             </Component>
-            <Component Id="ext_unix_group_acl.8" Directory="man8" Guid="A1FDFADA-E7CF-4703-AAD7-0F1C7D52EC79">
+            <Component Id="ext_unix_group_acl.8" Directory="man8" Guid="D711CD81-F550-43AD-94A8-2A7C574A018D">
                 <File Id="ext_unix_group_acl.8" KeyPath="yes" Source="$(var.ResDir)\usr\share\squid\man\man8\ext_unix_group_acl.8" />
             </Component>
-            <Component Id="ext_wbinfo_group_acl.8" Directory="man8" Guid="1F4D2903-790F-4541-9F8D-69A297F891F2">
+            <Component Id="ext_wbinfo_group_acl.8" Directory="man8" Guid="0968834D-8064-4D54-9691-9AFEE56D13A0">
                 <File Id="ext_wbinfo_group_acl.8" KeyPath="yes" Source="$(var.ResDir)\usr\share\squid\man\man8\ext_wbinfo_group_acl.8" />
             </Component>
-            <Component Id="helper_mux.8" Directory="man8" Guid="5DD83118-7E8A-48AA-AC06-019B90CE401B">
+            <Component Id="helper_mux.8" Directory="man8" Guid="755BC2F0-37E6-40B9-BA7D-456DE5C754B9">
                 <File Id="helper_mux.8" KeyPath="yes" Source="$(var.ResDir)\usr\share\squid\man\man8\helper-mux.8" />
             </Component>
-            <Component Id="log_db_daemon.8" Directory="man8" Guid="F14743BE-8F22-4847-9874-FBE45AC97CE0">
+            <Component Id="log_db_daemon.8" Directory="man8" Guid="8E22BF3F-341B-4AFC-BEE1-3529DC506EBA">
                 <File Id="log_db_daemon.8" KeyPath="yes" Source="$(var.ResDir)\usr\share\squid\man\man8\log_db_daemon.8" />
             </Component>
-            <Component Id="negotiate_kerberos_auth.8" Directory="man8" Guid="0E5E702A-33B3-41CC-B28C-52A170B6061E">
+            <Component Id="negotiate_kerberos_auth.8" Directory="man8" Guid="A6B7B9FE-99FC-4516-A63A-D3663AFED30E">
                 <File Id="negotiate_kerberos_auth.8" KeyPath="yes" Source="$(var.ResDir)\usr\share\squid\man\man8\negotiate_kerberos_auth.8" />
             </Component>
-            <Component Id="security_fake_certverify.8" Directory="man8" Guid="0F65FD65-215C-4840-AA15-C0A5FA2D68FD">
+            <Component Id="security_fake_certverify.8" Directory="man8" Guid="6479B03A-0E24-4DF3-B11E-510794061430">
                 <File Id="security_fake_certverify.8" KeyPath="yes" Source="$(var.ResDir)\usr\share\squid\man\man8\security_fake_certverify.8" />
             </Component>
-            <Component Id="security_file_certgen.8" Directory="man8" Guid="A149944D-ABDF-408D-BF36-0FAABF6FE69F">
+            <Component Id="security_file_certgen.8" Directory="man8" Guid="239D3DB1-7D28-4794-AB39-D259E8A92D91">
                 <File Id="security_file_certgen.8" KeyPath="yes" Source="$(var.ResDir)\usr\share\squid\man\man8\security_file_certgen.8" />
             </Component>
-            <Component Id="squid.8" Directory="man8" Guid="81FA44F9-E612-40C6-909D-DD3442272D8F">
+            <Component Id="squid.8" Directory="man8" Guid="DEAE4125-0E0D-46CE-B934-30F4579D736E">
                 <File Id="squid.8" KeyPath="yes" Source="$(var.ResDir)\usr\share\squid\man\man8\squid.8" />
             </Component>
-            <Component Id="storeid_file_rewrite.8" Directory="man8" Guid="31024652-BF2B-4BF7-866C-17F78B13D162">
+            <Component Id="storeid_file_rewrite.8" Directory="man8" Guid="F787A65F-B086-440F-B1AE-655F07519210">
                 <File Id="storeid_file_rewrite.8" KeyPath="yes" Source="$(var.ResDir)\usr\share\squid\man\man8\storeid_file_rewrite.8" />
             </Component>
-            <Component Id="url_lfs_rewrite.8" Directory="man8" Guid="96133698-3406-4550-BB5D-B1BEF729F2D0">
+            <Component Id="url_lfs_rewrite.8" Directory="man8" Guid="A4F3A01F-20C0-43EC-AE7C-B99258DB6F10">
                 <File Id="url_lfs_rewrite.8" KeyPath="yes" Source="$(var.ResDir)\usr\share\squid\man\man8\url_lfs_rewrite.8" />
             </Component>
-            <Component Id="cert.pem_1" Directory="ssl_1" Guid="3E3D2DAF-A794-474E-85FA-B6ACA916BB49">
+            <Component Id="cert.pem_1" Directory="ssl_1" Guid="9CB494AD-0376-4F03-A794-03711D11DD95">
                 <File Id="cert.pem_1" KeyPath="yes" Source="$(var.ResDir)\usr\ssl\cert.pem" />
             </Component>
-            <Component Id="ca_bundle.crt_1" Directory="certs_1" Guid="BC0AB474-550C-487D-8A91-9D9DEBF0D65C">
+            <Component Id="ca_bundle.crt_1" Directory="certs_1" Guid="C2E03C99-E980-417A-BEAE-D2B860E313AC">
                 <File Id="ca_bundle.crt_1" KeyPath="yes" Source="$(var.ResDir)\usr\ssl\certs\ca-bundle.crt" />
             </Component>
-            <Component Id="ca_bundle.trust.crt_1" Directory="certs_1" Guid="E8FA33E7-1845-4753-926F-5446FA53E6BF">
+            <Component Id="ca_bundle.trust.crt_1" Directory="certs_1" Guid="F30580BE-29CF-48DD-9866-7101F4FC0461">
                 <File Id="ca_bundle.trust.crt_1" KeyPath="yes" Source="$(var.ResDir)\usr\ssl\certs\ca-bundle.trust.crt" />
             </Component>
-            <Component Id="BF0C2691_D9E2_4D82_A5C1_92A67995821C" Directory="var" Guid="14EED57F-FD86-40F5-90CB-CF5AA129DAFB" KeyPath="yes">
+            <Component Id="D1A40110_4504_4910_9FED_FD8624F0A812" Directory="var" Guid="B830F0F2-DAC1-45B0-9DF4-A2D92DF0624A" KeyPath="yes">
                 <CreateFolder />
             </Component>
-            <Component Id="_5C73025C_D33F_44D6_B3C0_19E73FE3B338" Directory="cache" Guid="3082A1B5-C007-459C-80E4-F7EFB7DF2F67" KeyPath="yes">
+            <Component Id="F80B0CED_8226_4C02_A333_AC51FFF0BF57" Directory="cache" Guid="E1CB8C99-496C-4727-8207-A8F126D5B7F1" KeyPath="yes">
                 <CreateFolder />
             </Component>
-            <Component Id="_95ACD53F_7D26_4D85_AF6B_D4CEBBF91C20" Directory="squid_3" Guid="FDC229EE-F0F0-4660-B893-0C04F00BBF04" KeyPath="yes">
+            <Component Id="DA36AB66_F0BC_41AB_8B05_1CBF19B0F2F3" Directory="squid_3" Guid="3FEFFB0E-9BAF-4061-9307-A8C4CE7F8F43" KeyPath="yes">
                 <CreateFolder />
             </Component>
-            <Component Id="_7F605D4A_5571_4558_9783_875EC71E937D" Directory="log" Guid="ADB5F994-E166-48F6-97DE-90444F18EAB9" KeyPath="yes">
+            <Component Id="_36B8CE15_5944_49A3_BA84_FBCE600BE8D5" Directory="log" Guid="B6AAAA10-ADA5-4332-A30D-F06C2D5135F4" KeyPath="yes">
                 <CreateFolder />
             </Component>
-            <Component Id="_4CBB724A_5662_4A20_82E4_8000393890F1" Directory="squid_4" Guid="802FEB2B-651D-439B-91EB-89CFE633E088" KeyPath="yes">
+            <Component Id="_4DAB8534_C24F_4E10_B8AC_D39531583C92" Directory="squid_4" Guid="DEEBB2FB-CEC7-425C-BA7B-6B43D6BA41CA" KeyPath="yes">
                 <CreateFolder />
             </Component>
-            <Component Id="F04D78C6_F856_4245_BA97_22E75186D79D" Directory="run" Guid="E46C99FD-AF5A-4419-8D8D-BA7F9FE295BF" KeyPath="yes">
+            <Component Id="_1E59309B_6FBC_4299_866E_51A7E64B4FC3" Directory="run" Guid="8E871B7C-6270-4DA5-91B9-89AC81B66E27" KeyPath="yes">
                 <CreateFolder />
             </Component>
-            <Component Id="F90836EA_2633_41FA_87FE_7569672BEB0C" Directory="squid_5" Guid="3A2A2FFE-667F-4A22-A06B-710118F3D085" KeyPath="yes">
+            <Component Id="C2E57845_4F79_4134_9265_EE623832CBDA" Directory="squid_5" Guid="7F83AE4B-5635-458F-A889-765EA8BAFCBE" KeyPath="yes">
                 <CreateFolder />
             </Component>
-            <Component Id="_47AF8E58_9279_45F5_992A_D7BA122C12E4" Directory="run_1" Guid="5EB06015-1EE7-479A-8D3C-123C16CA01BC" KeyPath="yes">
+            <Component Id="BA9E42D0_15C4_4810_AEDA_895AF8ED0C64" Directory="run_1" Guid="350BD014-2D32-40D5-AF14-4B1E3E8A82D8" KeyPath="yes">
                 <CreateFolder />
             </Component>
-            <Component Id="BC71CCF0_AB03_46B6_85FB_6C4A51D81052" Directory="squid_6" Guid="AE2EB4E3-8274-463B-B061-3CDFEDB01246" KeyPath="yes">
+            <Component Id="_618F187D_77F4_4DEC_8905_DC2B05798655" Directory="squid_6" Guid="5B5C22F7-114F-40B4-AC2F-A239A839D0CD" KeyPath="yes">
                 <CreateFolder />
             </Component>
         </ComponentGroup>

@@ -36,13 +36,13 @@ Now we need to build some tools that make the integration easier. Run `01_csharp
 
 ### Step 3. Pack MSI
 
-Next step is to pack the MSI file. First we need to take only necessary files from the cygwin folder structure in `ztmp` and add some system Windows files. Open terminal console again, navigate to `tools/msi` folder and run `01_resources.bat`. This will create Squid folder structure in `src.res` folder. 
+Next step is to pack the MSI file. First we need to take only necessary files from the cygwin folder structure in `ztmp` and add some system Windows files. Open terminal console again, navigate to `tools/msi` folder and run `01_resources.bat`. This will create Squid folder structure in `res` folder. 
 
-After that, compile the C# companion projects by running `02_csharp.bat`, note you need to have Visual Studio 2022 installed on your machine with support for .Net Framework 4.8.
+Run `02_msi.bat` to make the MSI, this will be created in `acceptance` folder. If you need to sign it also run `02_sign.bat`.
 
 ## Help and Support
 
-Squid documentation can be found at http://www.squid-cache.org. In case of any errors in the *installer only*, please send an email to support@diladele.com or post your question in the [discussion group](https://github.com/diladele/squid-windows/discussions). For squid specific questions please use one of Squid mailing lists http://www.squid-cache.org/Support/mailing-lists.html.
+Finally try installing your MSI to see if all works as expected. If not Squid documentation can be found at http://www.squid-cache.org. In case of any errors in the *installer only*, please send an email to support@diladele.com or post your question in the [discussion group](https://github.com/diladele/squid-windows/discussions). For squid specific questions please use one of Squid mailing lists http://www.squid-cache.org/Support/mailing-lists.html.
 
 ## Credits
 
