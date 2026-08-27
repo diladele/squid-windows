@@ -32,7 +32,7 @@ To build Squid 7.7, first make sure the `ztmp/usr/src` folder is empty, then ope
 
 ### Step 3. Build Tools
 
-Now we need to build some tools that make the integration easier. Run `01_csharp.bat` in the `tools/build` folder. If you wish to sign those, also run `02_sign.bat`.
+Now we need to build some tools that make the integration easier. Run `01_csharp.bat` in the `tools/build` folder. If you wish to sign those, also run `02_sign.bat`. Be sure to change the SHA of the certificate used for signing to your own certificate.
 
 ### Step 3. Pack MSI
 
