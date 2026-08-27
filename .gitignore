@@ -12,7 +12,7 @@ src.net/squidtray/obj/
 src.pack/msi/*.wixobj
 
 # msi folder structure
-src.res/
+res/
 acceptance/
 
 #certificates/
