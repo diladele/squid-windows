@@ -31,7 +31,15 @@ namespace Diladele.Squid.Tray
                             installationFolder = key.GetValue("InstallDir") as string;
                         }
                     }
+
+                    // if we have no registry entry, fallback to development machine
+                    if (string.IsNullOrEmpty(installationFolder))
+                    {
+                        installationFolder = @"c:\diladele\squid-windows\res";
+                    }
                 }
+
+
 
                 return installationFolder;
             }

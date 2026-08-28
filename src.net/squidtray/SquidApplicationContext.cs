@@ -229,9 +229,11 @@ namespace Diladele.Squid.Tray
             try
             {
                 var currentVersionFile = PredefinedPaths.InstallationFolder + @"\bin\settings.json";
-                var remoteVersionFile = PredefinedPaths.InstallationFolder + @"\var\log\squid.version";
+                if (!File.Exists(currentVersionFile))
+                    return;
 
-                if (!File.Exists(currentVersionFile) || !File.Exists(remoteVersionFile))
+                var remoteVersionFile = PredefinedPaths.InstallationFolder + @"\var\log\squid.version";
+                if (!File.Exists(remoteVersionFile))
                 {
                     return;
                 }
@@ -253,7 +255,7 @@ namespace Diladele.Squid.Tray
                     this.notifyIcon.ShowBalloonTip(
                         (int)TimeSpan.FromSeconds(15).TotalMilliseconds,
                         "Squid For Windows Update Available!",
-                        "New version of the product '" + remote.Version + "' is now available. Please visit www.diladele.com",
+                        "New version of the product '" + remote.Version + "' is now available. Please visit diladele.com!",
                         ToolTipIcon.Info);
                 }
             }
