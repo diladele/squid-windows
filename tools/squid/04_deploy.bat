@@ -11,7 +11,7 @@ set MAJOR=7
 set MINOR=7
 
 :: deploy into sygwin build folder by make install
-%BUILD%\bin\bash.exe -lc "cd /usr/src/squid-%MAJOR%.%MINOR% && make install"
+%BUILD%\bin\bash.exe -lc "cd /usr/src/squid-%MAJOR%.%MINOR% && make install-strip"
 
 :: and let admin check the output
 echo "SUCCESS: run next step please!"
