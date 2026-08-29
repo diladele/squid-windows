@@ -1,0 +1,7 @@
+{
+    "settings" : {
+        "version"  : "7.7",
+        "platform" : "amd64",
+        "os"       : "windows"
+    }
+}

@@ -1,7 +1,24 @@
-certificates/
-*.pfx
-*/obj/
-installer/bin/
-squid/diladele/
-*.suo
-sign.bat
+# output folders
+bin/
+ztmp/
+acceptance/
+
+# build artefacts for dot net
+src.net/.vs/
+src.net/squidsrv/obj/
+src.net/squidtray/obj/
+
+# build artefacts for wix
+src.pack/msi/*.wixobj
+
+# msi folder structure
+res/
+acceptance/
+
+#certificates/
+#*.pfx
+#*/obj/
+#installer/bin/
+#squid/diladele/
+#*.suo
+#sign.bat

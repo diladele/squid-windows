@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+  <Fragment>
+    <ComponentGroup Id="SquidTray">
+      <!--Component Id="SquidTerminalShortcut" Directory="DesktopFolder" Guid="C3BF753A-0C2A-4E08-A218-F775FB56F70C">
+        <Shortcut Id="SquidTerminalDesktopShortcut"
+                  Name="Squid Terminal"
+                  Description="Squid command line with properly set environment"
+                  Arguments="/K &quot;set PATH=[#bin];%PATH%&quot;"
+                  Target="[CMD_PATH]">
+        </Shortcut>
+      </Component-->
+      
+      <Component Id="ApplicationShortcutDesktop" Directory="DesktopFolder" Guid="93CBE6DF-4905-49E8-96CA-CF3D15C18DE9">
+        <Shortcut Id="SquidTerminalDesktopShortcut"
+                  Name="Squid Terminal"
+                  Description="Squid command line with properly set environment"
+                  Arguments="/K &quot;color 02 &amp; cd /d[INSTALLFOLDER] &amp; set PATH=[INSTALLFOLDER]bin;%PATH%&quot;"
+                  Target="[CMD_PATH]">
+        </Shortcut>
+        <Shortcut Id="ApplicationDesktopShortcut"
+                  Name="Squid Server Tray"
+                  Description="Starts a squid server system tray"
+                  Target="[INSTALLFOLDER]bin\Diladele.Squid.Tray.exe">
+          <Icon Id="SquidIcon" SourceFile="SquidIcon.ico"/>
+          </Shortcut>
+        <RemoveFolder Id="DesktopFolder" On="uninstall"/>
+        <RegistryValue Root="HKCU" Key="Software\Squid" Name="installed" Type="integer" Value="1" KeyPath="yes"/>
+      </Component>
+
+      <Component Id="cmpD058CD70843C402E81E16A44DC8ADD6C" Directory="bin" Guid="D058CD70-843C-402E-81E1-6A44DC8ADD6C">
+        <File Id="tray6FAE4CBABF7D43429B28E0B5977FD050" KeyPath="yes" Source="$(var.ResDir)\bin\Diladele.Squid.Tray.exe" />
+      </Component>
+      <Component Id="cmp7C909DD25801476AA0043B1EF8A1FEEC" Directory="bin" Guid="7C909DD2-5801-476A-A004-3B1EF8A1FEEC">
+        <File Id="file83801F6DC7B0450B8ABEE271ECC45C21" KeyPath="yes" Source="$(var.ResDir)\bin\Diladele.Squid.Tray.exe.config" />
+      </Component>
+      <Component Id="cmpB61CF3C4401347F297C359A4E66A8AB4" Directory="bin" Guid="B61CF3C4-4013-47F2-97C3-59A4E66A8AB4">
+        <File Id="file8F13C4A2ED374B38BBF931774E05A6B9" KeyPath="yes" Source="$(var.ResDir)\bin\Diladele.Squid.Tray.pdb" />
+      </Component>
+    </ComponentGroup>
+  </Fragment>
+</Wix>
