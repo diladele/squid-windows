@@ -16,7 +16,7 @@ If you are looking for functionality beyond what the console version of Squid pr
 
 Web Filtering Proxy is a Windows native web filtering solution that seamlessly integrates with Active Directory and provides rich content and web filtering functionality to sanitize Internet traffic passing into home/enterprise networks. It may be used to block illegal or potentially malicious file downloads, remove annoying advertisements, prevent access to various categories of web sites and block resources with adult/explicit content.
 
-The MSI is available from [download page](https://www.diladele.com/webproxy/download.html) or can be installed using winget package manager by running `winget install webproxy`. Administator guide and various tutorials [are available online](https://www.diladele.com/webproxy/docs/). If you are running a home or small business network the product is also [completely free](https://www.diladele.com/webproxy/licensing.html).
+The MSI is available from [download page](https://www.diladele.com/webproxy/download.html) or can be installed using winget package manager by running `winget install webproxy`. Administrator guide and various tutorials [are available online](https://www.diladele.com/webproxy/docs/). If you are running a home or small business network the product is also [completely free](https://www.diladele.com/webproxy/licensing.html).
 
 ## How to Build
 
