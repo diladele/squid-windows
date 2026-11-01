@@ -12,7 +12,7 @@ set BUILD=%ROOT%ztmp
 
 :: configure squid versions
 set MAJOR=7
-set MINOR=7
+set MINOR=8
 
 :: download latest squid into the build folder
 curl -L -o %BUILD%\usr\src\squid-%MAJOR%.%MINOR%.tar.gz https://github.com/squid-cache/squid/releases/download/SQUID_%MAJOR%_%MINOR%/squid-%MAJOR%.%MINOR%.tar.gz

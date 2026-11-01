@@ -8,7 +8,7 @@ set BUILD=%ROOT%ztmp
 
 :: configure squid versions
 set MAJOR=7
-set MINOR=7
+set MINOR=8
 
 :: deploy into sygwin build folder by make install
 %BUILD%\bin\bash.exe -lc "cd /usr/src/squid-%MAJOR%.%MINOR% && make install-strip"

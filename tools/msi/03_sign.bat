@@ -14,10 +14,10 @@ set SIGN="c:/Program Files (x86)/Windows Kits/10/bin/10.0.26100.0/x64/signtool.e
 	/fd SHA256 ^
 	/td SHA256 ^
 	/tr http://timestamp.globalsign.com/tsa/r45standard ^
-	%ROOT%\acceptance\squid-7.7_amd64.msi
+	%ROOT%\acceptance\squid-7.8_amd64.msi
 
 :: and verify it
-%SIGN% verify /debug /v /pa %ROOT%\acceptance\squid-7.7_amd64.msi
+%SIGN% verify /debug /v /pa %ROOT%\acceptance\squid-7.8_amd64.msi
 
 :: let admin check the output
 echo "SUCCESS: run next step please!"

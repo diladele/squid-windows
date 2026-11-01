@@ -3,11 +3,11 @@
 > Squid is a caching proxy for the Web supporting HTTP, HTTPS, FTP, and more. It reduces bandwidth and improves response times by caching and reusing frequently-requested web pages. Squid has extensive access controls and makes a great server accelerator. It runs on most available operating systems, including Windows and is licensed under the GNU GPL.
 > <cite> <http://www.squid-cache.org>
 
-This project provides MSI installer package for Squid proxy server which can run on Microsoft Windows. It enables Squid installation with just a few simple clicks. Current version is based on the latest Squid 7.7 build using Cygwin Windows 64 bit.
+This project provides MSI installer package for Squid proxy server which can run on Microsoft Windows. It enables Squid installation with just a few simple clicks. Current version is based on the latest Squid 7.8 build using Cygwin Windows 64 bit.
 
 ## Installation
 
-* Download [Squid 7.7 for Windows MSI installer](http://www.diladele.com/squid/download.html) from Diladele B.V.
+* Download [Squid 7.8 for Windows MSI installer](http://www.diladele.com/squid/download.html) from Diladele B.V.
 * Run it and click through *Next* buttons till the product is installed.
 
 ## Secure Web Gateway for Microsoft Windows
@@ -28,7 +28,7 @@ To install Cygwin into `ztmp` folder, open terminal console, change into the `to
 
 ### Step 2. Build Squid
 
-To build Squid 7.7, first make sure the `ztmp/usr/src` folder is empty, then open terminal console, change into the `tools/squid/` folder and run `01_download.bat`, `02_configure.bat`, `03_compile.bat` and finally `04_deploy.bat` files. After that you should have built Squid binaries in your `ztmp` cygwin folder.
+To build Squid 7.8, first make sure the `ztmp/usr/src` folder is empty, then open terminal console, change into the `tools/squid/` folder and run `01_download.bat`, `02_configure.bat`, `03_compile.bat` and finally `04_deploy.bat` files. After that you should have built Squid binaries in your `ztmp` cygwin folder.
 
 ### Step 3. Build Tools
 

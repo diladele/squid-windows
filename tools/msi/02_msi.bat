@@ -36,7 +36,7 @@ set HEAT=%WIX%\HEAT.EXE
 :: and then call light to actually make the MSI
 %LIGHT% /nologo /pedantic ^
 	/ext WiXUtilExtension /ext WixUIExtension /ext WixDifxAppExtension /ext WixFirewallExtension /ext WixNetFxExtension ^
-	/out %ROOT%\acceptance\squid-7.7_amd64.msi ^
+	/out %ROOT%\acceptance\squid-7.8_amd64.msi ^
 	/cultures:en-us ^
 	%OUT%\*.wixobj
 
